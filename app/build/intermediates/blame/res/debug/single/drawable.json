@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable/plugin_camera_title_btn_cancel.xml",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable/plugin_camera_title_btn_cancel.xml"
+    },
+    {
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable/plugin_camera_ok_btn_state.xml",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable/plugin_camera_ok_btn_state.xml"
+    },
+    {
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable/plugin_camera_del_state.xml",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable/plugin_camera_del_state.xml"
+    },
+    {
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable/plugin_camera_title_btn_preview.xml",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable/plugin_camera_title_btn_preview.xml"
+    },
+    {
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable/text_while.xml",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable/text_while.xml"
+    },
+    {
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable/plugin_camera_albumbackground.xml",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable/plugin_camera_albumbackground.xml"
+    },
+    {
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable/bt_nobgd.xml",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable/bt_nobgd.xml"
+    },
+    {
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable/plugin_camera_pic_choose_selector.xml",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable/plugin_camera_pic_choose_selector.xml"
+    },
+    {
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable/plugin_camera_title_btn_back.xml",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable/plugin_camera_title_btn_back.xml"
+    }
+]
