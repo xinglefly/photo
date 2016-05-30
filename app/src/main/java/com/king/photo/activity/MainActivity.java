@@ -70,7 +70,6 @@ public class MainActivity extends Activity {
     @OnItemClick(R.id.noScrollgridview)
     void onGridviewItemClick(AdapterView<?> parent,int position){
         if (position == Bimp.tempSelectBitmap.size()) {
-            Log.i("ddddddd", "----------");
             ll_popup.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.activity_translate_in));
             pop.showAtLocation(parentView, Gravity.BOTTOM, 0, 0);
         } else {

@@ -8,7 +8,6 @@
         android:id="@+id/headview"
         android:layout_width="fill_parent"
         android:layout_height="45dp"
-        android:background="@drawable/plugin_camera_title_bar"
         android:gravity="center_vertical">
 
         <TextView
@@ -16,12 +15,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/photo"
+            android:text="选择相册"
             android:textColor="#ffffff"
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/cancel"
+            android:id="@+id/btn_cancle"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -29,14 +28,14 @@
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/plugin_camera_title_btn_cancel"
-            android:text="@string/camera_cancel"
+            android:text="取消"
             android:textColor="#fff"
             android:textSize="14sp" />
     </RelativeLayout>
 
 
     <GridView
-        android:id="@+id/fileGridView"
+        android:id="@+id/gridview_file"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_below="@id/headview"

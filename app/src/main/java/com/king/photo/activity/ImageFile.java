@@ -18,45 +18,44 @@ import com.king.photo.util.Bimp;
 import com.king.photo.util.PublicWay;
 import com.king.photo.util.Res;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 
 public class ImageFile extends Activity {
 
-	private FolderAdapter folderAdapter;
-	private Button bt_cancel;
-	private Context mContext;
+    @BindView(R.id.headerTitle) TextView headerTitle;
+    @BindView(R.id.btn_cancle) Button btnCancle;
+    @BindView(R.id.gridview_file) GridView gridviewFile;
+    private FolderAdapter folderAdapter;
 
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.plugin_camera_image_file);
-		PublicWay.activityList.add(this);
-		mContext = this;
-		bt_cancel = (Button) findViewById(Res.getWidgetID("cancel"));
-		bt_cancel.setOnClickListener(new CancelListener());
-		GridView gridView = (GridView) findViewById(Res.getWidgetID("fileGridView"));
-		TextView textView = (TextView) findViewById(Res.getWidgetID("headerTitle"));
-		textView.setText(Res.getString("photo"));
-		folderAdapter = new FolderAdapter(this);
-		gridView.setAdapter(folderAdapter);
-	}
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.plugin_camera_image_file);
+        ButterKnife.bind(this);
+        initView();
+    }
 
-	private class CancelListener implements OnClickListener {// 取消按钮的监听
-		public void onClick(View v) {
-			//清空选择的图片
-			Bimp.tempSelectBitmap.clear();
-			Intent intent = new Intent();
-			intent.setClass(mContext, MainActivity.class);
-			startActivity(intent);
-		}
-	}
+    private void initView() {
+        headerTitle.setText("photo");
+        PublicWay.activityList.add(this);
+        folderAdapter = new FolderAdapter(this);
+        gridviewFile.setAdapter(folderAdapter);
+    }
 
-	public boolean onKeyDown(int keyCode, KeyEvent event) {
-		if (keyCode == KeyEvent.KEYCODE_BACK) {
-			Intent intent = new Intent();
-			intent.setClass(mContext, MainActivity.class);
-			startActivity(intent);
-		}
-		
-		return true;
-	}
+    @OnClick(R.id.btn_cancle)
+    void onBtnClick(){
+        Bimp.tempSelectBitmap.clear();
+        startActivity(new Intent(this,MainActivity.class));
+    }
+
+
+
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK)
+            startActivity(new Intent(this, MainActivity.class));
+        return true;
+    }
 
 }
