@@ -19,19 +19,14 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.king.photo.R;
 import com.king.photo.util.Bimp;
 import com.king.photo.util.PublicWay;
 import com.king.photo.util.Res;
 import com.king.photo.zoom.PhotoView;
 import com.king.photo.zoom.ViewPagerFixed;
 
-/**
- * 这个是用于进行图片浏览时的界面
- *
- * @author king
- * @QQ:595163260
- * @version 2014年10月18日  下午11:47:53
- */
+
 public class GalleryActivity extends Activity {
 	private Intent intent;
     // 返回按钮
@@ -61,7 +56,7 @@ public class GalleryActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(Res.getLayoutID("plugin_camera_gallery"));// 切屏到主界面
+		setContentView(R.layout.plugin_camera_gallery);// 切屏到主界面
 		PublicWay.activityList.add(this);
 		mContext = this;
 		back_bt = (Button) findViewById(Res.getWidgetID("gallery_back"));

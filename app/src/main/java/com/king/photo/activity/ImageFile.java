@@ -12,18 +12,13 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
 
+import com.king.photo.R;
 import com.king.photo.adapter.FolderAdapter;
 import com.king.photo.util.Bimp;
 import com.king.photo.util.PublicWay;
 import com.king.photo.util.Res;
 
-/**
- * 这个类主要是用来进行显示包含图片的文件夹
- *
- * @author king
- * @QQ:595163260
- * @version 2014年10月18日  下午11:48:06
- */
+
 public class ImageFile extends Activity {
 
 	private FolderAdapter folderAdapter;
@@ -32,7 +27,7 @@ public class ImageFile extends Activity {
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(Res.getLayoutID("plugin_camera_image_file"));
+		setContentView(R.layout.plugin_camera_image_file);
 		PublicWay.activityList.add(this);
 		mContext = this;
 		bt_cancel = (Button) findViewById(Res.getWidgetID("cancel"));

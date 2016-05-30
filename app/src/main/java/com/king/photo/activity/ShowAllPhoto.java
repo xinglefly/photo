@@ -19,18 +19,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import com.king.photo.R;
 import com.king.photo.adapter.AlbumGridViewAdapter;
 import com.king.photo.util.Bimp;
 import com.king.photo.util.ImageItem;
 import com.king.photo.util.PublicWay;
 import com.king.photo.util.Res;
-/**
- * 这个是显示一个文件夹里面的所有图片时的界面
- *
- * @author king
- * @QQ:595163260
- * @version 2014年10月18日  下午11:49:10
- */
+
 public class ShowAllPhoto extends Activity {
 	private GridView gridView;
 	private ProgressBar progressBar;
@@ -51,7 +46,7 @@ public class ShowAllPhoto extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(Res.getLayoutID("plugin_camera_show_all_photo"));
+		setContentView(R.layout.plugin_camera_show_all_photo);
 		PublicWay.activityList.add(this);
 		mContext = this;
 		back = (Button) findViewById(Res.getWidgetID("showallphoto_back"));

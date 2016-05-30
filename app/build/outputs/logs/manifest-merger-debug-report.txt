@@ -17,6 +17,7 @@ ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:2
 		INJECTED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml
 uses-sdk
 ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:7:5-9:41
+MERGED from [com.jakewharton:butterknife:8.0.1] /Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.0.1/AndroidManifest.xml:5:5-43
 	android:targetSdkVersion
 		ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:9:9-38
 		INJECTED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml
