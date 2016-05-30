@@ -1,8 +1,5 @@
 package com.king.photo.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -20,213 +17,142 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.king.photo.R;
+import com.king.photo.adapter.MyPageAdapter;
 import com.king.photo.util.Bimp;
 import com.king.photo.util.PublicWay;
 import com.king.photo.util.Res;
 import com.king.photo.zoom.PhotoView;
 import com.king.photo.zoom.ViewPagerFixed;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.OnPageChange;
+
 
 public class GalleryActivity extends Activity {
-	private Intent intent;
-    // 返回按钮
-    private Button back_bt;
-	// 发送按钮
-	private Button send_bt;
-	//删除按钮
-	private Button del_bt;
-	//顶部显示预览图片位置的textview
-	private TextView positionTextView;
-	//获取前一个activity传过来的position
-	private int position;
-	//当前的位置
-	private int location = 0;
-	
-	private ArrayList<View> listViews = null;
-	private ViewPagerFixed pager;
-	private MyPageAdapter adapter;
 
-	public List<Bitmap> bmp = new ArrayList<Bitmap>();
-	public List<String> drr = new ArrayList<String>();
-	public List<String> del = new ArrayList<String>();
-	
-	private Context mContext;
+    @BindView(R.id.btn_finish) Button btn_finish;
+    @BindView(R.id.page_gallery) ViewPagerFixed pager;
 
-	RelativeLayout photo_relativeLayout;
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.plugin_camera_gallery);// 切屏到主界面
-		PublicWay.activityList.add(this);
-		mContext = this;
-		back_bt = (Button) findViewById(Res.getWidgetID("gallery_back"));
-		send_bt = (Button) findViewById(Res.getWidgetID("send_button"));
-		del_bt = (Button)findViewById(Res.getWidgetID("gallery_del"));
-		back_bt.setOnClickListener(new BackListener());
-		send_bt.setOnClickListener(new GallerySendListener());
-		del_bt.setOnClickListener(new DelListener());
-		intent = getIntent();
-		Bundle bundle = intent.getExtras();
-		position = Integer.parseInt(intent.getStringExtra("position"));
-		isShowOkBt();
-		// 为发送按钮设置文字
-		pager = (ViewPagerFixed) findViewById(Res.getWidgetID("gallery01"));
-		pager.setOnPageChangeListener(pageChangeListener);
-		for (int i = 0; i < Bimp.tempSelectBitmap.size(); i++) {
-			initListViews( Bimp.tempSelectBitmap.get(i).getBitmap() );
-		}
-		
-		adapter = new MyPageAdapter(listViews);
-		pager.setAdapter(adapter);
-		pager.setPageMargin((int)getResources().getDimensionPixelOffset(Res.getDimenID("ui_10_dip")));
-		int id = intent.getIntExtra("ID", 0);
-		pager.setCurrentItem(id);
-	}
-	
-	private OnPageChangeListener pageChangeListener = new OnPageChangeListener() {
+    private Intent intent;
+    private int position;
+    private int location = 0;
 
-		public void onPageSelected(int arg0) {
-			location = arg0;
-		}
+    private ArrayList<View> listViews = null;
+    private MyPageAdapter adapter;
 
-		public void onPageScrolled(int arg0, float arg1, int arg2) {
+    public List<Bitmap> bmp = new ArrayList<Bitmap>();
+    public List<String> drr = new ArrayList<String>();
+    public List<String> del = new ArrayList<String>();
 
-		}
 
-		public void onPageScrollStateChanged(int arg0) {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.plugin_camera_gallery);
+        ButterKnife.bind(this);
+        PublicWay.activityList.add(this);
+        initView();
+    }
 
-		}
-	};
-	
-	private void initListViews(Bitmap bm) {
-		if (listViews == null)
-			listViews = new ArrayList<View>();
-		PhotoView img = new PhotoView(this);
-		img.setBackgroundColor(0xff000000);
-		img.setImageBitmap(bm);
-		img.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,
-				LayoutParams.MATCH_PARENT));
-		listViews.add(img);
-	}
-	
-	// 返回按钮添加的监听器
-	private class BackListener implements OnClickListener {
+    private void initView() {
+        intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        position = Integer.parseInt(intent.getStringExtra("position"));
+        isShowOkBt();
+        for (int i = 0; i < Bimp.tempSelectBitmap.size(); i++) {
+            initListViews(Bimp.tempSelectBitmap.get(i).getBitmap());
+        }
 
-		public void onClick(View v) {
-			intent.setClass(GalleryActivity.this, ImageFile.class);
-			startActivity(intent);
-		}
-	}
-	
-	// 删除按钮添加的监听器
-	private class DelListener implements OnClickListener {
+        adapter = new MyPageAdapter(listViews);
+        pager.setAdapter(adapter);
+        pager.setPageMargin((int) getResources().getDimensionPixelOffset(R.dimen.ui_10_dip));
+        int id = intent.getIntExtra("ID", 0);
+        pager.setCurrentItem(id);
+    }
 
-		public void onClick(View v) {
-			if (listViews.size() == 1) {
-				Bimp.tempSelectBitmap.clear();
-				Bimp.max = 0;
-				send_bt.setText(Res.getString("finish")+"(" + Bimp.tempSelectBitmap.size() + "/"+PublicWay.num+")");
-				Intent intent = new Intent("data.broadcast.action");  
-                sendBroadcast(intent);  
-				finish();
-			} else {
-				Bimp.tempSelectBitmap.remove(location);
-				Bimp.max--;
-				pager.removeAllViews();
-				listViews.remove(location);
-				adapter.setListViews(listViews);
-				send_bt.setText(Res.getString("finish")+"(" + Bimp.tempSelectBitmap.size() + "/"+PublicWay.num+")");
-				adapter.notifyDataSetChanged();
-			}
-		}
-	}
 
-	// 完成按钮的监听
-	private class GallerySendListener implements OnClickListener {
-		public void onClick(View v) {
-			finish();
-			intent.setClass(mContext,MainActivity.class);
-			startActivity(intent);
-		}
+    @OnPageChange(R.id.page_gallery)
+    void onPageSelected(int position) {
+        location = position;
+    }
 
-	}
 
-	public void isShowOkBt() {
-		if (Bimp.tempSelectBitmap.size() > 0) {
-			send_bt.setText(Res.getString("finish")+"(" + Bimp.tempSelectBitmap.size() + "/"+PublicWay.num+")");
-			send_bt.setPressed(true);
-			send_bt.setClickable(true);
-			send_bt.setTextColor(Color.WHITE);
-		} else {
-			send_bt.setPressed(false);
-			send_bt.setClickable(false);
-			send_bt.setTextColor(Color.parseColor("#E1E0DE"));
-		}
-	}
+    @OnClick({R.id.btn_gallery, R.id.btn_finish, R.id.btn_del})
+    void onGalleryClicks(View v) {
+        switch (v.getId()) {
+            case R.id.btn_gallery:
+                startActivity(intent.setClass(this, ImageFile.class));
+                break;
+            case R.id.btn_finish:
+                finish();
+                startActivity(intent.setClass(this, MainActivity.class));
+                break;
+            case R.id.btn_del:
+                if (listViews.size() == 1) {
+                    Bimp.tempSelectBitmap.clear();
+                    Bimp.max = 0;
+                    btn_finish.setText("finish" + Bimp.tempSelectBitmap.size() + "/" + PublicWay.num);
+                    Intent intent = new Intent("data.broadcast.action");
+                    sendBroadcast(intent);
+                    finish();
+                } else {
+                    Bimp.tempSelectBitmap.remove(location);
+                    Bimp.max--;
+                    pager.removeAllViews();
+                    listViews.remove(location);
+                    adapter.setListViews(listViews);
+                    btn_finish.setText("finish" + Bimp.tempSelectBitmap.size() + "/" + PublicWay.num);
+                    adapter.notifyDataSetChanged();
+                }
+                break;
+        }
+    }
 
-	/**
-	 * 监听返回按钮
-	 */
-	@Override
-	public boolean onKeyDown(int keyCode, KeyEvent event) {
-		
-		if (keyCode == KeyEvent.KEYCODE_BACK) {
-			if(position==1){
-				this.finish();
-				intent.setClass(GalleryActivity.this, AlbumActivity.class);
-				startActivity(intent);
-			}else if(position==2){
-				this.finish();
-				intent.setClass(GalleryActivity.this, ShowAllPhoto.class);
-				startActivity(intent);
-			}
-		}
-		return true;
-	}
-	
-	
-	class MyPageAdapter extends PagerAdapter {
 
-		private ArrayList<View> listViews;
+    private void initListViews(Bitmap bm) {
+        if (listViews == null)
+            listViews = new ArrayList<View>();
+        PhotoView img = new PhotoView(this);
+        img.setBackgroundColor(0xff000000);
+        img.setImageBitmap(bm);
+        img.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
+        listViews.add(img);
+    }
 
-		private int size;
-		public MyPageAdapter(ArrayList<View> listViews) {
-			this.listViews = listViews;
-			size = listViews == null ? 0 : listViews.size();
-		}
 
-		public void setListViews(ArrayList<View> listViews) {
-			this.listViews = listViews;
-			size = listViews == null ? 0 : listViews.size();
-		}
+    public void isShowOkBt() {
+        if (Bimp.tempSelectBitmap.size() > 0) {
+            btn_finish.setText(Bimp.tempSelectBitmap.size() + "/" + PublicWay.num + "");
+            btn_finish.setPressed(true);
+            btn_finish.setClickable(true);
+            btn_finish.setTextColor(Color.WHITE);
+        } else {
+            btn_finish.setPressed(false);
+            btn_finish.setClickable(false);
+            btn_finish.setTextColor(Color.parseColor("#E1E0DE"));
+        }
+    }
 
-		public int getCount() {
-			return size;
-		}
 
-		public int getItemPosition(Object object) {
-			return POSITION_NONE;
-		}
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
 
-		public void destroyItem(View arg0, int arg1, Object arg2) {
-			((ViewPagerFixed) arg0).removeView(listViews.get(arg1 % size));
-		}
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            if (position == 1) {
+                this.finish();
+                startActivity(intent.setClass(GalleryActivity.this, AlbumActivity.class));
+            } else if (position == 2) {
+                this.finish();
+                startActivity(intent.setClass(GalleryActivity.this, ShowAllPhoto.class));
+            }
+        }
+        return true;
+    }
 
-		public void finishUpdate(View arg0) {
-		}
 
-		public Object instantiateItem(View arg0, int arg1) {
-			try {
-				((ViewPagerFixed) arg0).addView(listViews.get(arg1 % size), 0);
-
-			} catch (Exception e) {
-			}
-			return listViews.get(arg1 % size);
-		}
-
-		public boolean isViewFromObject(View arg0, Object arg1) {
-			return arg0 == arg1;
-		}
-
-	}
 }

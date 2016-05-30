@@ -1,8 +1,6 @@
 package com.king.photo.activity;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -16,19 +14,13 @@ import android.provider.MediaStore;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.view.animation.AnimationUtils;
-import android.widget.Adapter;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.GridView;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
@@ -40,7 +32,6 @@ import com.king.photo.util.Bimp;
 import com.king.photo.util.FileUtils;
 import com.king.photo.util.ImageItem;
 import com.king.photo.util.PublicWay;
-import com.king.photo.util.ViewHolder;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -48,7 +39,6 @@ import butterknife.OnItemClick;
 
 
 public class MainActivity extends Activity {
-
 
     @BindView(R.id.activity_selectimg_send) TextView activitySelectimgSend;
     @BindView(R.id.noScrollgridview) GridView noScrollgridview;
@@ -75,23 +65,6 @@ public class MainActivity extends Activity {
         adapter = new GridAdapter(this);
         adapter.isRefresh();
         noScrollgridview.setAdapter(adapter);
-        /*noScrollgridview.setOnItemClickListener(new OnItemClickListener() {
-
-            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
-                                    long arg3) {
-                if (arg2 == Bimp.tempSelectBitmap.size()) {
-                    Log.i("ddddddd", "----------");
-                    ll_popup.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.activity_translate_in));
-                    pop.showAtLocation(parentView, Gravity.BOTTOM, 0, 0);
-                } else {
-                    Intent intent = new Intent(MainActivity.this,
-                            GalleryActivity.class);
-                    intent.putExtra("position", "1");
-                    intent.putExtra("ID", arg2);
-                    startActivity(intent);
-                }
-            }
-        });*/
     }
 
     @OnItemClick(R.id.noScrollgridview)

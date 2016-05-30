@@ -221,6 +221,9 @@ public final class R {
         public static final int activity_selectimg_send=0x7f090003;
         public static final int back=0x7f09000c;
         public static final int bottom_layout=0x7f09000e;
+        public static final int btn_del=0x7f090014;
+        public static final int btn_finish=0x7f090015;
+        public static final int btn_gallery=0x7f090013;
         public static final int button2=0x7f090001;
         public static final int button3=0x7f090002;
         public static final int cancel=0x7f09000d;
@@ -231,9 +234,6 @@ public final class R {
         public static final int file_back=0x7f09001b;
         public static final int file_image=0x7f09001c;
         public static final int filenum=0x7f09001e;
-        public static final int gallery01=0x7f090016;
-        public static final int gallery_back=0x7f090013;
-        public static final int gallery_del=0x7f090014;
         public static final int headerTitle=0x7f090017;
         public static final int headview=0x7f09000b;
         public static final int imageView1=0x7f090000;
@@ -249,9 +249,9 @@ public final class R {
         public static final int noScrollgridview=0x7f090004;
         public static final int no_picture_confirm=0x7f090019;
         public static final int ok_button=0x7f090010;
+        public static final int page_gallery=0x7f090016;
         public static final int parent=0x7f090005;
         public static final int preview=0x7f09000f;
-        public static final int send_button=0x7f090015;
         public static final int showallphoto_back=0x7f090025;
         public static final int showallphoto_bottom_layout=0x7f090028;
         public static final int showallphoto_cancel=0x7f090027;
@@ -287,7 +287,8 @@ public final class R {
         public static final int only_choose_num=0x7f080006;
         public static final int photo=0x7f080007;
         public static final int preview=0x7f080008;
-        public static final int unfinished=0x7f080009;
+        public static final int title_activity_main2=0x7f080009;
+        public static final int unfinished=0x7f08000a;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 

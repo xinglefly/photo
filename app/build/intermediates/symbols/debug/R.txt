@@ -200,6 +200,9 @@ int drawable text_while 0x7f020026
 int id activity_selectimg_send 0x7f090003
 int id back 0x7f09000c
 int id bottom_layout 0x7f09000e
+int id btn_del 0x7f090014
+int id btn_finish 0x7f090015
+int id btn_gallery 0x7f090013
 int id button2 0x7f090001
 int id button3 0x7f090002
 int id cancel 0x7f09000d
@@ -210,9 +213,6 @@ int id fileGridView 0x7f090018
 int id file_back 0x7f09001b
 int id file_image 0x7f09001c
 int id filenum 0x7f09001e
-int id gallery01 0x7f090016
-int id gallery_back 0x7f090013
-int id gallery_del 0x7f090014
 int id headerTitle 0x7f090017
 int id headview 0x7f09000b
 int id imageView1 0x7f090000
@@ -228,9 +228,9 @@ int id name 0x7f09001f
 int id noScrollgridview 0x7f090004
 int id no_picture_confirm 0x7f090019
 int id ok_button 0x7f090010
+int id page_gallery 0x7f090016
 int id parent 0x7f090005
 int id preview 0x7f09000f
-int id send_button 0x7f090015
 int id showallphoto_back 0x7f090025
 int id showallphoto_bottom_layout 0x7f090028
 int id showallphoto_cancel 0x7f090027
@@ -262,7 +262,8 @@ int string no_photo 0x7f080005
 int string only_choose_num 0x7f080006
 int string photo 0x7f080007
 int string preview 0x7f080008
-int string unfinished 0x7f080009
+int string title_activity_main2 0x7f080009
+int string unfinished 0x7f08000a
 int style AppBaseTheme 0x7f060000
 int style PopupAnimation 0x7f060001
 int style PopupAnimation1 0x7f060002

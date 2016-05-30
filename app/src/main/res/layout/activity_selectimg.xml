@@ -37,7 +37,7 @@
         android:layout_margin="8dp"
         android:background="@null"
         android:gravity="left|top"
-        android:hint="说点什么吧..."></EditText>
+        android:hint="说点什么吧..."/>
 
     <GridView
         android:id="@+id/noScrollgridview"

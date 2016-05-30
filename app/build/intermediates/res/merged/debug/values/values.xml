@@ -165,6 +165,7 @@
     <string name="only_choose_num">超出可选图片张数</string>
     <string name="photo">选择相册</string>
     <string name="preview">预览</string>
+    <string name="title_activity_main2">Main2Activity</string>
     <string name="unfinished">完成</string>
     <style mce_bogus="1" name="PopupAnimation" parent="android:Animation">
         <item name="android:windowEnterAnimation">@anim/activity_translate_in</item>
