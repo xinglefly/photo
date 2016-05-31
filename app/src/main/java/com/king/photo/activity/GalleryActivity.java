@@ -34,17 +34,10 @@ public class GalleryActivity extends Activity {
     @BindView(R.id.btn_finish) Button btn_finish;
     @BindView(R.id.page_gallery) ViewPagerFixed pager;
 
-    private Intent intent;
-    private int position;
-    private int location = 0;
-
     private ArrayList<View> listViews = null;
     private GalleryPageAdapter adapter;
-
-    public List<Bitmap> bmp = new ArrayList<Bitmap>();
-    public List<String> drr = new ArrayList<String>();
-    public List<String> del = new ArrayList<String>();
-
+    private int position;
+    private int location = 0;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -56,9 +49,7 @@ public class GalleryActivity extends Activity {
     }
 
     private void initView() {
-        intent = getIntent();
-        Bundle bundle = intent.getExtras();
-        position = Integer.parseInt(intent.getStringExtra("position"));
+        position = Integer.parseInt(getIntent().getStringExtra("position"));
         isShowOkBt();
         for (int i = 0; i < Bimp.tempSelectBitmap.size(); i++) {
             initListViews(Bimp.tempSelectBitmap.get(i).getBitmap());
@@ -67,8 +58,7 @@ public class GalleryActivity extends Activity {
         adapter = new GalleryPageAdapter(listViews);
         pager.setAdapter(adapter);
         pager.setPageMargin((int) getResources().getDimensionPixelOffset(R.dimen.ui_10_dip));
-        int id = intent.getIntExtra("ID", 0);
-        pager.setCurrentItem(id);
+        pager.setCurrentItem(getIntent().getIntExtra("ID", 0));
     }
 
 
@@ -82,18 +72,17 @@ public class GalleryActivity extends Activity {
     void onGalleryClicks(View v) {
         switch (v.getId()) {
             case R.id.btn_gallery:
-                startActivity(intent.setClass(this, ImageFile.class));
+                startActivity(new Intent(this, ImageFile.class));
                 break;
             case R.id.btn_finish:
                 finish();
-                startActivity(intent.setClass(this, MainActivity.class));
+                startActivity(new Intent(this, MainActivity.class));
                 break;
             case R.id.btn_del:
                 if (listViews.size() == 1) {
                     Bimp.tempSelectBitmap.clear();
                     Bimp.max = 0;
                     btn_finish.setText(Bimp.tempSelectBitmap.size() + "/" + PublicWay.num);
-                    EventBus.getDefault().post(new PhotoEvent(true));
                     finish();
                 } else {
                     Bimp.tempSelectBitmap.remove(location);
@@ -104,6 +93,7 @@ public class GalleryActivity extends Activity {
                     btn_finish.setText(Bimp.tempSelectBitmap.size() + "/" + PublicWay.num);
                     adapter.notifyDataSetChanged();
                 }
+                EventBus.getDefault().post(new PhotoEvent(true));
                 break;
         }
     }
@@ -138,8 +128,8 @@ public class GalleryActivity extends Activity {
     public boolean onKeyDown(int keyCode, KeyEvent event) {
 
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-            if (position == 1) startActivity(intent.setClass(this, AlbumActivity.class));
-            else if (position == 2) startActivity(intent.setClass(this, ShowAllPhoto.class));
+            if (position == 1) startActivity(new Intent(this, AlbumActivity.class));
+            else if (position == 2) startActivity(new Intent(this, ShowAllPhoto.class));
             this.finish();
         }
         return true;

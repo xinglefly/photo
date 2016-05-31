@@ -32,6 +32,7 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import butterknife.OnItemClick;
 
 public class ShowAllPhoto extends Activity {
 
@@ -92,10 +93,13 @@ public class ShowAllPhoto extends Activity {
         }
     }
 
+
     @Subscribe
     public void isRefreshAlbum(PhotoEvent event){
         if (event.isRefresh()) gridImageAdapter.notifyDataSetChanged();
     }
+
+
 
 
     private void initListener() {

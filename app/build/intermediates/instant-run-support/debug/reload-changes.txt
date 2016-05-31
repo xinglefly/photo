@@ -1,8 +1,2 @@
-CHANGED,/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/king/photo/activity/AlbumActivity$override.class
 CHANGED,/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
-CHANGED,/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/king/photo/activity/ShowAllPhoto$1$override.class
-CHANGED,/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/king/photo/activity/MainActivity$override.class
-CHANGED,/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/king/photo/activity/AlbumActivity$1$override.class
 CHANGED,/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/king/photo/activity/GalleryActivity$override.class
-CHANGED,/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/king/photo/activity/MainActivity$5$override.class
-CHANGED,/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/king/photo/activity/ShowAllPhoto$override.class
