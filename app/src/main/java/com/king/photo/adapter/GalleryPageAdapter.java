@@ -7,12 +7,12 @@ import java.util.ArrayList;
 
 
 @SuppressWarnings("unused")
-public class MyPageAdapter extends PagerAdapter {
+public class GalleryPageAdapter extends PagerAdapter {
 
     private ArrayList<View> listViews;
     private int size;
 
-    public MyPageAdapter(ArrayList<View> listViews) {
+    public GalleryPageAdapter(ArrayList<View> listViews) {
         this.listViews = listViews;
         size = listViews == null ? 0 : listViews.size();
     }

@@ -26,7 +26,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.king.photo.R;
-import com.king.photo.adapter.GridAdapter;
+import com.king.photo.adapter.PhotoGridAdapter;
 import com.king.photo.util.Bimp;
 import com.king.photo.util.FileUtils;
 import com.king.photo.bean.ImageItem;
@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
     @BindView(R.id.activity_selectimg_send) TextView activitySelectimgSend;
     @BindView(R.id.noScrollgridview) GridView noScrollgridview;
 
-    private GridAdapter adapter;
+    private PhotoGridAdapter adapter;
     private View parentView;
     private PopupWindow pop = null;
     private LinearLayout ll_popup;
@@ -61,7 +61,7 @@ public class MainActivity extends Activity {
         bimap = BitmapFactory.decodeResource(getResources(), R.drawable.icon_addpic_unfocused);
         PublicWay.activityList.add(this);
         noScrollgridview.setSelector(new ColorDrawable(Color.TRANSPARENT));
-        adapter = new GridAdapter(this);
+        adapter = new PhotoGridAdapter(this);
         adapter.isRefresh();
         noScrollgridview.setAdapter(adapter);
     }
@@ -69,9 +69,8 @@ public class MainActivity extends Activity {
     @OnItemClick(R.id.noScrollgridview)
     void onGridviewItemClick(AdapterView<?> parent,int position){
         if (position == Bimp.tempSelectBitmap.size()) {
-//            ll_popup.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.activity_translate_in));
-//            pop.showAtLocation(parentView, Gravity.BOTTOM, 0, 0);
-            photo();
+            ll_popup.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.activity_translate_in));
+            pop.showAtLocation(parentView, Gravity.BOTTOM, 0, 0);
         } else {
             Intent intent = new Intent(MainActivity.this, GalleryActivity.class);
             intent.putExtra("position", "1");
@@ -206,9 +205,8 @@ public class MainActivity extends Activity {
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             for (int i = 0; i < PublicWay.activityList.size(); i++) {
-                if (null != PublicWay.activityList.get(i)) {
+                if (null != PublicWay.activityList.get(i))
                     PublicWay.activityList.get(i).finish();
-                }
             }
             System.exit(0);
         }

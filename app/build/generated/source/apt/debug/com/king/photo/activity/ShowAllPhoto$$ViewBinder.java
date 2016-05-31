@@ -15,40 +15,40 @@ public class ShowAllPhoto$$ViewBinder<T extends ShowAllPhoto> implements ViewBin
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131296290, "field 'tvHeadTitle'");
-    target.tvHeadTitle = finder.castView(view, 2131296290, "field 'tvHeadTitle'");
-    view = finder.findRequiredView(source, 2131296268, "field 'btnPreview' and method 'onButtonClick'");
-    target.btnPreview = finder.castView(view, 2131296268, "field 'btnPreview'");
+    view = finder.findRequiredView(source, 2131296291, "field 'tvHeadTitle'");
+    target.tvHeadTitle = finder.castView(view, 2131296291, "field 'tvHeadTitle'");
+    view = finder.findRequiredView(source, 2131296270, "field 'btnPreview' and method 'onButtonClick'");
+    target.btnPreview = finder.castView(view, 2131296270, "field 'btnPreview'");
+    unbinder.view2131296270 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onButtonClick(p0);
+      }
+    });
+    view = finder.findRequiredView(source, 2131296271, "field 'btnFinish' and method 'onButtonClick'");
+    target.btnFinish = finder.castView(view, 2131296271, "field 'btnFinish'");
+    unbinder.view2131296271 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onButtonClick(p0);
+      }
+    });
+    view = finder.findRequiredView(source, 2131296294, "field 'progressBar'");
+    target.progressBar = finder.castView(view, 2131296294, "field 'progressBar'");
+    view = finder.findRequiredView(source, 2131296293, "field 'gridview_photos'");
+    target.gridview_photos = finder.castView(view, 2131296293, "field 'gridview_photos'");
+    view = finder.findRequiredView(source, 2131296290, "method 'onButtonClick'");
+    unbinder.view2131296290 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onButtonClick(p0);
+      }
+    });
+    view = finder.findRequiredView(source, 2131296268, "method 'onButtonClick'");
     unbinder.view2131296268 = view;
-    view.setOnClickListener(new DebouncingOnClickListener() {
-      @Override
-      public void doClick(View p0) {
-        target.onButtonClick(p0);
-      }
-    });
-    view = finder.findRequiredView(source, 2131296269, "field 'btnFinish' and method 'onButtonClick'");
-    target.btnFinish = finder.castView(view, 2131296269, "field 'btnFinish'");
-    unbinder.view2131296269 = view;
-    view.setOnClickListener(new DebouncingOnClickListener() {
-      @Override
-      public void doClick(View p0) {
-        target.onButtonClick(p0);
-      }
-    });
-    view = finder.findRequiredView(source, 2131296293, "field 'progressBar'");
-    target.progressBar = finder.castView(view, 2131296293, "field 'progressBar'");
-    view = finder.findRequiredView(source, 2131296292, "field 'gridview_photos'");
-    target.gridview_photos = finder.castView(view, 2131296292, "field 'gridview_photos'");
-    view = finder.findRequiredView(source, 2131296289, "method 'onButtonClick'");
-    unbinder.view2131296289 = view;
-    view.setOnClickListener(new DebouncingOnClickListener() {
-      @Override
-      public void doClick(View p0) {
-        target.onButtonClick(p0);
-      }
-    });
-    view = finder.findRequiredView(source, 2131296266, "method 'onButtonClick'");
-    unbinder.view2131296266 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -65,13 +65,13 @@ public class ShowAllPhoto$$ViewBinder<T extends ShowAllPhoto> implements ViewBin
   protected static class InnerUnbinder<T extends ShowAllPhoto> implements Unbinder {
     private T target;
 
+    View view2131296270;
+
+    View view2131296271;
+
+    View view2131296290;
+
     View view2131296268;
-
-    View view2131296269;
-
-    View view2131296289;
-
-    View view2131296266;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -86,14 +86,14 @@ public class ShowAllPhoto$$ViewBinder<T extends ShowAllPhoto> implements ViewBin
 
     protected void unbind(T target) {
       target.tvHeadTitle = null;
-      view2131296268.setOnClickListener(null);
+      view2131296270.setOnClickListener(null);
       target.btnPreview = null;
-      view2131296269.setOnClickListener(null);
+      view2131296271.setOnClickListener(null);
       target.btnFinish = null;
       target.progressBar = null;
       target.gridview_photos = null;
-      view2131296289.setOnClickListener(null);
-      view2131296266.setOnClickListener(null);
+      view2131296290.setOnClickListener(null);
+      view2131296268.setOnClickListener(null);
     }
   }
 }

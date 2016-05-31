@@ -11,7 +11,7 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 
 import com.king.photo.R;
-import com.king.photo.adapter.MyPageAdapter;
+import com.king.photo.adapter.GalleryPageAdapter;
 import com.king.photo.util.Bimp;
 import com.king.photo.util.PublicWay;
 import com.king.photo.zoom.PhotoView;
@@ -36,7 +36,7 @@ public class GalleryActivity extends Activity {
     private int location = 0;
 
     private ArrayList<View> listViews = null;
-    private MyPageAdapter adapter;
+    private GalleryPageAdapter adapter;
 
     public List<Bitmap> bmp = new ArrayList<Bitmap>();
     public List<String> drr = new ArrayList<String>();
@@ -61,7 +61,7 @@ public class GalleryActivity extends Activity {
             initListViews(Bimp.tempSelectBitmap.get(i).getBitmap());
         }
 
-        adapter = new MyPageAdapter(listViews);
+        adapter = new GalleryPageAdapter(listViews);
         pager.setAdapter(adapter);
         pager.setPageMargin((int) getResources().getDimensionPixelOffset(R.dimen.ui_10_dip));
         int id = intent.getIntExtra("ID", 0);
@@ -89,7 +89,7 @@ public class GalleryActivity extends Activity {
                 if (listViews.size() == 1) {
                     Bimp.tempSelectBitmap.clear();
                     Bimp.max = 0;
-                    btn_finish.setText("finish" + Bimp.tempSelectBitmap.size() + "/" + PublicWay.num);
+                    btn_finish.setText(Bimp.tempSelectBitmap.size() + "/" + PublicWay.num);
                     Intent intent = new Intent("data.broadcast.action");
                     sendBroadcast(intent);
                     finish();
@@ -99,7 +99,7 @@ public class GalleryActivity extends Activity {
                     pager.removeAllViews();
                     listViews.remove(location);
                     adapter.setListViews(listViews);
-                    btn_finish.setText("finish" + Bimp.tempSelectBitmap.size() + "/" + PublicWay.num);
+                    btn_finish.setText(Bimp.tempSelectBitmap.size() + "/" + PublicWay.num);
                     adapter.notifyDataSetChanged();
                 }
                 break;
