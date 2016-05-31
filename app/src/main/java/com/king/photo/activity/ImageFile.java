@@ -26,7 +26,6 @@ import butterknife.OnClick;
 public class ImageFile extends Activity {
 
     @BindView(R.id.headerTitle) TextView headerTitle;
-    @BindView(R.id.btn_cancle) Button btnCancle;
     @BindView(R.id.gridview_file) GridView gridviewFile;
     private FolderAdapter folderAdapter;
 

@@ -11,7 +11,14 @@
                     "endOffset": 94
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 153,
+                        "startColumn": 1,
+                        "startOffset": 8173,
+                        "endColumn": 40,
+                        "endOffset": 8212
+                    }
                 }
             },
             {
@@ -23,7 +30,14 @@
                     "endOffset": 138
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 1,
+                        "startOffset": 2395,
+                        "endColumn": 40,
+                        "endOffset": 2434
+                    }
                 }
             },
             {
@@ -35,7 +49,14 @@
                     "endOffset": 185
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 1,
+                        "startOffset": 1867,
+                        "endColumn": 43,
+                        "endOffset": 1909
+                    }
                 }
             },
             {
@@ -47,7 +68,14 @@
                     "endOffset": 224
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 132,
+                        "startColumn": 1,
+                        "startOffset": 7108,
+                        "endColumn": 35,
+                        "endOffset": 7142
+                    }
                 }
             },
             {
@@ -59,7 +87,14 @@
                     "endOffset": 269
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 101,
+                        "startColumn": 1,
+                        "startOffset": 5365,
+                        "endColumn": 41,
+                        "endOffset": 5405
+                    }
                 }
             },
             {
@@ -71,7 +106,14 @@
                     "endOffset": 309
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 1,
+                        "startOffset": 2293,
+                        "endColumn": 36,
+                        "endOffset": 2328
+                    }
                 }
             },
             {
@@ -83,7 +125,14 @@
                     "endOffset": 349
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 1,
+                        "startOffset": 2139,
+                        "endColumn": 36,
+                        "endOffset": 2174
+                    }
                 }
             },
             {
@@ -95,7 +144,14 @@
                     "endOffset": 390
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 1,
+                        "startOffset": 758,
+                        "endColumn": 37,
+                        "endOffset": 794
+                    }
                 }
             },
             {
@@ -107,7 +163,14 @@
                     "endOffset": 430
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 147,
+                        "startColumn": 1,
+                        "startOffset": 7899,
+                        "endColumn": 36,
+                        "endOffset": 7934
+                    }
                 }
             },
             {
@@ -119,7 +182,14 @@
                     "endOffset": 479
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 1,
+                        "startOffset": 644,
+                        "endColumn": 45,
+                        "endOffset": 688
+                    }
                 }
             },
             {
@@ -131,7 +201,14 @@
                     "endOffset": 518
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 143,
+                        "startColumn": 1,
+                        "startOffset": 7694,
+                        "endColumn": 35,
+                        "endOffset": 7728
+                    }
                 }
             },
             {
@@ -143,7 +220,14 @@
                     "endOffset": 563
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 93,
+                        "startColumn": 1,
+                        "startOffset": 4952,
+                        "endColumn": 41,
+                        "endOffset": 4992
+                    }
                 }
             },
             {
@@ -155,7 +239,14 @@
                     "endOffset": 603
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 82,
+                        "startColumn": 1,
+                        "startOffset": 4353,
+                        "endColumn": 36,
+                        "endOffset": 4388
+                    }
                 }
             },
             {
@@ -167,7 +258,14 @@
                     "endOffset": 647
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 54,
+                        "startColumn": 1,
+                        "startOffset": 2829,
+                        "endColumn": 40,
+                        "endOffset": 2868
+                    }
                 }
             },
             {
@@ -179,7 +277,14 @@
                     "endOffset": 691
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 115,
+                        "startColumn": 1,
+                        "startOffset": 6149,
+                        "endColumn": 40,
+                        "endOffset": 6188
+                    }
                 }
             },
             {
@@ -191,7 +296,14 @@
                     "endOffset": 736
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 102,
+                        "startColumn": 1,
+                        "startOffset": 5420,
+                        "endColumn": 41,
+                        "endOffset": 5460
+                    }
                 }
             },
             {
@@ -203,7 +315,14 @@
                     "endOffset": 780
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 65,
+                        "startColumn": 1,
+                        "startOffset": 3411,
+                        "endColumn": 40,
+                        "endOffset": 3450
+                    }
                 }
             },
             {
@@ -215,7 +334,14 @@
                     "endOffset": 820
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 1,
+                        "startOffset": 1285,
+                        "endColumn": 36,
+                        "endOffset": 1320
+                    }
                 }
             },
             {
@@ -227,7 +353,14 @@
                     "endOffset": 869
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 114,
+                        "startColumn": 1,
+                        "startOffset": 6090,
+                        "endColumn": 45,
+                        "endOffset": 6134
+                    }
                 }
             },
             {
@@ -239,7 +372,14 @@
                     "endOffset": 912
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 1,
+                        "startOffset": 425,
+                        "endColumn": 39,
+                        "endOffset": 463
+                    }
                 }
             },
             {
@@ -251,7 +391,14 @@
                     "endOffset": 954
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 57,
+                        "startColumn": 1,
+                        "startOffset": 2986,
+                        "endColumn": 38,
+                        "endOffset": 3023
+                    }
                 }
             },
             {
@@ -263,7 +410,14 @@
                     "endOffset": 993
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 133,
+                        "startColumn": 1,
+                        "startOffset": 7157,
+                        "endColumn": 35,
+                        "endOffset": 7191
+                    }
                 }
             },
             {
@@ -275,7 +429,14 @@
                     "endOffset": 1036
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 145,
+                        "startColumn": 1,
+                        "startOffset": 7797,
+                        "endColumn": 39,
+                        "endOffset": 7835
+                    }
                 }
             },
             {
@@ -287,7 +448,14 @@
                     "endOffset": 1079
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 139,
+                        "startColumn": 1,
+                        "startOffset": 7489,
+                        "endColumn": 39,
+                        "endOffset": 7527
+                    }
                 }
             },
             {
@@ -299,7 +467,14 @@
                     "endOffset": 1127
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 1,
+                        "startOffset": 3850,
+                        "endColumn": 44,
+                        "endOffset": 3893
+                    }
                 }
             },
             {
@@ -311,7 +486,14 @@
                     "endOffset": 1170
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 80,
+                        "startColumn": 1,
+                        "startOffset": 4247,
+                        "endColumn": 39,
+                        "endOffset": 4285
+                    }
                 }
             },
             {
@@ -323,7 +505,14 @@
                     "endOffset": 1214
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 142,
+                        "startColumn": 1,
+                        "startOffset": 7640,
+                        "endColumn": 40,
+                        "endOffset": 7679
+                    }
                 }
             },
             {
@@ -335,7 +524,14 @@
                     "endOffset": 1257
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 81,
+                        "startColumn": 1,
+                        "startOffset": 4300,
+                        "endColumn": 39,
+                        "endOffset": 4338
+                    }
                 }
             },
             {
@@ -347,7 +543,14 @@
                     "endOffset": 1301
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 70,
+                        "startColumn": 1,
+                        "startOffset": 3682,
+                        "endColumn": 40,
+                        "endOffset": 3721
+                    }
                 }
             },
             {
@@ -359,7 +562,14 @@
                     "endOffset": 1347
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 91,
+                        "startColumn": 1,
+                        "startOffset": 4844,
+                        "endColumn": 42,
+                        "endOffset": 4885
+                    }
                 }
             },
             {
@@ -371,7 +581,14 @@
                     "endOffset": 1396
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 116,
+                        "startColumn": 1,
+                        "startOffset": 6203,
+                        "endColumn": 45,
+                        "endOffset": 6247
+                    }
                 }
             },
             {
@@ -383,7 +600,14 @@
                     "endOffset": 1441
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 1,
+                        "startOffset": 1229,
+                        "endColumn": 41,
+                        "endOffset": 1269
+                    }
                 }
             },
             {
@@ -395,7 +619,14 @@
                     "endOffset": 1486
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 84,
+                        "startColumn": 1,
+                        "startOffset": 4452,
+                        "endColumn": 41,
+                        "endOffset": 4492
+                    }
                 }
             },
             {
@@ -407,7 +638,14 @@
                     "endOffset": 1528
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 92,
+                        "startColumn": 1,
+                        "startOffset": 4900,
+                        "endColumn": 38,
+                        "endOffset": 4937
+                    }
                 }
             },
             {
@@ -419,7 +657,14 @@
                     "endOffset": 1573
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 51,
+                        "startColumn": 1,
+                        "startOffset": 2667,
+                        "endColumn": 41,
+                        "endOffset": 2707
+                    }
                 }
             },
             {
@@ -431,7 +676,14 @@
                     "endOffset": 1620
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 89,
+                        "startColumn": 1,
+                        "startOffset": 4730,
+                        "endColumn": 43,
+                        "endOffset": 4772
+                    }
                 }
             },
             {
@@ -443,7 +695,14 @@
                     "endOffset": 1668
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 119,
+                        "startColumn": 1,
+                        "startOffset": 6375,
+                        "endColumn": 44,
+                        "endOffset": 6418
+                    }
                 }
             },
             {
@@ -455,7 +714,14 @@
                     "endOffset": 1716
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 125,
+                        "startColumn": 1,
+                        "startOffset": 6709,
+                        "endColumn": 44,
+                        "endOffset": 6752
+                    }
                 }
             },
             {
@@ -467,7 +733,14 @@
                     "endOffset": 1764
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 126,
+                        "startColumn": 1,
+                        "startOffset": 6768,
+                        "endColumn": 44,
+                        "endOffset": 6811
+                    }
                 }
             },
             {
@@ -479,7 +752,14 @@
                     "endOffset": 1812
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 137,
+                        "startColumn": 1,
+                        "startOffset": 7373,
+                        "endColumn": 44,
+                        "endOffset": 7416
+                    }
                 }
             },
             {
@@ -491,7 +771,14 @@
                     "endOffset": 1857
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 86,
+                        "startColumn": 1,
+                        "startOffset": 4561,
+                        "endColumn": 41,
+                        "endOffset": 4601
+                    }
                 }
             },
             {
@@ -503,7 +790,14 @@
                     "endOffset": 1900
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 1,
+                        "startOffset": 1494,
+                        "endColumn": 39,
+                        "endOffset": 1532
+                    }
                 }
             },
             {
@@ -515,7 +809,14 @@
                     "endOffset": 1946
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 138,
+                        "startColumn": 1,
+                        "startOffset": 7432,
+                        "endColumn": 42,
+                        "endOffset": 7473
+                    }
                 }
             },
             {
@@ -527,7 +828,14 @@
                     "endOffset": 1988
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 111,
+                        "startColumn": 1,
+                        "startOffset": 5925,
+                        "endColumn": 38,
+                        "endOffset": 5962
+                    }
                 }
             },
             {
@@ -539,7 +847,14 @@
                     "endOffset": 2030
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 112,
+                        "startColumn": 1,
+                        "startOffset": 5977,
+                        "endColumn": 38,
+                        "endOffset": 6014
+                    }
                 }
             },
             {
@@ -551,7 +866,14 @@
                     "endOffset": 2075
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 130,
+                        "startColumn": 1,
+                        "startOffset": 6995,
+                        "endColumn": 41,
+                        "endOffset": 7035
+                    }
                 }
             },
             {
@@ -563,7 +885,14 @@
                     "endOffset": 2119
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 74,
+                        "startColumn": 1,
+                        "startOffset": 3909,
+                        "endColumn": 40,
+                        "endOffset": 3948
+                    }
                 }
             },
             {
@@ -575,7 +904,14 @@
                     "endOffset": 2165
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 1,
+                        "startOffset": 311,
+                        "endColumn": 42,
+                        "endOffset": 352
+                    }
                 }
             },
             {
@@ -587,7 +923,14 @@
                     "endOffset": 2211
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 128,
+                        "startColumn": 1,
+                        "startOffset": 6880,
+                        "endColumn": 42,
+                        "endOffset": 6921
+                    }
                 }
             },
             {
@@ -599,7 +942,14 @@
                     "endOffset": 2253
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 1,
+                        "startOffset": 1548,
+                        "endColumn": 38,
+                        "endOffset": 1585
+                    }
                 }
             },
             {
@@ -611,7 +961,14 @@
                     "endOffset": 2297
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 56,
+                        "startColumn": 1,
+                        "startOffset": 2932,
+                        "endColumn": 40,
+                        "endOffset": 2971
+                    }
                 }
             },
             {
@@ -623,7 +980,14 @@
                     "endOffset": 2342
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 1,
+                        "startOffset": 1975,
+                        "endColumn": 41,
+                        "endOffset": 2015
+                    }
                 }
             },
             {
@@ -635,7 +999,14 @@
                     "endOffset": 2381
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 1,
+                        "startOffset": 971,
+                        "endColumn": 35,
+                        "endOffset": 1005
+                    }
                 }
             },
             {
@@ -647,7 +1018,14 @@
                     "endOffset": 2425
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 59,
+                        "startColumn": 1,
+                        "startOffset": 3099,
+                        "endColumn": 40,
+                        "endOffset": 3138
+                    }
                 }
             },
             {
@@ -659,7 +1037,14 @@
                     "endOffset": 2464
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 96,
+                        "startColumn": 1,
+                        "startOffset": 5119,
+                        "endColumn": 35,
+                        "endOffset": 5153
+                    }
                 }
             },
             {
@@ -671,7 +1056,14 @@
                     "endOffset": 2504
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 141,
+                        "startColumn": 1,
+                        "startOffset": 7591,
+                        "endColumn": 36,
+                        "endOffset": 7626
+                    }
                 }
             },
             {
@@ -683,7 +1075,14 @@
                     "endOffset": 2550
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 78,
+                        "startColumn": 1,
+                        "startOffset": 4137,
+                        "endColumn": 42,
+                        "endOffset": 4178
+                    }
                 }
             },
             {
@@ -695,7 +1094,14 @@
                     "endOffset": 2589
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 97,
+                        "startColumn": 1,
+                        "startOffset": 5167,
+                        "endColumn": 35,
+                        "endOffset": 5201
+                    }
                 }
             },
             {
@@ -707,7 +1113,14 @@
                     "endOffset": 2632
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 1,
+                        "startOffset": 2343,
+                        "endColumn": 39,
+                        "endOffset": 2381
+                    }
                 }
             },
             {
@@ -719,7 +1132,14 @@
                     "endOffset": 2674
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 1,
+                        "startOffset": 1335,
+                        "endColumn": 38,
+                        "endOffset": 1372
+                    }
                 }
             },
             {
@@ -731,7 +1151,14 @@
                     "endOffset": 2718
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 67,
+                        "startColumn": 1,
+                        "startOffset": 3515,
+                        "endColumn": 40,
+                        "endOffset": 3554
+                    }
                 }
             },
             {
@@ -743,7 +1170,14 @@
                     "endOffset": 2759
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 117,
+                        "startColumn": 1,
+                        "startOffset": 6263,
+                        "endColumn": 37,
+                        "endOffset": 6299
+                    }
                 }
             },
             {
@@ -755,7 +1189,14 @@
                     "endOffset": 2799
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 1,
+                        "startOffset": 106,
+                        "endColumn": 36,
+                        "endOffset": 141
+                    }
                 }
             },
             {
@@ -767,7 +1208,14 @@
                     "endOffset": 2839
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 1,
+                        "startOffset": 2450,
+                        "endColumn": 36,
+                        "endOffset": 2485
+                    }
                 }
             },
             {
@@ -779,7 +1227,14 @@
                     "endOffset": 2882
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 52,
+                        "startColumn": 1,
+                        "startOffset": 2722,
+                        "endColumn": 39,
+                        "endOffset": 2760
+                    }
                 }
             },
             {
@@ -791,7 +1246,14 @@
                     "endOffset": 2930
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 1,
+                        "startOffset": 531,
+                        "endColumn": 44,
+                        "endOffset": 574
+                    }
                 }
             },
             {
@@ -803,7 +1265,14 @@
                     "endOffset": 2974
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 103,
+                        "startColumn": 1,
+                        "startOffset": 5475,
+                        "endColumn": 40,
+                        "endOffset": 5514
+                    }
                 }
             },
             {
@@ -815,7 +1284,14 @@
                     "endOffset": 3021
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 1,
+                        "startOffset": 367,
+                        "endColumn": 43,
+                        "endOffset": 409
+                    }
                 }
             },
             {
@@ -827,7 +1303,14 @@
                     "endOffset": 3065
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 79,
+                        "startColumn": 1,
+                        "startOffset": 4193,
+                        "endColumn": 40,
+                        "endOffset": 4232
+                    }
                 }
             },
             {
@@ -839,7 +1322,14 @@
                     "endOffset": 3110
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 48,
+                        "startColumn": 1,
+                        "startOffset": 2500,
+                        "endColumn": 41,
+                        "endOffset": 2540
+                    }
                 }
             },
             {
@@ -851,7 +1341,14 @@
                     "endOffset": 3154
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 53,
+                        "startColumn": 1,
+                        "startOffset": 2775,
+                        "endColumn": 40,
+                        "endOffset": 2814
+                    }
                 }
             },
             {
@@ -863,7 +1360,14 @@
                     "endOffset": 3209
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 1,
+                        "startOffset": 1751,
+                        "endColumn": 51,
+                        "endOffset": 1801
+                    }
                 }
             },
             {
@@ -875,7 +1379,14 @@
                     "endOffset": 3253
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 62,
+                        "startColumn": 1,
+                        "startOffset": 3256,
+                        "endColumn": 40,
+                        "endOffset": 3295
+                    }
                 }
             },
             {
@@ -887,7 +1398,14 @@
                     "endOffset": 3298
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 88,
+                        "startColumn": 1,
+                        "startOffset": 4675,
+                        "endColumn": 41,
+                        "endOffset": 4715
+                    }
                 }
             },
             {
@@ -899,7 +1417,14 @@
                     "endOffset": 3342
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 63,
+                        "startColumn": 1,
+                        "startOffset": 3310,
+                        "endColumn": 40,
+                        "endOffset": 3349
+                    }
                 }
             },
             {
@@ -911,7 +1436,14 @@
                     "endOffset": 3386
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 1,
+                        "startOffset": 1068,
+                        "endColumn": 40,
+                        "endOffset": 1107
+                    }
                 }
             },
             {
@@ -923,7 +1455,14 @@
                     "endOffset": 3432
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 1,
+                        "startOffset": 1173,
+                        "endColumn": 42,
+                        "endOffset": 1214
+                    }
                 }
             },
             {
@@ -935,7 +1474,14 @@
                     "endOffset": 3480
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 129,
+                        "startColumn": 1,
+                        "startOffset": 6936,
+                        "endColumn": 44,
+                        "endOffset": 6979
+                    }
                 }
             },
             {
@@ -947,7 +1493,14 @@
                     "endOffset": 3527
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 94,
+                        "startColumn": 1,
+                        "startOffset": 5009,
+                        "endColumn": 43,
+                        "endOffset": 5051
+                    }
                 }
             },
             {
@@ -959,7 +1512,14 @@
                     "endOffset": 3576
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 105,
+                        "startColumn": 1,
+                        "startOffset": 5590,
+                        "endColumn": 45,
+                        "endOffset": 5634
+                    }
                 }
             },
             {
@@ -971,7 +1531,14 @@
                     "endOffset": 3625
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 106,
+                        "startColumn": 1,
+                        "startOffset": 5649,
+                        "endColumn": 45,
+                        "endOffset": 5693
+                    }
                 }
             },
             {
@@ -983,7 +1550,14 @@
                     "endOffset": 3674
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 76,
+                        "startColumn": 1,
+                        "startOffset": 4018,
+                        "endColumn": 45,
+                        "endOffset": 4062
+                    }
                 }
             },
             {
@@ -995,7 +1569,14 @@
                     "endOffset": 3720
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 1,
+                        "startOffset": 156,
+                        "endColumn": 42,
+                        "endOffset": 197
+                    }
                 }
             },
             {
@@ -1007,7 +1588,14 @@
                     "endOffset": 3759
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 135,
+                        "startColumn": 1,
+                        "startOffset": 7261,
+                        "endColumn": 35,
+                        "endOffset": 7295
+                    }
                 }
             },
             {
@@ -1019,7 +1607,14 @@
                     "endOffset": 3803
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 124,
+                        "startColumn": 1,
+                        "startOffset": 6655,
+                        "endColumn": 40,
+                        "endOffset": 6694
+                    }
                 }
             },
             {
@@ -1031,7 +1626,14 @@
                     "endOffset": 3843
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 1,
+                        "startOffset": 1817,
+                        "endColumn": 36,
+                        "endOffset": 1852
+                    }
                 }
             },
             {
@@ -1043,7 +1645,14 @@
                     "endOffset": 3885
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 1,
+                        "startOffset": 1600,
+                        "endColumn": 38,
+                        "endOffset": 1637
+                    }
                 }
             },
             {
@@ -1055,7 +1664,14 @@
                     "endOffset": 3926
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 100,
+                        "startColumn": 1,
+                        "startOffset": 5315,
+                        "endColumn": 37,
+                        "endOffset": 5351
+                    }
                 }
             },
             {
@@ -1067,7 +1683,14 @@
                     "endOffset": 3977
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 113,
+                        "startColumn": 1,
+                        "startOffset": 6029,
+                        "endColumn": 47,
+                        "endOffset": 6075
+                    }
                 }
             },
             {
@@ -1079,7 +1702,14 @@
                     "endOffset": 4022
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 144,
+                        "startColumn": 1,
+                        "startOffset": 7742,
+                        "endColumn": 41,
+                        "endOffset": 7782
+                    }
                 }
             },
             {
@@ -1091,7 +1721,14 @@
                     "endOffset": 4069
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 1,
+                        "startOffset": 3792,
+                        "endColumn": 43,
+                        "endOffset": 3834
+                    }
                 }
             },
             {
@@ -1103,7 +1740,14 @@
                     "endOffset": 4116
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 87,
+                        "startColumn": 1,
+                        "startOffset": 4618,
+                        "endColumn": 43,
+                        "endOffset": 4660
+                    }
                 }
             },
             {
@@ -1115,7 +1759,14 @@
                     "endOffset": 4165
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 123,
+                        "startColumn": 1,
+                        "startOffset": 6596,
+                        "endColumn": 45,
+                        "endOffset": 6640
+                    }
                 }
             },
             {
@@ -1127,7 +1778,14 @@
                     "endOffset": 4215
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 104,
+                        "startColumn": 1,
+                        "startOffset": 5529,
+                        "endColumn": 46,
+                        "endOffset": 5574
+                    }
                 }
             },
             {
@@ -1139,7 +1797,14 @@
                     "endOffset": 4267
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 136,
+                        "startColumn": 1,
+                        "startOffset": 7310,
+                        "endColumn": 48,
+                        "endOffset": 7357
+                    }
                 }
             },
             {
@@ -1151,7 +1816,14 @@
                     "endOffset": 4317
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 118,
+                        "startColumn": 1,
+                        "startOffset": 6314,
+                        "endColumn": 46,
+                        "endOffset": 6359
+                    }
                 }
             },
             {
@@ -1163,7 +1835,14 @@
                     "endOffset": 4367
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 68,
+                        "startColumn": 1,
+                        "startOffset": 3570,
+                        "endColumn": 46,
+                        "endOffset": 3615
+                    }
                 }
             },
             {
@@ -1175,7 +1854,14 @@
                     "endOffset": 4414
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 131,
+                        "startColumn": 1,
+                        "startOffset": 7050,
+                        "endColumn": 43,
+                        "endOffset": 7092
+                    }
                 }
             },
             {
@@ -1187,7 +1873,14 @@
                     "endOffset": 4458
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 1,
+                        "startOffset": 2030,
+                        "endColumn": 40,
+                        "endOffset": 2069
+                    }
                 }
             },
             {
@@ -1199,7 +1892,14 @@
                     "endOffset": 4502
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 1,
+                        "startOffset": 703,
+                        "endColumn": 40,
+                        "endOffset": 742
+                    }
                 }
             },
             {
@@ -1211,7 +1911,14 @@
                     "endOffset": 4545
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 1,
+                        "startOffset": 809,
+                        "endColumn": 39,
+                        "endOffset": 847
+                    }
                 }
             },
             {
@@ -1223,7 +1930,14 @@
                     "endOffset": 4591
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 1,
+                        "startOffset": 862,
+                        "endColumn": 42,
+                        "endOffset": 903
+                    }
                 }
             },
             {
@@ -1235,7 +1949,14 @@
                     "endOffset": 4630
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 146,
+                        "startColumn": 1,
+                        "startOffset": 7850,
+                        "endColumn": 35,
+                        "endOffset": 7884
+                    }
                 }
             },
             {
@@ -1247,7 +1968,14 @@
                     "endOffset": 4677
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 151,
+                        "startColumn": 1,
+                        "startOffset": 8076,
+                        "endColumn": 43,
+                        "endOffset": 8118
+                    }
                 }
             },
             {
@@ -1259,7 +1987,14 @@
                     "endOffset": 4719
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 1,
+                        "startOffset": 1699,
+                        "endColumn": 38,
+                        "endOffset": 1736
+                    }
                 }
             },
             {
@@ -1271,7 +2006,14 @@
                     "endOffset": 4759
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 98,
+                        "startColumn": 1,
+                        "startOffset": 5215,
+                        "endColumn": 36,
+                        "endOffset": 5250
+                    }
                 }
             },
             {
@@ -1283,7 +2025,14 @@
                     "endOffset": 4803
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 109,
+                        "startColumn": 1,
+                        "startOffset": 5816,
+                        "endColumn": 40,
+                        "endOffset": 5855
+                    }
                 }
             },
             {
@@ -1295,7 +2044,14 @@
                     "endOffset": 4844
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 1,
+                        "startOffset": 1123,
+                        "endColumn": 37,
+                        "endOffset": 1159
+                    }
                 }
             },
             {
@@ -1307,7 +2063,14 @@
                     "endOffset": 4888
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 1,
+                        "startOffset": 1440,
+                        "endColumn": 40,
+                        "endOffset": 1479
+                    }
                 }
             },
             {
@@ -1319,7 +2082,14 @@
                     "endOffset": 4929
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 60,
+                        "startColumn": 1,
+                        "startOffset": 3154,
+                        "endColumn": 37,
+                        "endOffset": 3190
+                    }
                 }
             },
             {
@@ -1331,7 +2101,14 @@
                     "endOffset": 4977
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 49,
+                        "startColumn": 1,
+                        "startOffset": 2556,
+                        "endColumn": 44,
+                        "endOffset": 2599
+                    }
                 }
             },
             {
@@ -1343,7 +2120,14 @@
                     "endOffset": 5021
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 85,
+                        "startColumn": 1,
+                        "startOffset": 4507,
+                        "endColumn": 40,
+                        "endOffset": 4546
+                    }
                 }
             },
             {
@@ -1355,7 +2139,14 @@
                     "endOffset": 5069
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 77,
+                        "startColumn": 1,
+                        "startOffset": 4078,
+                        "endColumn": 44,
+                        "endOffset": 4121
+                    }
                 }
             },
             {
@@ -1367,7 +2158,14 @@
                     "endOffset": 5117
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 58,
+                        "startColumn": 1,
+                        "startOffset": 3039,
+                        "endColumn": 44,
+                        "endOffset": 3082
+                    }
                 }
             },
             {
@@ -1379,7 +2177,14 @@
                     "endOffset": 5162
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 1,
+                        "startOffset": 589,
+                        "endColumn": 41,
+                        "endOffset": 629
+                    }
                 }
             },
             {
@@ -1391,7 +2196,14 @@
                     "endOffset": 5206
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 1,
+                        "startOffset": 918,
+                        "endColumn": 40,
+                        "endOffset": 957
+                    }
                 }
             },
             {
@@ -1403,7 +2215,14 @@
                     "endOffset": 5245
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 66,
+                        "startColumn": 1,
+                        "startOffset": 3466,
+                        "endColumn": 35,
+                        "endOffset": 3500
+                    }
                 }
             },
             {
@@ -1415,7 +2234,14 @@
                     "endOffset": 5284
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 1,
+                        "startOffset": 1019,
+                        "endColumn": 35,
+                        "endOffset": 1053
+                    }
                 }
             },
             {
@@ -1427,7 +2253,14 @@
                     "endOffset": 5338
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 152,
+                        "startColumn": 1,
+                        "startOffset": 8121,
+                        "endColumn": 50,
+                        "endOffset": 8170
+                    }
                 }
             },
             {
@@ -1439,7 +2272,14 @@
                     "endOffset": 5377
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 55,
+                        "startColumn": 1,
+                        "startOffset": 2883,
+                        "endColumn": 35,
+                        "endOffset": 2917
+                    }
                 }
             },
             {
@@ -1451,7 +2291,14 @@
                     "endOffset": 5422
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 75,
+                        "startColumn": 1,
+                        "startOffset": 3963,
+                        "endColumn": 41,
+                        "endOffset": 4003
+                    }
                 }
             },
             {
@@ -1463,7 +2310,14 @@
                     "endOffset": 5463
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 99,
+                        "startColumn": 1,
+                        "startOffset": 5265,
+                        "endColumn": 37,
+                        "endOffset": 5301
+                    }
                 }
             },
             {
@@ -1475,7 +2329,14 @@
                     "endOffset": 5501
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 1,
+                        "startOffset": 1652,
+                        "endColumn": 34,
+                        "endOffset": 1685
+                    }
                 }
             },
             {
@@ -1487,7 +2348,14 @@
                     "endOffset": 5545
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 71,
+                        "startColumn": 1,
+                        "startOffset": 3737,
+                        "endColumn": 40,
+                        "endOffset": 3776
+                    }
                 }
             },
             {
@@ -1499,7 +2367,14 @@
                     "endOffset": 5589
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 121,
+                        "startColumn": 1,
+                        "startOffset": 6488,
+                        "endColumn": 40,
+                        "endOffset": 6527
+                    }
                 }
             },
             {
@@ -1511,7 +2386,14 @@
                     "endOffset": 5635
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 90,
+                        "startColumn": 1,
+                        "startOffset": 4788,
+                        "endColumn": 42,
+                        "endOffset": 4829
+                    }
                 }
             },
             {
@@ -1523,7 +2405,14 @@
                     "endOffset": 5676
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 1,
+                        "startOffset": 1924,
+                        "endColumn": 37,
+                        "endOffset": 1960
+                    }
                 }
             },
             {
@@ -1535,7 +2424,14 @@
                     "endOffset": 5721
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 1,
+                        "startOffset": 2238,
+                        "endColumn": 41,
+                        "endOffset": 2278
+                    }
                 }
             },
             {
@@ -1547,7 +2443,14 @@
                     "endOffset": 5764
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 1,
+                        "startOffset": 478,
+                        "endColumn": 39,
+                        "endOffset": 516
+                    }
                 }
             },
             {
@@ -1559,7 +2462,14 @@
                     "endOffset": 5807
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 127,
+                        "startColumn": 1,
+                        "startOffset": 6827,
+                        "endColumn": 39,
+                        "endOffset": 6865
+                    }
                 }
             },
             {
@@ -1571,7 +2481,14 @@
                     "endOffset": 5848
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 83,
+                        "startColumn": 1,
+                        "startOffset": 4402,
+                        "endColumn": 37,
+                        "endOffset": 4438
+                    }
                 }
             },
             {
@@ -1583,7 +2500,14 @@
                     "endOffset": 5889
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 69,
+                        "startColumn": 1,
+                        "startOffset": 3632,
+                        "endColumn": 37,
+                        "endOffset": 3668
+                    }
                 }
             },
             {
@@ -1595,7 +2519,14 @@
                     "endOffset": 5931
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 95,
+                        "startColumn": 1,
+                        "startOffset": 5067,
+                        "endColumn": 38,
+                        "endOffset": 5104
+                    }
                 }
             },
             {
@@ -1607,7 +2538,14 @@
                     "endOffset": 5975
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 110,
+                        "startColumn": 1,
+                        "startOffset": 5871,
+                        "endColumn": 40,
+                        "endOffset": 5910
+                    }
                 }
             },
             {
@@ -1619,7 +2557,14 @@
                     "endOffset": 6019
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 107,
+                        "startColumn": 1,
+                        "startOffset": 5708,
+                        "endColumn": 40,
+                        "endOffset": 5747
+                    }
                 }
             },
             {
@@ -1631,7 +2576,14 @@
                     "endOffset": 6063
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 108,
+                        "startColumn": 1,
+                        "startOffset": 5762,
+                        "endColumn": 40,
+                        "endOffset": 5801
+                    }
                 }
             },
             {
@@ -1643,7 +2595,14 @@
                     "endOffset": 6102
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 1,
+                        "startOffset": 262,
+                        "endColumn": 35,
+                        "endOffset": 296
+                    }
                 }
             },
             {
@@ -1655,7 +2614,14 @@
                     "endOffset": 6148
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 134,
+                        "startColumn": 1,
+                        "startOffset": 7205,
+                        "endColumn": 42,
+                        "endOffset": 7246
+                    }
                 }
             },
             {
@@ -1667,7 +2633,14 @@
                     "endOffset": 6192
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 120,
+                        "startColumn": 1,
+                        "startOffset": 6434,
+                        "endColumn": 40,
+                        "endOffset": 6473
+                    }
                 }
             },
             {
@@ -1679,7 +2652,14 @@
                     "endOffset": 6246
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 157,
+                        "startColumn": 1,
+                        "startOffset": 8263,
+                        "endColumn": 50,
+                        "endOffset": 8312
+                    }
                 }
             },
             {
@@ -1691,7 +2671,14 @@
                     "endOffset": 6290
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 156,
+                        "startColumn": 1,
+                        "startOffset": 8221,
+                        "endColumn": 40,
+                        "endOffset": 8260
+                    }
                 }
             },
             {
@@ -1703,7 +2690,14 @@
                     "endOffset": 6328
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 64,
+                        "startColumn": 1,
+                        "startOffset": 3364,
+                        "endColumn": 34,
+                        "endOffset": 3397
+                    }
                 }
             },
             {
@@ -1715,7 +2709,14 @@
                     "endOffset": 6367
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 140,
+                        "startColumn": 1,
+                        "startOffset": 7542,
+                        "endColumn": 35,
+                        "endOffset": 7576
+                    }
                 }
             },
             {
@@ -1727,7 +2728,14 @@
                     "endOffset": 6409
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 1,
+                        "startOffset": 3205,
+                        "endColumn": 38,
+                        "endOffset": 3242
+                    }
                 }
             },
             {
@@ -1739,7 +2747,14 @@
                     "endOffset": 6450
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 1,
+                        "startOffset": 1388,
+                        "endColumn": 37,
+                        "endOffset": 1424
+                    }
                 }
             },
             {
@@ -1751,7 +2766,14 @@
                     "endOffset": 6494
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 148,
+                        "startColumn": 1,
+                        "startOffset": 7948,
+                        "endColumn": 40,
+                        "endOffset": 7987
+                    }
                 }
             },
             {
@@ -1763,7 +2785,14 @@
                     "endOffset": 6539
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 149,
+                        "startColumn": 1,
+                        "startOffset": 8001,
+                        "endColumn": 41,
+                        "endOffset": 8041
+                    }
                 }
             },
             {
@@ -1775,7 +2804,14 @@
                     "endOffset": 6583
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 122,
+                        "startColumn": 1,
+                        "startOffset": 6542,
+                        "endColumn": 40,
+                        "endOffset": 6581
+                    }
                 }
             },
             {
@@ -1787,7 +2823,14 @@
                     "endOffset": 6624
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 50,
+                        "startColumn": 1,
+                        "startOffset": 2615,
+                        "endColumn": 37,
+                        "endOffset": 2651
+                    }
                 }
             },
             {
@@ -1799,7 +2842,14 @@
                     "endOffset": 6664
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 1,
+                        "startOffset": 2188,
+                        "endColumn": 36,
+                        "endOffset": 2223
+                    }
                 }
             },
             {
@@ -1811,7 +2861,14 @@
                     "endOffset": 6704
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 1,
+                        "startOffset": 57,
+                        "endColumn": 36,
+                        "endOffset": 92
+                    }
                 }
             },
             {
@@ -1823,7 +2880,14 @@
                     "endOffset": 6749
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 1,
+                        "startOffset": 2084,
+                        "endColumn": 41,
+                        "endOffset": 2124
+                    }
                 }
             },
             {
@@ -1835,7 +2899,14 @@
                     "endOffset": 6790
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 1,
+                        "startOffset": 212,
+                        "endColumn": 37,
+                        "endOffset": 248
+                    }
                 }
             },
             {
@@ -1847,7 +2918,14 @@
                     "endOffset": 6848
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/dimens.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 92,
+                        "endColumn": 57,
+                        "endOffset": 145
+                    }
                 }
             },
             {
@@ -1859,7 +2937,14 @@
                     "endOffset": 6904
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/dimens.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 151,
+                        "endColumn": 55,
+                        "endOffset": 202
+                    }
                 }
             },
             {
@@ -1871,7 +2956,14 @@
                     "endOffset": 6946
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/dimens.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 208,
+                        "endColumn": 41,
+                        "endOffset": 245
+                    }
                 }
             },
             {
@@ -1883,7 +2975,14 @@
                     "endOffset": 6983
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 306,
+                        "endColumn": 36,
+                        "endOffset": 338
+                    }
                 }
             },
             {
@@ -1895,7 +2994,14 @@
                     "endOffset": 7031
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 47,
+                        "endOffset": 99
+                    }
                 }
             },
             {
@@ -1907,7 +3013,14 @@
                     "endOffset": 7076
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 424,
+                        "endColumn": 44,
+                        "endOffset": 464
+                    }
                 }
             },
             {
@@ -1919,7 +3032,14 @@
                     "endOffset": 7114
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 176,
+                        "endColumn": 37,
+                        "endOffset": 209
+                    }
                 }
             },
             {
@@ -1931,7 +3051,14 @@
                     "endOffset": 7167
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 214,
+                        "endColumn": 52,
+                        "endOffset": 262
+                    }
                 }
             },
             {
@@ -1943,7 +3070,14 @@
                     "endOffset": 7211
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 469,
+                        "endColumn": 43,
+                        "endOffset": 508
+                    }
                 }
             },
             {
@@ -1955,7 +3089,14 @@
                     "endOffset": 7264
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 123,
+                        "endColumn": 52,
+                        "endOffset": 171
+                    }
                 }
             },
             {
@@ -1967,7 +3108,14 @@
                     "endOffset": 7303
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 267,
+                        "endColumn": 38,
+                        "endOffset": 301
+                    }
                 }
             },
             {
@@ -1979,7 +3127,14 @@
                     "endOffset": 7342
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 343,
+                        "endColumn": 38,
+                        "endOffset": 377
+                    }
                 }
             },
             {
@@ -2010,7 +3165,14 @@
                     "endOffset": 7447
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 382,
+                        "endColumn": 41,
+                        "endOffset": 419
+                    }
                 }
             },
             {
@@ -2023,7 +3185,15 @@
                     "endOffset": 7705
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/styles.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 19,
+                        "endLine": 5,
+                        "endColumn": 12,
+                        "endOffset": 275
+                    }
                 }
             },
             {
@@ -2036,7 +3206,15 @@
                     "endOffset": 7962
                 },
                 "from": {
-                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/styles.xml"
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 1,
+                        "startOffset": 281,
+                        "endLine": 10,
+                        "endColumn": 12,
+                        "endOffset": 536
+                    }
                 }
             }
         ]

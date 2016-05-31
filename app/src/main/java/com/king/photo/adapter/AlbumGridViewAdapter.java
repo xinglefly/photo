@@ -14,21 +14,18 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
+import com.king.photo.R;
 import com.king.photo.util.BitmapCache;
 import com.king.photo.util.BitmapCache.ImageCallback;
 import com.king.photo.util.ImageItem;
 import com.king.photo.util.Res;
+import com.king.photo.util.ViewHolder;
 
-/**
- * 这个是显示一个文件夹里面的所有图片时用的适配器
- *
- * @author king
- * @QQ:595163260
- * @version 2014年10月18日  下午11:49:35
- */
+
 public class AlbumGridViewAdapter extends BaseAdapter{
 	final String TAG = getClass().getSimpleName();
 	private Context mContext;
@@ -36,6 +33,7 @@ public class AlbumGridViewAdapter extends BaseAdapter{
 	private ArrayList<ImageItem> selectedDataList;
 	private DisplayMetrics dm;
 	BitmapCache cache;
+
 	public AlbumGridViewAdapter(Context c, ArrayList<ImageItem> dataList,
 			ArrayList<ImageItem> selectedDataList) {
 		mContext = c;
@@ -43,8 +41,7 @@ public class AlbumGridViewAdapter extends BaseAdapter{
 		this.dataList = dataList;
 		this.selectedDataList = selectedDataList;
 		dm = new DisplayMetrics();
-		((Activity) mContext).getWindowManager().getDefaultDisplay()
-				.getMetrics(dm);
+		((Activity) mContext).getWindowManager().getDefaultDisplay().getMetrics(dm);
 	}
 
 	public int getCount() {
@@ -76,60 +73,41 @@ public class AlbumGridViewAdapter extends BaseAdapter{
 		}
 	};
 	
-	/**
-	 * 存放列表项控件句柄
-	 */
-	private class ViewHolder {
-		public ImageView imageView;
-		public ToggleButton toggleButton;
-		public Button choosetoggle;
-		public TextView textView;
-	}
 
 	public View getView(int position, View convertView, ViewGroup parent) {
-		ViewHolder viewHolder;
-		if (convertView == null) {
-			viewHolder = new ViewHolder();
-			convertView = LayoutInflater.from(mContext).inflate(
-					Res.getLayoutID("plugin_camera_select_imageview"), parent, false);
-			viewHolder.imageView = (ImageView) convertView
-					.findViewById(Res.getWidgetID("image_view"));
-			viewHolder.toggleButton = (ToggleButton) convertView
-					.findViewById(Res.getWidgetID("toggle_button"));
-			viewHolder.choosetoggle = (Button) convertView
-					.findViewById(Res.getWidgetID("choosedbt"));
-//			RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,dipToPx(65)); 
-//			lp.setMargins(50, 0, 50,0); 
-//			viewHolder.imageView.setLayoutParams(lp);
-			convertView.setTag(viewHolder);
-		} else {
-			viewHolder = (ViewHolder) convertView.getTag();
-		}
+		if (convertView == null)
+			convertView =LayoutInflater.from(mContext) .inflate(R.layout.plugin_camera_select_imageview,parent, false);
+
+		ImageView imgView = ViewHolder.get(convertView, R.id.img_view);
+		ToggleButton btnToggle = ViewHolder.get(convertView, R.id.btn_toggle);
+		Button btnChoose = ViewHolder.get(convertView, R.id.btn_choose);
+		RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,dipToPx(65));
+		lp.setMargins(50, 0, 50,0);
+		imgView.setLayoutParams(lp);
+
 		String path;
 		if (dataList != null && dataList.size() > position)
 			path = dataList.get(position).imagePath;
 		else
 			path = "camera_default";
 		if (path.contains("camera_default")) {
-			viewHolder.imageView.setImageResource(Res.getDrawableID("plugin_camera_no_pictures"));
+			imgView.setImageResource(Res.getDrawableID("plugin_camera_no_pictures"));
 		} else {
-//			ImageManager2.from(mContext).displayImage(viewHolder.imageView,
-//					path, Res.getDrawableID("plugin_camera_camera_default"), 100, 100);
 			final ImageItem item = dataList.get(position);
-			viewHolder.imageView.setTag(item.imagePath);
-			cache.displayBmp(viewHolder.imageView, item.thumbnailPath, item.imagePath,
-					callback);
+			imgView.setTag(item.imagePath);
+			cache.displayBmp(imgView, item.thumbnailPath, item.imagePath, callback);
 		}
-		viewHolder.toggleButton.setTag(position);
-		viewHolder.choosetoggle.setTag(position);
-		viewHolder.toggleButton.setOnClickListener(new ToggleClickListener(viewHolder.choosetoggle));
+		btnToggle.setTag(position);
+		btnChoose.setTag(position);
+		btnToggle.setOnClickListener(new ToggleClickListener(btnChoose));
 		if (selectedDataList.contains(dataList.get(position))) {
-			viewHolder.toggleButton.setChecked(true);
-			viewHolder.choosetoggle.setVisibility(View.VISIBLE);
+			btnToggle.setChecked(true);
+			btnChoose.setVisibility(View.VISIBLE);
 		} else {
-			viewHolder.toggleButton.setChecked(false);
-			viewHolder.choosetoggle.setVisibility(View.GONE);
+			btnToggle.setChecked(false);
+			btnChoose.setVisibility(View.GONE);
 		}
+
 		return convertView;
 	}
 	
@@ -163,8 +141,7 @@ public class AlbumGridViewAdapter extends BaseAdapter{
 	}
 
 	public interface OnItemClickListener {
-		public void onItemClick(ToggleButton view, int position,
-				boolean isChecked,Button chooseBt);
+		public void onItemClick(ToggleButton view, int position, boolean isChecked,Button chooseBt);
 	}
 
 }

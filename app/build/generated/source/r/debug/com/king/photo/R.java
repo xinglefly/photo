@@ -219,39 +219,39 @@ public final class R {
     }
     public static final class id {
         public static final int activity_selectimg_send=0x7f090003;
-        public static final int back=0x7f09000c;
         public static final int bottom_layout=0x7f09000e;
+        public static final int btn_album=0x7f09000c;
+        public static final int btn_cancle=0x7f09000d;
+        public static final int btn_choose=0x7f090023;
         public static final int btn_del=0x7f090014;
-        public static final int btn_finish=0x7f090015;
+        public static final int btn_finish=0x7f090010;
         public static final int btn_gallery=0x7f090013;
+        public static final int btn_preview=0x7f09000f;
+        public static final int btn_toggle=0x7f090022;
         public static final int button2=0x7f090001;
         public static final int button3=0x7f090002;
-        public static final int cancel=0x7f09000d;
+        public static final int cancel=0x7f090018;
         public static final int choose_back=0x7f09001d;
-        public static final int choosedbt=0x7f090023;
         public static final int file=0x7f09001a;
-        public static final int fileGridView=0x7f090018;
         public static final int file_back=0x7f09001b;
         public static final int file_image=0x7f09001c;
         public static final int filenum=0x7f09001e;
-        public static final int headerTitle=0x7f090017;
+        public static final int gridview_album=0x7f090011;
+        public static final int gridview_file=0x7f090017;
+        public static final int headerTitle=0x7f090016;
         public static final int headview=0x7f09000b;
         public static final int imageView1=0x7f090000;
-        public static final int image_view=0x7f090020;
+        public static final int img_view=0x7f090020;
         public static final int item_grida_image=0x7f09000a;
         public static final int item_popupwindows_Photo=0x7f090008;
         public static final int item_popupwindows_camera=0x7f090007;
         public static final int item_popupwindows_cancel=0x7f090009;
         public static final int ll_popup=0x7f090006;
-        public static final int myGrid=0x7f090011;
-        public static final int myText=0x7f090012;
         public static final int name=0x7f09001f;
         public static final int noScrollgridview=0x7f090004;
         public static final int no_picture_confirm=0x7f090019;
-        public static final int ok_button=0x7f090010;
-        public static final int page_gallery=0x7f090016;
+        public static final int page_gallery=0x7f090015;
         public static final int parent=0x7f090005;
-        public static final int preview=0x7f09000f;
         public static final int showallphoto_back=0x7f090025;
         public static final int showallphoto_bottom_layout=0x7f090028;
         public static final int showallphoto_cancel=0x7f090027;
@@ -262,7 +262,7 @@ public final class R {
         public static final int showallphoto_preview=0x7f090029;
         public static final int showallphoto_progressbar=0x7f09002c;
         public static final int toggle=0x7f090021;
-        public static final int toggle_button=0x7f090022;
+        public static final int tv_none=0x7f090012;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

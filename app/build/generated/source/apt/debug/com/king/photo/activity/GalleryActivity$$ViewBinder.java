@@ -16,18 +16,18 @@ public class GalleryActivity$$ViewBinder<T extends GalleryActivity> implements V
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131296277, "field 'btn_finish' and method 'onGalleryClicks'");
-    target.btn_finish = finder.castView(view, 2131296277, "field 'btn_finish'");
-    unbinder.view2131296277 = view;
+    view = finder.findRequiredView(source, 2131296272, "field 'btn_finish' and method 'onGalleryClicks'");
+    target.btn_finish = finder.castView(view, 2131296272, "field 'btn_finish'");
+    unbinder.view2131296272 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onGalleryClicks(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131296278, "field 'pager' and method 'onPageSelected'");
-    target.pager = finder.castView(view, 2131296278, "field 'pager'");
-    unbinder.view2131296278 = view;
+    view = finder.findRequiredView(source, 2131296277, "field 'pager' and method 'onPageSelected'");
+    target.pager = finder.castView(view, 2131296277, "field 'pager'");
+    unbinder.view2131296277 = view;
     ((ViewPager) view).setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
       @Override
       public void onPageSelected(int p0) {
@@ -68,9 +68,9 @@ public class GalleryActivity$$ViewBinder<T extends GalleryActivity> implements V
   protected static class InnerUnbinder<T extends GalleryActivity> implements Unbinder {
     private T target;
 
-    View view2131296277;
+    View view2131296272;
 
-    View view2131296278;
+    View view2131296277;
 
     View view2131296275;
 
@@ -88,9 +88,9 @@ public class GalleryActivity$$ViewBinder<T extends GalleryActivity> implements V
     }
 
     protected void unbind(T target) {
-      view2131296277.setOnClickListener(null);
+      view2131296272.setOnClickListener(null);
       target.btn_finish = null;
-      ((ViewPager) view2131296278).setOnPageChangeListener(null);
+      ((ViewPager) view2131296277).setOnPageChangeListener(null);
       target.pager = null;
       view2131296275.setOnClickListener(null);
       view2131296276.setOnClickListener(null);

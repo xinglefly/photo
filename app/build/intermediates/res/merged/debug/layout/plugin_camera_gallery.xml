@@ -61,7 +61,7 @@
         android:layout_below="@id/headview"
         android:layout_centerHorizontal="true"
         android:background="@color/plugin_camera_black"
-        android:unselectedAlpha="1"></com.king.photo.zoom.ViewPagerFixed>
+        android:unselectedAlpha="1"/>
 
 </RelativeLayout>
   
