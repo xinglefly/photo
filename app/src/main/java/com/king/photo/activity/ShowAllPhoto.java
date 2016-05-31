@@ -21,7 +21,6 @@ import com.king.photo.adapter.AlbumGridViewAdapter;
 import com.king.photo.bean.ImageItem;
 import com.king.photo.util.Bimp;
 import com.king.photo.util.PublicWay;
-import com.king.photo.util.Res;
 
 import java.util.ArrayList;
 

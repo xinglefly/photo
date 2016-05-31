@@ -21,7 +21,6 @@ import com.king.photo.R;
 import com.king.photo.util.BitmapCache;
 import com.king.photo.util.BitmapCache.ImageCallback;
 import com.king.photo.bean.ImageItem;
-import com.king.photo.util.Res;
 import com.king.photo.util.ViewHolder;
 
 

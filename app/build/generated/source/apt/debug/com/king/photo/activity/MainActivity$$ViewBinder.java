@@ -15,11 +15,11 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131296259, "field 'activitySelectimgSend'");
-    target.activitySelectimgSend = finder.castView(view, 2131296259, "field 'activitySelectimgSend'");
-    view = finder.findRequiredView(source, 2131296260, "field 'noScrollgridview' and method 'onGridviewItemClick'");
-    target.noScrollgridview = finder.castView(view, 2131296260, "field 'noScrollgridview'");
-    unbinder.view2131296260 = view;
+    view = finder.findRequiredView(source, 2131296256, "field 'activitySelectimgSend'");
+    target.activitySelectimgSend = finder.castView(view, 2131296256, "field 'activitySelectimgSend'");
+    view = finder.findRequiredView(source, 2131296257, "field 'noScrollgridview' and method 'onGridviewItemClick'");
+    target.noScrollgridview = finder.castView(view, 2131296257, "field 'noScrollgridview'");
+    unbinder.view2131296257 = view;
     ((AdapterView<?>) view).setOnItemClickListener(new AdapterView.OnItemClickListener() {
       @Override
       public void onItemClick(AdapterView<?> p0, View p1, int p2, long p3) {
@@ -36,7 +36,7 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
   protected static class InnerUnbinder<T extends MainActivity> implements Unbinder {
     private T target;
 
-    View view2131296260;
+    View view2131296257;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -51,7 +51,7 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
 
     protected void unbind(T target) {
       target.activitySelectimgSend = null;
-      ((AdapterView<?>) view2131296260).setOnItemClickListener(null);
+      ((AdapterView<?>) view2131296257).setOnItemClickListener(null);
       target.noScrollgridview = null;
     }
   }

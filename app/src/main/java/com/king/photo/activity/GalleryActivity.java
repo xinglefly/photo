@@ -1,26 +1,19 @@
 package com.king.photo.activity;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import com.king.photo.R;
 import com.king.photo.adapter.MyPageAdapter;
 import com.king.photo.util.Bimp;
 import com.king.photo.util.PublicWay;
-import com.king.photo.util.Res;
 import com.king.photo.zoom.PhotoView;
 import com.king.photo.zoom.ViewPagerFixed;
 

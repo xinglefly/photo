@@ -189,7 +189,7 @@ public class MainActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
             case TAKE_PICTURE:
-                if (Bimp.tempSelectBitmap.size() < 9 && resultCode == RESULT_OK) {
+                if (Bimp.tempSelectBitmap.size() < 6 && resultCode == RESULT_OK) {
 
                     String fileName = String.valueOf(System.currentTimeMillis());
                     Bitmap bm = (Bitmap) data.getExtras().get("data");
