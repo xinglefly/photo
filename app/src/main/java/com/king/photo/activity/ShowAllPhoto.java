@@ -20,8 +20,12 @@ import android.widget.ToggleButton;
 import com.king.photo.R;
 import com.king.photo.adapter.AlbumGridViewAdapter;
 import com.king.photo.bean.ImageItem;
+import com.king.photo.event.PhotoEvent;
 import com.king.photo.util.Bimp;
 import com.king.photo.util.PublicWay;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
 
 import java.util.ArrayList;
 
@@ -46,26 +50,14 @@ public class ShowAllPhoto extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.plugin_camera_show_all_photo);
         ButterKnife.bind(this);
+        EventBus.getDefault().register(this);
         PublicWay.activityList.add(this);
 
-        addBroadCast();
         initView();
         initListener();
         isShowOkBt();
     }
 
-    private void addBroadCast() {
-        IntentFilter filter = new IntentFilter("data.broadcast.action");
-        registerReceiver(broadcastReceiver, filter);
-    }
-
-    BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
-
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            gridImageAdapter.notifyDataSetChanged();
-        }
-    };
 
     private void initView() {
         String folderName = getIntent().getStringExtra("folderName");
@@ -97,8 +89,12 @@ public class ShowAllPhoto extends Activity {
                 startActivity(new Intent(this, MainActivity.class));
                 finish();
                 break;
-
         }
+    }
+
+    @Subscribe
+    public void isRefreshAlbum(PhotoEvent event){
+        if (event.isRefresh()) gridImageAdapter.notifyDataSetChanged();
     }
 
 
@@ -160,4 +156,9 @@ public class ShowAllPhoto extends Activity {
         isShowOkBt();
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        EventBus.getDefault().unregister(this);
+    }
 }

@@ -19,11 +19,15 @@ import android.widget.ToggleButton;
 
 import com.king.photo.R;
 import com.king.photo.adapter.AlbumGridViewAdapter;
+import com.king.photo.event.PhotoEvent;
 import com.king.photo.util.AlbumHelper;
 import com.king.photo.util.Bimp;
 import com.king.photo.bean.ImageBucket;
 import com.king.photo.bean.ImageItem;
 import com.king.photo.util.PublicWay;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,27 +54,14 @@ public class AlbumActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.plugin_camera_album);
         ButterKnife.bind(this);
+        EventBus.getDefault().register(this);
         PublicWay.activityList.add(this);
 
         init();
         initListener();
-        addBroadCast();
         isShowOkBt();
     }
 
-    private void addBroadCast() {
-        //注册一个广播，这个广播主要是用于在GalleryActivity进行预览时，防止当所有图片都删除完后，再回到该页面时被取消选中的图片仍处于选中状态
-        IntentFilter filter = new IntentFilter("data.broadcast.action");
-        registerReceiver(broadcastReceiver, filter);
-    }
-
-    BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
-
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            gridImageAdapter.notifyDataSetChanged();
-        }
-    };
 
     private void init() {
         bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.plugin_camera_no_pictures);
@@ -114,6 +105,11 @@ public class AlbumActivity extends Activity {
         }
     }
 
+
+    @Subscribe
+    public void isRefreshAlbum(PhotoEvent event){
+        if (event.isRefresh()) gridImageAdapter.notifyDataSetChanged();
+    }
 
     private void initListener() {
         gridImageAdapter.setOnItemClickListener(new AlbumGridViewAdapter.OnItemClickListener() {
@@ -175,5 +171,11 @@ public class AlbumActivity extends Activity {
     protected void onRestart() {
         super.onRestart();
         isShowOkBt();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        EventBus.getDefault().unregister(this);
     }
 }

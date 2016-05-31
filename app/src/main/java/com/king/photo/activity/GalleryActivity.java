@@ -12,10 +12,13 @@ import android.widget.Button;
 
 import com.king.photo.R;
 import com.king.photo.adapter.GalleryPageAdapter;
+import com.king.photo.event.PhotoEvent;
 import com.king.photo.util.Bimp;
 import com.king.photo.util.PublicWay;
 import com.king.photo.zoom.PhotoView;
 import com.king.photo.zoom.ViewPagerFixed;
+
+import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -90,8 +93,7 @@ public class GalleryActivity extends Activity {
                     Bimp.tempSelectBitmap.clear();
                     Bimp.max = 0;
                     btn_finish.setText(Bimp.tempSelectBitmap.size() + "/" + PublicWay.num);
-                    Intent intent = new Intent("data.broadcast.action");
-                    sendBroadcast(intent);
+                    EventBus.getDefault().post(new PhotoEvent(true));
                     finish();
                 } else {
                     Bimp.tempSelectBitmap.remove(location);
