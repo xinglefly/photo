@@ -41,7 +41,7 @@ public class ImageFile extends Activity {
     @OnClick(R.id.btn_cancle)
     void onBtnClick(){
         Bimp.tempSelectBitmap.clear();
-        startActivity(new Intent(this,MainActivity.class));
+        finish();
     }
 
 

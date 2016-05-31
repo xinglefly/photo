@@ -270,7 +270,17 @@ public final class R {
         public static final int plugin_camera_show_all_photo=0x7f030009;
     }
     public static final class string {
-        public static final int app_name=0x7f080000;
+        public static final int album=0x7f080000;
+        public static final int app_name=0x7f080001;
+        public static final int camera_cancel=0x7f080002;
+        public static final int finish=0x7f080003;
+        public static final int invalidSD=0x7f080004;
+        public static final int no_photo=0x7f080005;
+        public static final int only_choose_num=0x7f080006;
+        public static final int photo=0x7f080007;
+        public static final int preview=0x7f080008;
+        public static final int title_activity_main2=0x7f080009;
+        public static final int unfinished=0x7f08000a;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 

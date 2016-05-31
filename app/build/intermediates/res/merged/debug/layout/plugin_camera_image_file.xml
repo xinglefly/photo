@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="选择相册"
+            android:text="@string/photo"
             android:textColor="#ffffff"
             android:textSize="20sp" />
 
@@ -28,7 +28,7 @@
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/plugin_camera_title_btn_cancel"
-            android:text="取消"
+            android:text="@string/camera_cancel"
             android:textColor="#fff"
             android:textSize="14sp" />
     </RelativeLayout>

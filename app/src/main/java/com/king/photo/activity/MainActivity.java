@@ -69,8 +69,9 @@ public class MainActivity extends Activity {
     @OnItemClick(R.id.noScrollgridview)
     void onGridviewItemClick(AdapterView<?> parent,int position){
         if (position == Bimp.tempSelectBitmap.size()) {
-            ll_popup.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.activity_translate_in));
-            pop.showAtLocation(parentView, Gravity.BOTTOM, 0, 0);
+//            ll_popup.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.activity_translate_in));
+//            pop.showAtLocation(parentView, Gravity.BOTTOM, 0, 0);
+            photo();
         } else {
             Intent intent = new Intent(MainActivity.this, GalleryActivity.class);
             intent.putExtra("position", "1");
@@ -112,8 +113,7 @@ public class MainActivity extends Activity {
         });
         bt2.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,
-                        AlbumActivity.class);
+                Intent intent = new Intent(MainActivity.this, AlbumActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.activity_translate_in, R.anim.activity_translate_out);
                 pop.dismiss();

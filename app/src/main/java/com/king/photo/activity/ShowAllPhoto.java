@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
@@ -68,8 +69,8 @@ public class ShowAllPhoto extends Activity {
 
     private void initView() {
         String folderName = getIntent().getStringExtra("folderName");
-        if (folderName.length() > 8)
-            folderName = folderName.substring(0, 9) + "...";
+        if (!TextUtils.isEmpty(folderName))
+            folderName = folderName.length() > 8?folderName.substring(0, 9) + "...":folderName;
 
         tvHeadTitle.setText(folderName);
         progressBar.setVisibility(View.GONE);
@@ -155,8 +156,8 @@ public class ShowAllPhoto extends Activity {
 
     @Override
     protected void onRestart() {
-        isShowOkBt();
         super.onRestart();
+        isShowOkBt();
     }
 
 }

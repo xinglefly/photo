@@ -79,9 +79,9 @@ public class AlbumActivity extends Activity {
 
         contentList = helper.getImagesBucketList(false);
         dataList = new ArrayList<ImageItem>();
-        for (int i = 0; i < contentList.size(); i++) {
+
+        for (int i = 0; i < contentList.size(); i++)
             dataList.addAll(contentList.get(i).imageList);
-        }
 
         gridImageAdapter = new AlbumGridViewAdapter(this, dataList, Bimp.tempSelectBitmap);
         gridViewAlbum.setAdapter(gridImageAdapter);
@@ -103,13 +103,11 @@ public class AlbumActivity extends Activity {
                 startActivity(new Intent(this, MainActivity.class));
                 break;
             case R.id.btn_preview:
-                if (Bimp.tempSelectBitmap.size() > 0) {
+                if (Bimp.tempSelectBitmap.size() > 0)
                     startActivity(new Intent(this,GalleryActivity.class).putExtra("position", "1"));
-                }
                 break;
             case R.id.btn_finish:
                 overridePendingTransition(R.anim.activity_translate_in, R.anim.activity_translate_out);
-                startActivity(new Intent(this,MainActivity.class));
                 finish();
                 break;
 
@@ -125,9 +123,8 @@ public class AlbumActivity extends Activity {
                         if (Bimp.tempSelectBitmap.size() >= PublicWay.num) {
                             toggleButton.setChecked(false);
                             chooseBt.setVisibility(View.GONE);
-                            if (!removeOneData(dataList.get(position))) {
+                            if (!removeOneData(dataList.get(position)))
                                 Toast.makeText(AlbumActivity.this, "超出可选图片张数", Toast.LENGTH_LONG).show();
-                            }
                             return;
                         }
                         if (isChecked) {
@@ -173,11 +170,6 @@ public class AlbumActivity extends Activity {
         }
     }
 
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK)
-            startActivity(new Intent(AlbumActivity.this, ImageFile.class));
-        return false;
-    }
 
     @Override
     protected void onRestart() {

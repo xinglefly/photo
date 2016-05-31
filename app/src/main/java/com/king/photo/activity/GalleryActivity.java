@@ -136,13 +136,9 @@ public class GalleryActivity extends Activity {
     public boolean onKeyDown(int keyCode, KeyEvent event) {
 
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-            if (position == 1) {
-                this.finish();
-                startActivity(intent.setClass(GalleryActivity.this, AlbumActivity.class));
-            } else if (position == 2) {
-                this.finish();
-                startActivity(intent.setClass(GalleryActivity.this, ShowAllPhoto.class));
-            }
+            if (position == 1) startActivity(intent.setClass(this, AlbumActivity.class));
+            else if (position == 2) startActivity(intent.setClass(this, ShowAllPhoto.class));
+            this.finish();
         }
         return true;
     }

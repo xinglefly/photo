@@ -4,7 +4,7 @@
     api-level="19"
     density="400dpi"
     format="7"
-    timestamp="1464680156562714000" >
+    timestamp="1464682910108882000" >
 
     <task
         name="javac"
@@ -23,7 +23,7 @@
         location="/Users/chenzhenxing/Desktop/Photo1/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="1464680156562714000" >
+    <build timestamp="1464682910108882000" >
         <artifact
             location="/Users/chenzhenxing/Desktop/Photo1/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
