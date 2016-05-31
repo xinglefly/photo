@@ -123,11 +123,8 @@ public class FolderAdapter extends BaseAdapter {
 		
 		public void onClick(View v) {
 			ShowAllPhoto.dataList = (ArrayList<ImageItem>) AlbumActivity.contentList.get(position).imageList;
-			Intent intent = new Intent();
 			String folderName = AlbumActivity.contentList.get(position).bucketName;
-			intent.putExtra("folderName", folderName);
-			intent.setClass(mContext, ShowAllPhoto.class);
-			mContext.startActivity(intent);
+			mContext.startActivity(new Intent(mContext, ShowAllPhoto.class).putExtra("folderName", folderName));
 			imgChoose.setVisibility(v.VISIBLE);
 		}
 	}

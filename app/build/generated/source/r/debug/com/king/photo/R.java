@@ -221,6 +221,7 @@ public final class R {
         public static final int activity_selectimg_send=0x7f090003;
         public static final int bottom_layout=0x7f09000e;
         public static final int btn_album=0x7f09000c;
+        public static final int btn_back=0x7f090025;
         public static final int btn_cancle=0x7f09000d;
         public static final int btn_choose=0x7f090023;
         public static final int btn_del=0x7f090014;
@@ -235,6 +236,7 @@ public final class R {
         public static final int file_back=0x7f09001b;
         public static final int gridview_album=0x7f090011;
         public static final int gridview_file=0x7f090017;
+        public static final int gridview_photos=0x7f090028;
         public static final int headerTitle=0x7f090016;
         public static final int headview=0x7f09000b;
         public static final int imageView1=0x7f090000;
@@ -250,18 +252,13 @@ public final class R {
         public static final int no_picture_confirm=0x7f090019;
         public static final int page_gallery=0x7f090015;
         public static final int parent=0x7f090005;
-        public static final int showallphoto_back=0x7f090025;
-        public static final int showallphoto_bottom_layout=0x7f090028;
-        public static final int showallphoto_cancel=0x7f090027;
-        public static final int showallphoto_headtitle=0x7f090026;
+        public static final int progressbar=0x7f090029;
+        public static final int showallphoto_bottom_layout=0x7f090027;
         public static final int showallphoto_headview=0x7f090024;
-        public static final int showallphoto_myGrid=0x7f09002b;
-        public static final int showallphoto_ok_button=0x7f09002a;
-        public static final int showallphoto_preview=0x7f090029;
-        public static final int showallphoto_progressbar=0x7f09002c;
         public static final int toggle=0x7f090021;
         public static final int tv_filenum=0x7f09001e;
         public static final int tv_folder_name=0x7f09001f;
+        public static final int tv_headtitle=0x7f090026;
         public static final int tv_none=0x7f090012;
     }
     public static final class layout {

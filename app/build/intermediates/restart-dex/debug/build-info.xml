@@ -4,26 +4,26 @@
     api-level="19"
     density="400dpi"
     format="7"
-    timestamp="1464676968130922000" >
+    timestamp="1464678574000885000" >
 
     <task
         name="javac"
-        duration="1764" />
+        duration="1678" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="45" />
+        duration="226" />
     <task
         name="verifier"
-        duration="6" />
+        duration="20" />
 
     <artifact
         location="/Users/chenzhenxing/Desktop/Photo1/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="1464676968130922000" >
+    <build timestamp="1464678574000885000" >
         <artifact
             location="/Users/chenzhenxing/Desktop/Photo1/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
