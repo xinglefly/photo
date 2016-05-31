@@ -5,11 +5,11 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.util.SparseArray;
+
+import com.king.photo.bean.ImageItem;
 
 public class Bimp {
 	public static int max = 0;

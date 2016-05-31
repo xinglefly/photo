@@ -11,7 +11,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.provider.MediaStore;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
@@ -30,7 +29,7 @@ import com.king.photo.R;
 import com.king.photo.adapter.GridAdapter;
 import com.king.photo.util.Bimp;
 import com.king.photo.util.FileUtils;
-import com.king.photo.util.ImageItem;
+import com.king.photo.bean.ImageItem;
 import com.king.photo.util.PublicWay;
 
 import butterknife.BindView;

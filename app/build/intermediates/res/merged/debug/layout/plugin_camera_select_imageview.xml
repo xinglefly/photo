@@ -10,7 +10,7 @@
         android:layout_gravity="center"
         android:adjustViewBounds="true"
         android:background="@drawable/plugin_camera_no_pictures"
-        android:scaleType="centerCrop" />
+        android:scaleType="fitXY" />
 
     <RelativeLayout
         android:id="@+id/toggle"

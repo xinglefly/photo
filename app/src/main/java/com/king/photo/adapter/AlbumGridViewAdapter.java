@@ -15,18 +15,18 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.king.photo.R;
 import com.king.photo.util.BitmapCache;
 import com.king.photo.util.BitmapCache.ImageCallback;
-import com.king.photo.util.ImageItem;
+import com.king.photo.bean.ImageItem;
 import com.king.photo.util.Res;
 import com.king.photo.util.ViewHolder;
 
 
 public class AlbumGridViewAdapter extends BaseAdapter{
+
 	final String TAG = getClass().getSimpleName();
 	private Context mContext;
 	private ArrayList<ImageItem> dataList;
@@ -34,8 +34,7 @@ public class AlbumGridViewAdapter extends BaseAdapter{
 	private DisplayMetrics dm;
 	BitmapCache cache;
 
-	public AlbumGridViewAdapter(Context c, ArrayList<ImageItem> dataList,
-			ArrayList<ImageItem> selectedDataList) {
+	public AlbumGridViewAdapter(Context c, ArrayList<ImageItem> dataList, ArrayList<ImageItem> selectedDataList) {
 		mContext = c;
 		cache = new BitmapCache();
 		this.dataList = dataList;
@@ -56,23 +55,6 @@ public class AlbumGridViewAdapter extends BaseAdapter{
 		return 0;
 	}
 
-	ImageCallback callback = new ImageCallback() {
-		@Override
-		public void imageLoad(ImageView imageView, Bitmap bitmap,
-				Object... params) {
-			if (imageView != null && bitmap != null) {
-				String url = (String) params[0];
-				if (url != null && url.equals((String) imageView.getTag())) {
-					((ImageView) imageView).setImageBitmap(bitmap);
-				} else {
-					Log.e(TAG, "callback, bmp not match");
-				}
-			} else {
-				Log.e(TAG, "callback, bmp null");
-			}
-		}
-	};
-	
 
 	public View getView(int position, View convertView, ViewGroup parent) {
 		if (convertView == null)
@@ -86,12 +68,11 @@ public class AlbumGridViewAdapter extends BaseAdapter{
 		imgView.setLayoutParams(lp);
 
 		String path;
-		if (dataList != null && dataList.size() > position)
-			path = dataList.get(position).imagePath;
-		else
-			path = "camera_default";
+		if (dataList != null && dataList.size() > position) path = dataList.get(position).imagePath;
+		else path = "camera_default";
+
 		if (path.contains("camera_default")) {
-			imgView.setImageResource(Res.getDrawableID("plugin_camera_no_pictures"));
+			imgView.setImageResource(R.drawable.plugin_camera_no_pictures);
 		} else {
 			final ImageItem item = dataList.get(position);
 			imgView.setTag(item.imagePath);
@@ -110,10 +91,27 @@ public class AlbumGridViewAdapter extends BaseAdapter{
 
 		return convertView;
 	}
-	
+
+	ImageCallback callback = new ImageCallback() {
+		@Override
+		public void imageLoad(ImageView imageView, Bitmap bitmap, Object... params) {
+			if (imageView != null && bitmap != null) {
+				String url = (String) params[0];
+				if (url != null && url.equals((String) imageView.getTag())) {
+					((ImageView) imageView).setImageBitmap(bitmap);
+				} else {
+					Log.e(TAG, "callback, bmp not match");
+				}
+			} else {
+				Log.e(TAG, "callback, bmp null");
+			}
+		}
+	};
+
 	public int dipToPx(int dip) {
 		return (int) (dip * dm.density + 0.5f);
 	}
+
 	private class ToggleClickListener implements OnClickListener{
 		Button chooseBt;
 		public ToggleClickListener(Button choosebt){

@@ -15,6 +15,9 @@ import android.provider.MediaStore.Images.Media;
 import android.provider.MediaStore.Images.Thumbnails;
 import android.util.Log;
 
+import com.king.photo.bean.ImageBucket;
+import com.king.photo.bean.ImageItem;
+
 public class AlbumHelper {
 	final String TAG = getClass().getSimpleName();
 	Context context;
@@ -60,30 +63,18 @@ public class AlbumHelper {
 			int dataColumn = cur.getColumnIndex(Thumbnails.DATA);
 
 			do {
-				// Get the field values
 				_id = cur.getInt(_idColumn);
 				image_id = cur.getInt(image_idColumn);
 				image_path = cur.getString(dataColumn);
-
-				// Do something with the values.
-				// Log.i(TAG, _id + " image_id:" + image_id + " path:"
-				// + image_path + "---");
-				// HashMap<String, String> hash = new HashMap<String, String>();
-				// hash.put("image_id", image_id + "");
-				// hash.put("path", image_path);
-				// thumbnailList.add(hash);
 				thumbnailList.put("" + image_id, image_path);
 			} while (cur.moveToNext());
 		}
 	}
 
 	void getAlbum() {
-		String[] projection = { Albums._ID, Albums.ALBUM, Albums.ALBUM_ART,
-				Albums.ALBUM_KEY, Albums.ARTIST, Albums.NUMBER_OF_SONGS };
-		Cursor cursor = cr.query(Albums.EXTERNAL_CONTENT_URI, projection, null,
-				null, null);
+		String[] projection = { Albums._ID, Albums.ALBUM, Albums.ALBUM_ART, Albums.ALBUM_KEY, Albums.ARTIST, Albums.NUMBER_OF_SONGS };
+		Cursor cursor = cr.query(Albums.EXTERNAL_CONTENT_URI, projection, null, null, null);
 		getAlbumColumnData(cursor);
-
 	}
 
 	private void getAlbumColumnData(Cursor cur) {
@@ -103,7 +94,6 @@ public class AlbumHelper {
 			int numOfSongsColumn = cur.getColumnIndex(Albums.NUMBER_OF_SONGS);
 
 			do {
-				// Get the field values
 				_id = cur.getInt(_idColumn);
 				album = cur.getString(albumColumn);
 				albumArt = cur.getString(albumArtColumn);
@@ -111,10 +101,7 @@ public class AlbumHelper {
 				artist = cur.getString(artistColumn);
 				numOfSongs = cur.getInt(numOfSongsColumn);
 
-				// Do something with the values.
-				Log.i(TAG, _id + " album:" + album + " albumArt:" + albumArt
-						+ "albumKey: " + albumKey + " artist: " + artist
-						+ " numOfSongs: " + numOfSongs + "---");
+				Log.i(TAG, _id + " album:" + album + " albumArt:" + albumArt + "albumKey: " + albumKey + " artist: " + artist + " numOfSongs: " + numOfSongs + "---");
 				HashMap<String, String> hash = new HashMap<String, String>();
 				hash.put("_id", _id + "");
 				hash.put("album", album);
@@ -210,11 +197,9 @@ public class AlbumHelper {
 			buildImagesBucketList();
 		}
 		List<ImageBucket> tmpList = new ArrayList<ImageBucket>();
-		Iterator<Entry<String, ImageBucket>> itr = bucketList.entrySet()
-				.iterator();
+		Iterator<Entry<String, ImageBucket>> itr = bucketList.entrySet().iterator();
 		while (itr.hasNext()) {
-			Map.Entry<String, ImageBucket> entry = (Map.Entry<String, ImageBucket>) itr
-					.next();
+			Map.Entry<String, ImageBucket> entry = (Map.Entry<String, ImageBucket>) itr.next();
 			tmpList.add(entry.getValue());
 		}
 		return tmpList;
@@ -224,12 +209,10 @@ public class AlbumHelper {
 		String path = null;
 		Log.i(TAG, "---(^o^)----" + image_id);
 		String[] projection = { Media._ID, Media.DATA };
-		Cursor cursor = cr.query(Media.EXTERNAL_CONTENT_URI, projection,
-				Media._ID + "=" + image_id, null, null);
+		Cursor cursor = cr.query(Media.EXTERNAL_CONTENT_URI, projection, Media._ID + "=" + image_id, null, null);
 		if (cursor != null) {
 			cursor.moveToFirst();
 			path = cursor.getString(cursor.getColumnIndex(Media.DATA));
-
 		}
 		return path;
 	}

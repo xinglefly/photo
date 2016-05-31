@@ -14,8 +14,6 @@ import android.os.Handler;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.ImageView;
-
-import com.king.photo.R;
 import com.king.photo.activity.MainActivity;
 
 public class BitmapCache extends Activity {
@@ -31,8 +29,7 @@ public class BitmapCache extends Activity {
 		}
 	}
 
-	public void displayBmp(final ImageView iv, final String thumbPath,
-			final String sourcePath, final ImageCallback callback) {
+	public void displayBmp(final ImageView iv, final String thumbPath, final String sourcePath, final ImageCallback callback) {
 		if (TextUtils.isEmpty(thumbPath) && TextUtils.isEmpty(sourcePath)) {
 			Log.e(TAG, "no paths pass in");
 			return;
@@ -46,10 +43,7 @@ public class BitmapCache extends Activity {
 		} else if (!TextUtils.isEmpty(sourcePath)) {
 			path = sourcePath;
 			isThumbPath = false;
-		} else {
-			// iv.setImageBitmap(null);
-			return;
-		}
+		} else return;
 
 		if (imageCache.containsKey(path)) {
 			SoftReference<Bitmap> reference = imageCache.get(path);
@@ -102,8 +96,7 @@ public class BitmapCache extends Activity {
 	}
 
 	public Bitmap revitionImageSize(String path) throws IOException {
-		BufferedInputStream in = new BufferedInputStream(new FileInputStream(
-				new File(path)));
+		BufferedInputStream in = new BufferedInputStream(new FileInputStream(new File(path)));
 		BitmapFactory.Options options = new BitmapFactory.Options();
 		options.inJustDecodeBounds = true;
 		BitmapFactory.decodeStream(in, null, options);
@@ -113,8 +106,7 @@ public class BitmapCache extends Activity {
 		while (true) {
 			if ((options.outWidth >> i <= 256)
 					&& (options.outHeight >> i <= 256)) {
-				in = new BufferedInputStream(
-						new FileInputStream(new File(path)));
+				in = new BufferedInputStream(new FileInputStream(new File(path)));
 				options.inSampleSize = (int) Math.pow(2.0D, i);
 				options.inJustDecodeBounds = false;
 				bitmap = BitmapFactory.decodeStream(in, null, options);
@@ -126,7 +118,6 @@ public class BitmapCache extends Activity {
 	}
 
 	public interface ImageCallback {
-		public void imageLoad(ImageView imageView, Bitmap bitmap,
-				Object... params);
+		public void imageLoad(ImageView imageView, Bitmap bitmap, Object... params);
 	}
 }
