@@ -1,7 +1,5 @@
 package com.king.photo.activity;
 
-import java.util.ArrayList;
-
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -9,9 +7,9 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ProgressBar;
@@ -19,207 +17,148 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import com.king.photo.R;
 import com.king.photo.adapter.AlbumGridViewAdapter;
+import com.king.photo.bean.ImageItem;
+import com.king.photo.event.PhotoEvent;
 import com.king.photo.util.Bimp;
-import com.king.photo.util.ImageItem;
 import com.king.photo.util.PublicWay;
-import com.king.photo.util.Res;
-/**
- * 这个是显示一个文件夹里面的所有图片时的界面
- *
- * @author king
- * @QQ:595163260
- * @version 2014年10月18日  下午11:49:10
- */
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+
+import java.util.ArrayList;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class ShowAllPhoto extends Activity {
-	private GridView gridView;
-	private ProgressBar progressBar;
-	private AlbumGridViewAdapter gridImageAdapter;
-	// 完成按钮
-	private Button okButton;
-	// 预览按钮
-	private Button preview;
-	// 返回按钮
-	private Button back;
-	// 取消按钮
-	private Button cancel;
-	// 标题
-	private TextView headTitle;
-	private Intent intent;
-	private Context mContext;
-	public static ArrayList<ImageItem> dataList = new ArrayList<ImageItem>();
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(Res.getLayoutID("plugin_camera_show_all_photo"));
-		PublicWay.activityList.add(this);
-		mContext = this;
-		back = (Button) findViewById(Res.getWidgetID("showallphoto_back"));
-		cancel = (Button) findViewById(Res.getWidgetID("showallphoto_cancel"));
-		preview = (Button) findViewById(Res.getWidgetID("showallphoto_preview"));
-		okButton = (Button) findViewById(Res.getWidgetID("showallphoto_ok_button"));
-		headTitle = (TextView) findViewById(Res.getWidgetID("showallphoto_headtitle"));
-		this.intent = getIntent();
-		String folderName = intent.getStringExtra("folderName");
-		if (folderName.length() > 8) {
-			folderName = folderName.substring(0, 9) + "...";
-		}
-		headTitle.setText(folderName);
-		cancel.setOnClickListener(new CancelListener());
-		back.setOnClickListener(new BackListener(intent));
-		preview.setOnClickListener(new PreviewListener());
-		init();
-		initListener();
-		isShowOkBt();
-	}
-	
-	BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {  
-		  
-        @Override  
-        public void onReceive(Context context, Intent intent) {  
-            // TODO Auto-generated method stub  
-        	gridImageAdapter.notifyDataSetChanged();
-        }  
-    };  
 
-	private class PreviewListener implements OnClickListener {
-		public void onClick(View v) {
-			if (Bimp.tempSelectBitmap.size() > 0) {
-				intent.putExtra("position", "2");
-				intent.setClass(ShowAllPhoto.this, GalleryActivity.class);
-				startActivity(intent);
-			}
-		}
+    @BindView(R.id.tv_headtitle) TextView tvHeadTitle;
+    @BindView(R.id.btn_preview) Button btnPreview;
+    @BindView(R.id.btn_finish) Button btnFinish;
+    @BindView(R.id.progressbar) ProgressBar progressBar;
+    @BindView(R.id.gridview_photos) GridView gridview_photos;
 
-	}
 
-	private class BackListener implements OnClickListener {// 返回按钮监听
-		Intent intent;
+    private AlbumGridViewAdapter gridImageAdapter;
+    public static ArrayList<ImageItem> dataList = new ArrayList<ImageItem>();
 
-		public BackListener(Intent intent) {
-			this.intent = intent;
-		}
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.plugin_camera_show_all_photo);
+        ButterKnife.bind(this);
+        EventBus.getDefault().register(this);
+        PublicWay.activityList.add(this);
 
-		public void onClick(View v) {
-			intent.setClass(ShowAllPhoto.this, ImageFile.class);
-			startActivity(intent);
-		}
+        initView();
+        initListener();
+        isShowOkBt();
+    }
 
-	}
 
-	private class CancelListener implements OnClickListener {// 取消按钮的监听
-		public void onClick(View v) {
-			//清空选择的图片
-			Bimp.tempSelectBitmap.clear();
-			intent.setClass(mContext, MainActivity.class);
-			startActivity(intent);
-		}
-	}
+    private void initView() {
+        String folderName = getIntent().getStringExtra("folderName");
+        if (!TextUtils.isEmpty(folderName))
+            folderName = folderName.length() > 8?folderName.substring(0, 9) + "...":folderName;
 
-	private void init() {
-		IntentFilter filter = new IntentFilter("data.broadcast.action");  
-		registerReceiver(broadcastReceiver, filter);  
-		progressBar = (ProgressBar) findViewById(Res.getWidgetID("showallphoto_progressbar"));
-		progressBar.setVisibility(View.GONE);
-		gridView = (GridView) findViewById(Res.getWidgetID("showallphoto_myGrid"));
-		gridImageAdapter = new AlbumGridViewAdapter(this,dataList,
-				Bimp.tempSelectBitmap);
-		gridView.setAdapter(gridImageAdapter);
-		okButton = (Button) findViewById(Res.getWidgetID("showallphoto_ok_button"));
-	}
+        tvHeadTitle.setText(folderName);
+        progressBar.setVisibility(View.GONE);
+        gridImageAdapter = new AlbumGridViewAdapter(this, dataList, Bimp.tempSelectBitmap);
+        gridview_photos.setAdapter(gridImageAdapter);
+    }
 
-	private void initListener() {
 
-		gridImageAdapter
-				.setOnItemClickListener(new AlbumGridViewAdapter.OnItemClickListener() {
-					public void onItemClick(final ToggleButton toggleButton,
-							int position, boolean isChecked,
-							Button button) {
-						if (Bimp.tempSelectBitmap.size() >= PublicWay.num&&isChecked) {
-							button.setVisibility(View.GONE);
-							toggleButton.setChecked(false);
-							Toast.makeText(ShowAllPhoto.this, Res.getString("only_choose_num"), 200)
-									.show();
-							return;
-						}
+    @OnClick({R.id.btn_back, R.id.btn_cancle, R.id.btn_preview, R.id.btn_finish})
+    void onButtonClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn_back:
+                startActivity(new Intent(this, ImageFile.class));
+                break;
+            case R.id.btn_cancle:
+                Bimp.tempSelectBitmap.clear();
+                startActivity(new Intent(this, MainActivity.class));
+                break;
+            case R.id.btn_preview:
+                if (Bimp.tempSelectBitmap.size() > 0)
+                    startActivity(new Intent(this, GalleryActivity.class).putExtra("position", "2"));
+                break;
+            case R.id.btn_finish:
+                startActivity(new Intent(this, MainActivity.class));
+                finish();
+                break;
+        }
+    }
 
-						if (isChecked) {
-							button.setVisibility(View.VISIBLE);
-							Bimp.tempSelectBitmap.add(dataList.get(position));
-							okButton.setText(Res.getString("finish")+"(" + Bimp.tempSelectBitmap.size()
-									+ "/"+PublicWay.num+")");
-						} else {
-							button.setVisibility(View.GONE);
-							Bimp.tempSelectBitmap.remove(dataList.get(position));
-							okButton.setText(Res.getString("finish")+"(" + Bimp.tempSelectBitmap.size() + "/"+PublicWay.num+")");
-						}
-						isShowOkBt();
-					}
-				});
+    @Subscribe
+    public void isRefreshAlbum(PhotoEvent event){
+        if (event.isRefresh()) gridImageAdapter.notifyDataSetChanged();
+    }
 
-		okButton.setOnClickListener(new View.OnClickListener() {
 
-			@Override
-			public void onClick(View v) {
-				okButton.setClickable(false);
-//				if (PublicWay.photoService != null) {
-//					PublicWay.selectedDataList.addAll(Bimp.tempSelectBitmap);
-//					Bimp.tempSelectBitmap.clear();
-//					PublicWay.photoService.onActivityResult(0, -2,
-//							intent);
-//				}
-				intent.setClass(mContext, MainActivity.class);
-				startActivity(intent);
-				// Intent intent = new Intent();
-				// Bundle bundle = new Bundle();
-				// bundle.putStringArrayList("selectedDataList",
-				// selectedDataList);
-				// intent.putExtras(bundle);
-				// intent.setClass(ShowAllPhoto.this, UploadPhoto.class);
-				// startActivity(intent);
-				finish();
+    private void initListener() {
 
-			}
-		});
+        gridImageAdapter
+                .setOnItemClickListener(new AlbumGridViewAdapter.OnItemClickListener() {
+                    public void onItemClick(final ToggleButton toggleButton, int position, boolean isChecked, Button button) {
+                        if (Bimp.tempSelectBitmap.size() >= PublicWay.num && isChecked) {
+                            button.setVisibility(View.GONE);
+                            toggleButton.setChecked(false);
+                            Toast.makeText(ShowAllPhoto.this, "超出可选图片张数", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
 
-	}
+                        if (isChecked) {
+                            button.setVisibility(View.VISIBLE);
+                            Bimp.tempSelectBitmap.add(dataList.get(position));
+                            btnFinish.setText(Bimp.tempSelectBitmap.size() + "/" + PublicWay.num);
+                        } else {
+                            button.setVisibility(View.GONE);
+                            Bimp.tempSelectBitmap.remove(dataList.get(position));
+                            btnFinish.setText(Bimp.tempSelectBitmap.size() + "/" + PublicWay.num);
+                        }
+                        isShowOkBt();
+                    }
+                });
+    }
 
-	public void isShowOkBt() {
-		if (Bimp.tempSelectBitmap.size() > 0) {
-			okButton.setText(Res.getString("finish")+"(" + Bimp.tempSelectBitmap.size() + "/"+PublicWay.num+")");
-			preview.setPressed(true);
-			okButton.setPressed(true);
-			preview.setClickable(true);
-			okButton.setClickable(true);
-			okButton.setTextColor(Color.WHITE);
-			preview.setTextColor(Color.WHITE);
-		} else {
-			okButton.setText(Res.getString("finish")+"(" + Bimp.tempSelectBitmap.size() + "/"+PublicWay.num+")");
-			preview.setPressed(false);
-			preview.setClickable(false);
-			okButton.setPressed(false);
-			okButton.setClickable(false);
-			okButton.setTextColor(Color.parseColor("#E1E0DE"));
-			preview.setTextColor(Color.parseColor("#E1E0DE"));
-		}
-	}
+    public void isShowOkBt() {
+        if (Bimp.tempSelectBitmap.size() > 0) {
+            btnFinish.setText(Bimp.tempSelectBitmap.size() + "/" + PublicWay.num);
+            btnPreview.setPressed(true);
+            btnFinish.setPressed(true);
+            btnPreview.setClickable(true);
+            btnFinish.setClickable(true);
+            btnFinish.setTextColor(Color.WHITE);
+            btnPreview.setTextColor(Color.WHITE);
+        } else {
+            btnFinish.setText(Bimp.tempSelectBitmap.size() + "/" + PublicWay.num);
+            btnPreview.setPressed(false);
+            btnPreview.setClickable(false);
+            btnFinish.setPressed(false);
+            btnFinish.setClickable(false);
+            btnFinish.setTextColor(Color.parseColor("#E1E0DE"));
+            btnPreview.setTextColor(Color.parseColor("#E1E0DE"));
+        }
+    }
 
-	public boolean onKeyDown(int keyCode, KeyEvent event) {
-		if (keyCode == KeyEvent.KEYCODE_BACK) {
-			this.finish();
-			intent.setClass(ShowAllPhoto.this, ImageFile.class);
-			startActivity(intent);
-		}
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK)
+            startActivity(new Intent(this, ImageFile.class));
+        return false;
+    }
 
-		return false;
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        isShowOkBt();
+    }
 
-	}
-
-	@Override
-	protected void onRestart() {
-		// TODO Auto-generated method stub
-		isShowOkBt();
-		super.onRestart();
-	}
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        EventBus.getDefault().unregister(this);
+    }
 }

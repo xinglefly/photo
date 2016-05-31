@@ -16,20 +16,16 @@
         "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/layout/activity_selectimg.xml"
     },
     {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/layout/plugin_camera_gallery.xml",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/layout/plugin_camera_gallery.xml"
-    },
-    {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/layout/activity_main.xml"
-    },
-    {
         "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/layout/plugin_camera_select_imageview.xml",
         "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/layout/plugin_camera_select_imageview.xml"
     },
     {
         "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/layout/item_popupwindows.xml",
         "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/layout/item_popupwindows.xml"
+    },
+    {
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/layout/plugin_camera_gallery.xml",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/layout/plugin_camera_gallery.xml"
     },
     {
         "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/layout/plugin_camera_select_folder.xml",

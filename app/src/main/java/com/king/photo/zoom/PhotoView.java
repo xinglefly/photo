@@ -93,7 +93,6 @@ public class PhotoView extends ImageView implements IPhotoView {
 	}
 
 	@Override
-	// setImageBitmap calls through to this method
 	public void setImageDrawable(Drawable drawable) {
 		super.setImageDrawable(drawable);
 		if (null != mAttacher) {

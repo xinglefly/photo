@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="armeabi-v7a,armeabi"
-    api-level="18"
-    density="xhdpi"
+    api-level="19"
+    density="400dpi"
     format="7"
-    timestamp="1464330673805187000" >
+    timestamp="1464687712054390000" >
 
     <task
         name="javac"
-        duration="1580" />
+        duration="1085" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1299" />
+        duration="252" />
     <task
         name="verifier"
-        duration="55" />
+        duration="11" />
 
     <artifact
         location="/Users/chenzhenxing/Desktop/Photo1/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="1464330673805187000" >
+    <build timestamp="1464687712054390000" >
         <artifact
             location="/Users/chenzhenxing/Desktop/Photo1/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />

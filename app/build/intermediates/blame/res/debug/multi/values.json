@@ -2959,10 +2959,10 @@
                     "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/dimens.xml",
                     "position": {
                         "startLine": 5,
-                        "startColumn": 1,
-                        "startOffset": 205,
-                        "endColumn": 38,
-                        "endOffset": 242
+                        "startColumn": 4,
+                        "startOffset": 208,
+                        "endColumn": 41,
+                        "endOffset": 245
                     }
                 }
             },
@@ -2979,9 +2979,9 @@
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 310,
+                        "startOffset": 305,
                         "endColumn": 36,
-                        "endOffset": 342
+                        "endOffset": 337
                     }
                 }
             },
@@ -2998,9 +2998,9 @@
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 58,
+                        "startOffset": 56,
                         "endColumn": 47,
-                        "endOffset": 101
+                        "endOffset": 99
                     }
                 }
             },
@@ -3017,9 +3017,9 @@
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 429,
+                        "startOffset": 423,
                         "endColumn": 44,
-                        "endOffset": 469
+                        "endOffset": 463
                     }
                 }
             },
@@ -3036,9 +3036,9 @@
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 180,
+                        "startOffset": 175,
                         "endColumn": 37,
-                        "endOffset": 213
+                        "endOffset": 208
                     }
                 }
             },
@@ -3055,9 +3055,9 @@
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 218,
+                        "startOffset": 213,
                         "endColumn": 52,
-                        "endOffset": 266
+                        "endOffset": 261
                     }
                 }
             },
@@ -3074,9 +3074,9 @@
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 474,
+                        "startOffset": 468,
                         "endColumn": 43,
-                        "endOffset": 513
+                        "endOffset": 507
                     }
                 }
             },
@@ -3092,10 +3092,10 @@
                     "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 127,
-                        "endColumn": 52,
-                        "endOffset": 175
+                        "startColumn": 3,
+                        "startOffset": 122,
+                        "endColumn": 51,
+                        "endOffset": 170
                     }
                 }
             },
@@ -3112,9 +3112,9 @@
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 271,
+                        "startOffset": 266,
                         "endColumn": 38,
-                        "endOffset": 305
+                        "endOffset": 300
                     }
                 }
             },
@@ -3131,9 +3131,9 @@
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 347,
+                        "startOffset": 342,
                         "endColumn": 38,
-                        "endOffset": 381
+                        "endOffset": 376
                     }
                 }
             },
@@ -3142,17 +3142,17 @@
                     "startLine": 167,
                     "startColumn": 4,
                     "startOffset": 7347,
-                    "endColumn": 41,
-                    "endOffset": 7384
+                    "endColumn": 62,
+                    "endOffset": 7405
                 },
                 "from": {
                     "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 386,
-                        "endColumn": 41,
-                        "endOffset": 423
+                        "startOffset": 512,
+                        "endColumn": 62,
+                        "endOffset": 570
                     }
                 }
             },
@@ -3160,10 +3160,29 @@
                 "to": {
                     "startLine": 168,
                     "startColumn": 4,
-                    "startOffset": 7389,
-                    "endLine": 171,
+                    "startOffset": 7410,
+                    "endColumn": 41,
+                    "endOffset": 7447
+                },
+                "from": {
+                    "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 381,
+                        "endColumn": 41,
+                        "endOffset": 418
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 169,
+                    "startColumn": 4,
+                    "startOffset": 7452,
+                    "endLine": 172,
                     "endColumn": 12,
-                    "endOffset": 7642
+                    "endOffset": 7705
                 },
                 "from": {
                     "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/styles.xml",
@@ -3179,12 +3198,12 @@
             },
             {
                 "to": {
-                    "startLine": 172,
+                    "startLine": 173,
                     "startColumn": 4,
-                    "startOffset": 7647,
-                    "endLine": 175,
+                    "startOffset": 7710,
+                    "endLine": 176,
                     "endColumn": 12,
-                    "endOffset": 7899
+                    "endOffset": 7962
                 },
                 "from": {
                     "file": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/values/styles.xml",

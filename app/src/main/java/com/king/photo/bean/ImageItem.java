@@ -1,18 +1,21 @@
-package com.king.photo.util;
+package com.king.photo.bean;
 
 import java.io.IOException;
 import java.io.Serializable;
 
 import android.graphics.Bitmap;
 
+import com.king.photo.util.Bimp;
 
+@SuppressWarnings("unused")
 public class ImageItem implements Serializable {
+
 	public String imageId;
 	public String thumbnailPath;
 	public String imagePath;
 	private Bitmap bitmap;
 	public boolean isSelected = false;
-	
+
 	public String getImageId() {
 		return imageId;
 	}
@@ -37,12 +40,11 @@ public class ImageItem implements Serializable {
 	public void setSelected(boolean isSelected) {
 		this.isSelected = isSelected;
 	}
-	public Bitmap getBitmap() {		
+	public Bitmap getBitmap() {
 		if(bitmap == null){
 			try {
 				bitmap = Bimp.revitionImageSize(imagePath);
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}

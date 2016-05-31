@@ -19,16 +19,16 @@
             android:scaleType="centerCrop" />
 
         <ImageView
-            android:id="@+id/file_image"
+            android:id="@+id/img_file"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:adjustViewBounds="true"
             android:background="@drawable/plugin_camera_albumbackground"
-            android:scaleType="centerCrop" />
+            android:scaleType="fitXY" />
 
         <ImageView
-            android:id="@+id/choose_back"
+            android:id="@+id/img_choose"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
@@ -38,7 +38,7 @@
             android:visibility="gone" />
 
         <TextView
-            android:id="@+id/filenum"
+            android:id="@+id/tv_filenum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
@@ -50,7 +50,7 @@
     </FrameLayout>
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/tv_folder_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
