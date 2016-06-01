@@ -4,6 +4,7 @@ package com.king.photo.activity;
 import android.view.View;
 import android.widget.AdapterView;
 import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
 import butterknife.internal.Finder;
 import butterknife.internal.ViewBinder;
 import java.lang.IllegalStateException;
@@ -15,8 +16,6 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131296256, "field 'activitySelectimgSend'");
-    target.activitySelectimgSend = finder.castView(view, 2131296256, "field 'activitySelectimgSend'");
     view = finder.findRequiredView(source, 2131296257, "field 'noScrollgridview' and method 'onGridviewItemClick'");
     target.noScrollgridview = finder.castView(view, 2131296257, "field 'noScrollgridview'");
     unbinder.view2131296257 = view;
@@ -24,6 +23,14 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
       @Override
       public void onItemClick(AdapterView<?> p0, View p1, int p2, long p3) {
         target.onGridviewItemClick(p0, p2);
+      }
+    });
+    view = finder.findRequiredView(source, 2131296256, "method 'onUploadClick'");
+    unbinder.view2131296256 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onUploadClick();
       }
     });
     return unbinder;
@@ -38,6 +45,8 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
 
     View view2131296257;
 
+    View view2131296256;
+
     protected InnerUnbinder(T target) {
       this.target = target;
     }
@@ -50,9 +59,9 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
     }
 
     protected void unbind(T target) {
-      target.activitySelectimgSend = null;
       ((AdapterView<?>) view2131296257).setOnItemClickListener(null);
       target.noScrollgridview = null;
+      view2131296256.setOnClickListener(null);
     }
   }
 }

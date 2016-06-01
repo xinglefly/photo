@@ -21,7 +21,6 @@ import com.king.photo.zoom.ViewPagerFixed;
 import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -51,9 +50,8 @@ public class GalleryActivity extends Activity {
     private void initView() {
         position = Integer.parseInt(getIntent().getStringExtra("position"));
         isShowOkBt();
-        for (int i = 0; i < Bimp.tempSelectBitmap.size(); i++) {
+        for (int i = 0; i < Bimp.tempSelectBitmap.size(); i++)
             initListViews(Bimp.tempSelectBitmap.get(i).getBitmap());
-        }
 
         adapter = new GalleryPageAdapter(listViews);
         pager.setAdapter(adapter);

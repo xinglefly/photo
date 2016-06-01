@@ -9,17 +9,17 @@ import android.os.Environment;
 
 public class FileUtils {
 	
-	public static String SDPATH = Environment.getExternalStorageDirectory() + "/Photo_LJ/";
+	public static String SDPATH = Environment.getExternalStorageDirectory() + "/Photo_sd/";
 
 	public static void saveBitmap(Bitmap bm, String picName) {
 		try {
 			if (!isFileExist("")) {
 				File tempf = createSDDir("");
 			}
+
 			File f = new File(SDPATH, picName + ".JPEG"); 
-			if (f.exists()) {
+			if (f.exists())
 				f.delete();
-			}
 			FileOutputStream out = new FileOutputStream(f);
 			bm.compress(Bitmap.CompressFormat.JPEG, 90, out);
 			out.flush();
@@ -33,9 +33,7 @@ public class FileUtils {
 
 	public static File createSDDir(String dirName) throws IOException {
 		File dir = new File(SDPATH + dirName);
-		if (Environment.getExternalStorageState().equals(
-				Environment.MEDIA_MOUNTED)) {
-
+		if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
 			System.out.println("createSDDir:" + dir.getAbsolutePath());
 			System.out.println("createSDDir:" + dir.mkdir());
 		}
@@ -50,9 +48,8 @@ public class FileUtils {
 	
 	public static void delFile(String fileName){
 		File file = new File(SDPATH + fileName);
-		if(file.isFile()){
+		if(file.isFile())
 			file.delete();
-        }
 		file.exists();
 	}
 
@@ -73,11 +70,9 @@ public class FileUtils {
 	public static boolean fileIsExists(String path) {
 		try {
 			File f = new File(path);
-			if (!f.exists()) {
+			if (!f.exists())
 				return false;
-			}
 		} catch (Exception e) {
-
 			return false;
 		}
 		return true;

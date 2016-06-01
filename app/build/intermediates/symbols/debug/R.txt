@@ -197,7 +197,6 @@ int drawable plugin_camera_title_btn_back 0x7f020023
 int drawable plugin_camera_title_btn_cancel 0x7f020024
 int drawable plugin_camera_title_btn_preview 0x7f020025
 int drawable text_while 0x7f020026
-int id activity_selectimg_send 0x7f090000
 int id bottom_layout 0x7f09000d
 int id btn_album 0x7f09000b
 int id btn_back 0x7f090022
@@ -236,6 +235,7 @@ int id tv_filenum 0x7f09001c
 int id tv_folder_name 0x7f09001d
 int id tv_headtitle 0x7f090023
 int id tv_none 0x7f090011
+int id tv_upload 0x7f090000
 int layout activity_selectimg 0x7f030000
 int layout item_popupwindows 0x7f030001
 int layout item_published_grida 0x7f030002

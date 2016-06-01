@@ -1,6 +1,7 @@
 package com.king.photo.activity;
 
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -34,12 +35,12 @@ import com.king.photo.util.PublicWay;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import butterknife.OnItemClick;
 
 
 public class MainActivity extends Activity {
 
-    @BindView(R.id.activity_selectimg_send) TextView activitySelectimgSend;
     @BindView(R.id.noScrollgridview) GridView noScrollgridview;
 
     private PhotoGridAdapter adapter;
@@ -64,6 +65,15 @@ public class MainActivity extends Activity {
         adapter = new PhotoGridAdapter(this);
         adapter.isRefresh();
         noScrollgridview.setAdapter(adapter);
+    }
+
+    @OnClick(R.id.tv_upload)
+    void onUploadClick(){
+        Intent intent = new Intent();
+        ComponentName name = new ComponentName("com.zcsy.yidian","com.zcsy.yidian.activity.WelcomeActivity");
+        intent.setComponent(name);
+        intent.setAction(Intent.ACTION_VIEW);
+        startActivity(intent);
     }
 
     @OnItemClick(R.id.noScrollgridview)
@@ -125,11 +135,7 @@ public class MainActivity extends Activity {
                 ll_popup.clearAnimation();
             }
         });
-
-
-
     }
-
 
 
     Handler handler = new Handler() {
@@ -163,15 +169,6 @@ public class MainActivity extends Activity {
         }).start();
     }
 
-    public String getString(String s) {
-        String path = null;
-        if (s == null)
-            return "";
-        for (int i = s.length() - 1; i > 0; i++) {
-            s.charAt(i);
-        }
-        return path;
-    }
 
     protected void onRestart() {
         loading();
@@ -189,7 +186,6 @@ public class MainActivity extends Activity {
         switch (requestCode) {
             case TAKE_PICTURE:
                 if (Bimp.tempSelectBitmap.size() < 6 && resultCode == RESULT_OK) {
-
                     String fileName = String.valueOf(System.currentTimeMillis());
                     Bitmap bm = (Bitmap) data.getExtras().get("data");
                     FileUtils.saveBitmap(bm, fileName);

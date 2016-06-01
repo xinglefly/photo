@@ -218,7 +218,6 @@ public final class R {
         public static final int text_while=0x7f020026;
     }
     public static final class id {
-        public static final int activity_selectimg_send=0x7f090000;
         public static final int bottom_layout=0x7f09000d;
         public static final int btn_album=0x7f09000b;
         public static final int btn_back=0x7f090022;
@@ -257,6 +256,7 @@ public final class R {
         public static final int tv_folder_name=0x7f09001d;
         public static final int tv_headtitle=0x7f090023;
         public static final int tv_none=0x7f090011;
+        public static final int tv_upload=0x7f090000;
     }
     public static final class layout {
         public static final int activity_selectimg=0x7f030000;
