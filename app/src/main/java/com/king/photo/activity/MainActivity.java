@@ -24,7 +24,7 @@ import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
+import android.widget.Toast;
 
 import com.king.photo.R;
 import com.king.photo.adapter.PhotoGridAdapter;
@@ -178,6 +178,10 @@ public class MainActivity extends Activity {
     private static final int TAKE_PICTURE = 0x000001;
 
     public void photo() {
+        if (!FileUtils.hasSdcard()) {
+            Toast.makeText(this,"SD卡不存在，不能拍照",Toast.LENGTH_SHORT).show();
+            return;
+        }
         Intent openCameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(openCameraIntent, TAKE_PICTURE);
     }
@@ -185,11 +189,10 @@ public class MainActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
             case TAKE_PICTURE:
-                if (Bimp.tempSelectBitmap.size() < 6 && resultCode == RESULT_OK) {
+                if (Bimp.tempSelectBitmap.size() < 6 && resultCode == RESULT_OK){
                     String fileName = String.valueOf(System.currentTimeMillis());
                     Bitmap bm = (Bitmap) data.getExtras().get("data");
                     FileUtils.saveBitmap(bm, fileName);
-
                     ImageItem takePhoto = new ImageItem();
                     takePhoto.setBitmap(bm);
                     Bimp.tempSelectBitmap.add(takePhoto);
