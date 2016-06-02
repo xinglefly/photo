@@ -15,38 +15,38 @@ public class AlbumActivity$$ViewBinder<T extends AlbumActivity> implements ViewB
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131296270, "field 'btnPreview' and method 'onButtonClick'");
-    target.btnPreview = finder.castView(view, 2131296270, "field 'btnPreview'");
-    unbinder.view2131296270 = view;
+    view = finder.findRequiredView(source, 2131296260, "field 'btnPreview' and method 'onButtonClick'");
+    target.btnPreview = finder.castView(view, 2131296260, "field 'btnPreview'");
+    unbinder.view2131296260 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onButtonClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131296271, "field 'btnFinish' and method 'onButtonClick'");
-    target.btnFinish = finder.castView(view, 2131296271, "field 'btnFinish'");
-    unbinder.view2131296271 = view;
+    view = finder.findRequiredView(source, 2131296261, "field 'btnFinish' and method 'onButtonClick'");
+    target.btnFinish = finder.castView(view, 2131296261, "field 'btnFinish'");
+    unbinder.view2131296261 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onButtonClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131296272, "field 'gridViewAlbum'");
-    target.gridViewAlbum = finder.castView(view, 2131296272, "field 'gridViewAlbum'");
-    view = finder.findRequiredView(source, 2131296273, "field 'tvNone'");
-    target.tvNone = finder.castView(view, 2131296273, "field 'tvNone'");
-    view = finder.findRequiredView(source, 2131296267, "method 'onButtonClick'");
-    unbinder.view2131296267 = view;
+    view = finder.findRequiredView(source, 2131296262, "field 'gridViewAlbum'");
+    target.gridViewAlbum = finder.castView(view, 2131296262, "field 'gridViewAlbum'");
+    view = finder.findRequiredView(source, 2131296263, "field 'tvNone'");
+    target.tvNone = finder.castView(view, 2131296263, "field 'tvNone'");
+    view = finder.findRequiredView(source, 2131296257, "method 'onButtonClick'");
+    unbinder.view2131296257 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onButtonClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131296268, "method 'onButtonClick'");
-    unbinder.view2131296268 = view;
+    view = finder.findRequiredView(source, 2131296258, "method 'onButtonClick'");
+    unbinder.view2131296258 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -63,13 +63,13 @@ public class AlbumActivity$$ViewBinder<T extends AlbumActivity> implements ViewB
   protected static class InnerUnbinder<T extends AlbumActivity> implements Unbinder {
     private T target;
 
-    View view2131296270;
+    View view2131296260;
 
-    View view2131296271;
+    View view2131296261;
 
-    View view2131296267;
+    View view2131296257;
 
-    View view2131296268;
+    View view2131296258;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -83,14 +83,14 @@ public class AlbumActivity$$ViewBinder<T extends AlbumActivity> implements ViewB
     }
 
     protected void unbind(T target) {
-      view2131296270.setOnClickListener(null);
+      view2131296260.setOnClickListener(null);
       target.btnPreview = null;
-      view2131296271.setOnClickListener(null);
+      view2131296261.setOnClickListener(null);
       target.btnFinish = null;
       target.gridViewAlbum = null;
       target.tvNone = null;
-      view2131296267.setOnClickListener(null);
-      view2131296268.setOnClickListener(null);
+      view2131296257.setOnClickListener(null);
+      view2131296258.setOnClickListener(null);
     }
   }
 }

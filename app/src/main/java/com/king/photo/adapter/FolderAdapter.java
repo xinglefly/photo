@@ -18,7 +18,7 @@ import android.widget.TextView;
 
 import com.king.photo.R;
 import com.king.photo.activity.AlbumActivity;
-import com.king.photo.activity.ShowAllPhoto;
+import com.king.photo.activity.ShowAllPhotoActivity;
 import com.king.photo.util.BitmapCache;
 import com.king.photo.util.BitmapCache.ImageCallback;
 import com.king.photo.bean.ImageItem;
@@ -38,15 +38,12 @@ public class FolderAdapter extends BaseAdapter {
 		init(c);
 	}
 
-
 	public void init(Context c) {
 		mContext = c;
 		mIntent = ((Activity) mContext).getIntent();
 		dm = new DisplayMetrics();
 		((Activity) mContext).getWindowManager().getDefaultDisplay().getMetrics(dm);
 	}
-
-	
 
 	@Override
 	public int getCount() {
@@ -83,7 +80,7 @@ public class FolderAdapter extends BaseAdapter {
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		if (convertView == null)
-			convertView =LayoutInflater.from(mContext).inflate(R.layout.plugin_camera_select_folder,parent, false);
+			convertView =LayoutInflater.from(mContext).inflate(R.layout.folder_item,parent, false);
 
 		ImageView imgFile = ViewHolder.get(convertView, R.id.img_file);
 		ImageView imgChoose = ViewHolder.get(convertView, R.id.img_choose);
@@ -121,9 +118,9 @@ public class FolderAdapter extends BaseAdapter {
 		}
 		
 		public void onClick(View v) {
-			ShowAllPhoto.dataList = (ArrayList<ImageItem>) AlbumActivity.contentList.get(position).imageList;
+			ShowAllPhotoActivity.dataList = (ArrayList<ImageItem>) AlbumActivity.contentList.get(position).imageList;
 			String folderName = AlbumActivity.contentList.get(position).bucketName;
-			mContext.startActivity(new Intent(mContext, ShowAllPhoto.class).putExtra("folderName", folderName));
+			mContext.startActivity(new Intent(mContext, ShowAllPhotoActivity.class).putExtra("folderName", folderName));
 			imgChoose.setVisibility(v.VISIBLE);
 		}
 	}

@@ -48,7 +48,7 @@ public class AlbumActivity extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.plugin_camera_album);
+        setContentView(R.layout.album_activity);
         ButterKnife.bind(this);
         EventBus.getDefault().register(this);
         PublicWay.activityList.add(this);
@@ -83,7 +83,7 @@ public class AlbumActivity extends Activity {
     void onButtonClick(View v){
         switch (v.getId()){
             case R.id.btn_album:
-                startActivity(new Intent(AlbumActivity.this, ImageFile.class));
+                startActivity(new Intent(AlbumActivity.this, ImageFileActivity.class));
                 break;
             case R.id.btn_cancle:
                 Bimp.tempSelectBitmap.clear();
@@ -97,14 +97,14 @@ public class AlbumActivity extends Activity {
                 overridePendingTransition(R.anim.activity_translate_in, R.anim.activity_translate_out);
                 finish();
                 break;
-
         }
     }
 
 
     @Subscribe
     public void isRefreshAlbum(PhotoEvent event){
-        if (event.isRefresh()) gridImageAdapter.notifyDataSetChanged();
+        if (event.isRefresh())
+            gridImageAdapter.notifyDataSetChanged();
     }
 
     private void initListener() {

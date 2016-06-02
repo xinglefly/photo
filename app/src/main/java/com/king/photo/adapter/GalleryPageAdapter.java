@@ -40,9 +40,7 @@ public class GalleryPageAdapter extends PagerAdapter {
     public Object instantiateItem(View arg0, int arg1) {
         try {
             ((ViewPagerFixed) arg0).addView(listViews.get(arg1 % size), 0);
-
-        } catch (Exception e) {
-        }
+        } catch (Exception e) {}
         return listViews.get(arg1 % size);
     }
 

@@ -41,7 +41,7 @@ public class GalleryActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.plugin_camera_gallery);
+        setContentView(R.layout.gallery_activity);
         ButterKnife.bind(this);
         PublicWay.activityList.add(this);
         initView();
@@ -70,7 +70,7 @@ public class GalleryActivity extends Activity {
     void onGalleryClicks(View v) {
         switch (v.getId()) {
             case R.id.btn_gallery:
-                startActivity(new Intent(this, ImageFile.class));
+                startActivity(new Intent(this, ImageFileActivity.class));
                 break;
             case R.id.btn_finish:
                 finish();
@@ -124,10 +124,9 @@ public class GalleryActivity extends Activity {
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             if (position == 1) startActivity(new Intent(this, AlbumActivity.class));
-            else if (position == 2) startActivity(new Intent(this, ShowAllPhoto.class));
+            else if (position == 2) startActivity(new Intent(this, ShowAllPhotoActivity.class));
             this.finish();
         }
         return true;

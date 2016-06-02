@@ -16,17 +16,17 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131296257, "field 'noScrollgridview' and method 'onGridviewItemClick'");
-    target.noScrollgridview = finder.castView(view, 2131296257, "field 'noScrollgridview'");
-    unbinder.view2131296257 = view;
+    view = finder.findRequiredView(source, 2131296286, "field 'noScrollgridview' and method 'onGridviewItemClick'");
+    target.noScrollgridview = finder.castView(view, 2131296286, "field 'noScrollgridview'");
+    unbinder.view2131296286 = view;
     ((AdapterView<?>) view).setOnItemClickListener(new AdapterView.OnItemClickListener() {
       @Override
       public void onItemClick(AdapterView<?> p0, View p1, int p2, long p3) {
         target.onGridviewItemClick(p0, p2);
       }
     });
-    view = finder.findRequiredView(source, 2131296256, "method 'onUploadClick'");
-    unbinder.view2131296256 = view;
+    view = finder.findRequiredView(source, 2131296285, "method 'onUploadClick'");
+    unbinder.view2131296285 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -43,9 +43,9 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
   protected static class InnerUnbinder<T extends MainActivity> implements Unbinder {
     private T target;
 
-    View view2131296257;
+    View view2131296286;
 
-    View view2131296256;
+    View view2131296285;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -59,9 +59,9 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
     }
 
     protected void unbind(T target) {
-      ((AdapterView<?>) view2131296257).setOnItemClickListener(null);
+      ((AdapterView<?>) view2131296286).setOnItemClickListener(null);
       target.noScrollgridview = null;
-      view2131296256.setOnClickListener(null);
+      view2131296285.setOnClickListener(null);
     }
   }
 }

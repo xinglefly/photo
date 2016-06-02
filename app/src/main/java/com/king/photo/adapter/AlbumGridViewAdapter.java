@@ -57,7 +57,7 @@ public class AlbumGridViewAdapter extends BaseAdapter{
 
 	public View getView(int position, View convertView, ViewGroup parent) {
 		if (convertView == null)
-			convertView =LayoutInflater.from(mContext) .inflate(R.layout.plugin_camera_select_imageview,parent, false);
+			convertView =LayoutInflater.from(mContext) .inflate(R.layout.album_item,parent, false);
 
 		ImageView imgView = ViewHolder.get(convertView, R.id.img_view);
 		ToggleButton btnToggle = ViewHolder.get(convertView, R.id.btn_toggle);

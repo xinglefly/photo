@@ -16,18 +16,18 @@ public class GalleryActivity$$ViewBinder<T extends GalleryActivity> implements V
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131296271, "field 'btn_finish' and method 'onGalleryClicks'");
-    target.btn_finish = finder.castView(view, 2131296271, "field 'btn_finish'");
-    unbinder.view2131296271 = view;
+    view = finder.findRequiredView(source, 2131296261, "field 'btn_finish' and method 'onGalleryClicks'");
+    target.btn_finish = finder.castView(view, 2131296261, "field 'btn_finish'");
+    unbinder.view2131296261 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onGalleryClicks(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131296276, "field 'pager' and method 'onPageSelected'");
-    target.pager = finder.castView(view, 2131296276, "field 'pager'");
-    unbinder.view2131296276 = view;
+    view = finder.findRequiredView(source, 2131296282, "field 'pager' and method 'onPageSelected'");
+    target.pager = finder.castView(view, 2131296282, "field 'pager'");
+    unbinder.view2131296282 = view;
     ((ViewPager) view).setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
       @Override
       public void onPageSelected(int p0) {
@@ -42,16 +42,16 @@ public class GalleryActivity$$ViewBinder<T extends GalleryActivity> implements V
       public void onPageScrollStateChanged(int p0) {
       }
     });
-    view = finder.findRequiredView(source, 2131296274, "method 'onGalleryClicks'");
-    unbinder.view2131296274 = view;
+    view = finder.findRequiredView(source, 2131296280, "method 'onGalleryClicks'");
+    unbinder.view2131296280 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onGalleryClicks(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131296275, "method 'onGalleryClicks'");
-    unbinder.view2131296275 = view;
+    view = finder.findRequiredView(source, 2131296281, "method 'onGalleryClicks'");
+    unbinder.view2131296281 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -68,13 +68,13 @@ public class GalleryActivity$$ViewBinder<T extends GalleryActivity> implements V
   protected static class InnerUnbinder<T extends GalleryActivity> implements Unbinder {
     private T target;
 
-    View view2131296271;
+    View view2131296261;
 
-    View view2131296276;
+    View view2131296282;
 
-    View view2131296274;
+    View view2131296280;
 
-    View view2131296275;
+    View view2131296281;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -88,12 +88,12 @@ public class GalleryActivity$$ViewBinder<T extends GalleryActivity> implements V
     }
 
     protected void unbind(T target) {
-      view2131296271.setOnClickListener(null);
+      view2131296261.setOnClickListener(null);
       target.btn_finish = null;
-      ((ViewPager) view2131296276).setOnPageChangeListener(null);
+      ((ViewPager) view2131296282).setOnPageChangeListener(null);
       target.pager = null;
-      view2131296274.setOnClickListener(null);
-      view2131296275.setOnClickListener(null);
+      view2131296280.setOnClickListener(null);
+      view2131296281.setOnClickListener(null);
     }
   }
 }

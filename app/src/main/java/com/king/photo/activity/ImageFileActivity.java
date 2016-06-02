@@ -18,7 +18,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 
-public class ImageFile extends Activity {
+public class ImageFileActivity extends Activity {
 
     @BindView(R.id.headerTitle) TextView headerTitle;
     @BindView(R.id.gridview_file) GridView gridviewFile;
@@ -26,7 +26,7 @@ public class ImageFile extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.plugin_camera_image_file);
+        setContentView(R.layout.imagefile_activity);
         ButterKnife.bind(this);
         initView();
     }

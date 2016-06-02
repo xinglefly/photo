@@ -9,8 +9,6 @@ import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.provider.MediaStore;
 import android.view.Gravity;
 import android.view.KeyEvent;
@@ -51,7 +49,7 @@ public class MainActivity extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        parentView = getLayoutInflater().inflate(R.layout.activity_selectimg, null);
+        parentView = getLayoutInflater().inflate(R.layout.main_activity, null);
         setContentView(parentView);
         ButterKnife.bind(this);
         initView();
@@ -91,7 +89,7 @@ public class MainActivity extends Activity {
 
     public void initPup() {
         pop = new PopupWindow(MainActivity.this);
-        View view = getLayoutInflater().inflate(R.layout.item_popupwindows, null);
+        View view = getLayoutInflater().inflate(R.layout.popupwindows, null);
         ll_popup = ButterKnife.findById(view, R.id.ll_popup);
 
         pop.setWidth(LayoutParams.MATCH_PARENT);
@@ -138,40 +136,8 @@ public class MainActivity extends Activity {
     }
 
 
-    Handler handler = new Handler() {
-        public void handleMessage(Message msg) {
-            switch (msg.what) {
-                case 1:
-                    adapter.isRefresh();
-                    break;
-            }
-            super.handleMessage(msg);
-        }
-    };
-
-    public void loading() {
-        new Thread(new Runnable() {
-            public void run() {
-                while (true) {
-                    if (Bimp.max == Bimp.tempSelectBitmap.size()) {
-                        Message message = new Message();
-                        message.what = 1;
-                        handler.sendMessage(message);
-                        break;
-                    } else {
-                        Bimp.max += 1;
-                        Message message = new Message();
-                        message.what = 1;
-                        handler.sendMessage(message);
-                    }
-                }
-            }
-        }).start();
-    }
-
-
     protected void onRestart() {
-        loading();
+        adapter.isRefresh();
         super.onRestart();
     }
 

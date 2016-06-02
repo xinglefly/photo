@@ -30,7 +30,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ShowAllPhoto extends Activity {
+public class ShowAllPhotoActivity extends Activity {
 
     @BindView(R.id.tv_headtitle) TextView tvHeadTitle;
     @BindView(R.id.btn_preview) Button btnPreview;
@@ -45,7 +45,7 @@ public class ShowAllPhoto extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.plugin_camera_show_all_photo);
+        setContentView(R.layout.allphoto_activity);
         ButterKnife.bind(this);
         EventBus.getDefault().register(this);
         PublicWay.activityList.add(this);
@@ -72,7 +72,7 @@ public class ShowAllPhoto extends Activity {
     void onButtonClick(View v) {
         switch (v.getId()) {
             case R.id.btn_back:
-                startActivity(new Intent(this, ImageFile.class));
+                startActivity(new Intent(this, ImageFileActivity.class));
                 break;
             case R.id.btn_cancle:
                 Bimp.tempSelectBitmap.clear();
@@ -92,10 +92,9 @@ public class ShowAllPhoto extends Activity {
 
     @Subscribe
     public void isRefreshAlbum(PhotoEvent event){
-        if (event.isRefresh()) gridImageAdapter.notifyDataSetChanged();
+        if (event.isRefresh())
+            gridImageAdapter.notifyDataSetChanged();
     }
-
-
 
 
     private void initListener() {
@@ -106,7 +105,7 @@ public class ShowAllPhoto extends Activity {
                         if (Bimp.tempSelectBitmap.size() >= PublicWay.num && isChecked) {
                             button.setVisibility(View.GONE);
                             toggleButton.setChecked(false);
-                            Toast.makeText(ShowAllPhoto.this, "超出可选图片张数", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ShowAllPhotoActivity.this, "超出可选图片张数", Toast.LENGTH_SHORT).show();
                             return;
                         }
 
@@ -146,7 +145,7 @@ public class ShowAllPhoto extends Activity {
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK)
-            startActivity(new Intent(this, ImageFile.class));
+            startActivity(new Intent(this, ImageFileActivity.class));
         return false;
     }
 
