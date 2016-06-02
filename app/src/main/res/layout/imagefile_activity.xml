@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
-    android:background="@color/albumback">
+    android:background="#E1E0DE">
 
     <RelativeLayout
         android:id="@+id/headview"
@@ -27,7 +27,7 @@
             android:layout_centerVertical="true"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
-            android:background="@drawable/plugin_camera_title_btn_cancel"
+            android:background="@drawable/btn_cancel_select"
             android:text="@string/camera_cancel"
             android:textColor="#fff"
             android:textSize="14sp" />
@@ -40,7 +40,7 @@
         android:layout_height="fill_parent"
         android:layout_below="@id/headview"
         android:layout_centerInParent="true"
-        android:background="@color/albumback"
+        android:background="#E1E0DE"
         android:horizontalSpacing="10dp"
         android:numColumns="2"
         android:verticalSpacing="10dp" />

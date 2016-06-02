@@ -57,7 +57,7 @@ public class MainActivity extends Activity {
     }
 
     private void initView() {
-        bimap = BitmapFactory.decodeResource(getResources(), R.drawable.icon_addpic_unfocused);
+        bimap = BitmapFactory.decodeResource(getResources(), R.drawable.addpic);
         PublicWay.activityList.add(this);
         noScrollgridview.setSelector(new ColorDrawable(Color.TRANSPARENT));
         adapter = new PhotoGridAdapter(this);

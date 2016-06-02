@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/albumback">
+    android:background="#E1E0DE">
 
     <RelativeLayout
         android:id="@+id/headview"
@@ -17,7 +17,7 @@
             android:layout_centerVertical="true"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
-            android:background="@drawable/plugin_camera_title_btn_back"
+            android:background="@drawable/btn_album_select"
             android:text="@string/album"
             android:textColor="#fff"
             android:textSize="14sp" />
@@ -29,7 +29,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
-            android:background="@drawable/plugin_camera_del_state"
+            android:background="@drawable/btn_del_selector"
             android:textColor="#fff"
             android:textSize="14sp" />
     </RelativeLayout>
@@ -39,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/plugin_camera_bottom_bar">
+        android:background="@drawable/album_bottom_bar">
 
         <Button
             android:id="@+id/btn_finish"
@@ -47,7 +47,7 @@
             android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:background="@drawable/plugin_camera_ok_btn_state"
+            android:background="@drawable/btn_finish_select"
             android:text="@string/finish" />
 
     </RelativeLayout>

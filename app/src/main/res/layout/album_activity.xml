@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/albumback">
+    android:background="#E1E0DE">
 
     <RelativeLayout
         android:id="@+id/headview"
@@ -18,7 +18,7 @@
             android:layout_centerVertical="true"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
-            android:background="@drawable/plugin_camera_title_btn_back"
+            android:background="@drawable/btn_album_select"
             android:text="@string/album"
             android:textColor="#fff"
             android:textSize="14sp" />
@@ -30,7 +30,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="5dp"
-            android:background="@drawable/plugin_camera_title_btn_cancel"
+            android:background="@drawable/btn_cancel_select"
             android:text="@string/camera_cancel"
             android:textColor="#fff"
             android:textSize="14sp" />
@@ -42,7 +42,7 @@
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="3dp"
-        android:background="@drawable/plugin_camera_bottom_bar">
+        android:background="@drawable/album_bottom_bar">
 
         <Button
             android:id="@+id/btn_preview"
@@ -51,7 +51,7 @@
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
-            android:background="@drawable/plugin_camera_title_btn_preview"
+            android:background="@drawable/btn_preview_select"
             android:text="@string/preview" />
 
         <Button
@@ -61,7 +61,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
-            android:background="@drawable/plugin_camera_ok_btn_state" />
+            android:background="@drawable/btn_finish_select" />
     </RelativeLayout>
 
     <GridView
@@ -72,7 +72,7 @@
         android:layout_below="@id/headview"
         android:layout_centerInParent="true"
         android:layout_marginTop="2dp"
-        android:background="@color/albumback"
+        android:background="#E1E0DE"
         android:horizontalSpacing="10dp"
         android:numColumns="4"
         android:verticalSpacing="10dp" />

@@ -60,7 +60,7 @@ public class AlbumActivity extends Activity {
 
 
     private void init() {
-        bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.plugin_camera_no_pictures);
+        bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.no_pictures);
         helper = AlbumHelper.getHelper();
         helper.init(getApplicationContext());
 

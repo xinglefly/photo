@@ -66,12 +66,11 @@ public class PhotoGridAdapter extends BaseAdapter {
             convertView = inflater.inflate(R.layout.photo_item, parent, false);
 
         ImageView image = ViewHolder.get(convertView, R.id.item_grida_image);
-        FrameLayout frame = ViewHolder.get(convertView, R.id.frame);
         Button btnChoose = ViewHolder.get(convertView, R.id.btn_choose);
 
         if (position == Bimp.tempSelectBitmap.size()) {
             btnChoose.setVisibility(View.GONE);
-            image.setImageBitmap(BitmapFactory.decodeResource(mContext.getResources(), R.drawable.icon_addpic_unfocused));
+            image.setImageBitmap(BitmapFactory.decodeResource(mContext.getResources(), R.drawable.addpic));
             if (position == 6) image.setVisibility(View.GONE);
         } else {
             image.setImageBitmap(Bimp.tempSelectBitmap.get(position).getBitmap());

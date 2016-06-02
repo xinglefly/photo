@@ -15,7 +15,7 @@
             android:layout_height="130dp"
             android:layout_gravity="center"
             android:adjustViewBounds="true"
-            android:background="@drawable/plugin_camera_album_back"
+            android:background="@drawable/folder_bg"
             android:scaleType="centerCrop" />
 
         <ImageView
@@ -24,7 +24,6 @@
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:adjustViewBounds="true"
-            android:background="@drawable/plugin_camera_albumbackground"
             android:scaleType="fitXY" />
 
         <ImageView
@@ -33,7 +32,7 @@
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:adjustViewBounds="true"
-            android:background="@drawable/plugin_camera_choose_back"
+            android:background="@drawable/folder_choose"
             android:scaleType="centerCrop"
             android:visibility="gone" />
 
@@ -42,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
-            android:background="@drawable/plugin_camera_filenum"
+            android:background="@drawable/folder_filenum"
             android:gravity="center"
             android:textColor="#000000"
             android:textSize="16sp" />

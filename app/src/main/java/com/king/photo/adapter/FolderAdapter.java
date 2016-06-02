@@ -95,7 +95,7 @@ public class FolderAdapter extends BaseAdapter {
 		} else path = "android_hybrid_camera_default";
 
 		if (path.contains("android_hybrid_camera_default"))
-			imgFile.setImageResource(R.drawable.plugin_camera_no_pictures);
+			imgFile.setImageResource(R.drawable.no_pictures);
 		else {
 			final ImageItem item = AlbumActivity.contentList.get(position).imageList.get(0);
 			imgFile.setTag(item.imagePath);

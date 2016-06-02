@@ -25,9 +25,9 @@ public class GalleryActivity$$ViewBinder<T extends GalleryActivity> implements V
         target.onGalleryClicks(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131296282, "field 'pager' and method 'onPageSelected'");
-    target.pager = finder.castView(view, 2131296282, "field 'pager'");
-    unbinder.view2131296282 = view;
+    view = finder.findRequiredView(source, 2131296281, "field 'pager' and method 'onPageSelected'");
+    target.pager = finder.castView(view, 2131296281, "field 'pager'");
+    unbinder.view2131296281 = view;
     ((ViewPager) view).setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
       @Override
       public void onPageSelected(int p0) {
@@ -42,16 +42,16 @@ public class GalleryActivity$$ViewBinder<T extends GalleryActivity> implements V
       public void onPageScrollStateChanged(int p0) {
       }
     });
-    view = finder.findRequiredView(source, 2131296280, "method 'onGalleryClicks'");
-    unbinder.view2131296280 = view;
+    view = finder.findRequiredView(source, 2131296279, "method 'onGalleryClicks'");
+    unbinder.view2131296279 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onGalleryClicks(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131296281, "method 'onGalleryClicks'");
-    unbinder.view2131296281 = view;
+    view = finder.findRequiredView(source, 2131296280, "method 'onGalleryClicks'");
+    unbinder.view2131296280 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -70,11 +70,11 @@ public class GalleryActivity$$ViewBinder<T extends GalleryActivity> implements V
 
     View view2131296261;
 
-    View view2131296282;
+    View view2131296281;
+
+    View view2131296279;
 
     View view2131296280;
-
-    View view2131296281;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -90,10 +90,10 @@ public class GalleryActivity$$ViewBinder<T extends GalleryActivity> implements V
     protected void unbind(T target) {
       view2131296261.setOnClickListener(null);
       target.btn_finish = null;
-      ((ViewPager) view2131296282).setOnPageChangeListener(null);
+      ((ViewPager) view2131296281).setOnPageChangeListener(null);
       target.pager = null;
+      view2131296279.setOnClickListener(null);
       view2131296280.setOnClickListener(null);
-      view2131296281.setOnClickListener(null);
     }
   }
 }

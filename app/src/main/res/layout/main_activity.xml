@@ -27,7 +27,6 @@
             android:layout_marginRight="8dp"
             android:gravity="center"
             android:text="发送"
-            android:textColor="@drawable/text_while"
             android:textSize="20sp" />
     </RelativeLayout>
 
@@ -47,6 +46,6 @@
         android:horizontalSpacing="3dp"
         android:numColumns="4"
         android:scrollbars="none"
-        android:verticalSpacing="5dp"></GridView>
+        android:verticalSpacing="5dp"/>
 
 </LinearLayout>

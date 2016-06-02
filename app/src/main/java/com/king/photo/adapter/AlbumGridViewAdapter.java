@@ -71,7 +71,7 @@ public class AlbumGridViewAdapter extends BaseAdapter{
 		else path = "camera_default";
 
 		if (path.contains("camera_default")) {
-			imgView.setImageResource(R.drawable.plugin_camera_no_pictures);
+			imgView.setImageResource(R.drawable.no_pictures);
 		} else {
 			final ImageItem item = dataList.get(position);
 			imgView.setTag(item.imagePath);
