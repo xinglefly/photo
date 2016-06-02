@@ -1,15 +1,11 @@
 package com.king.photo.activity;
 
 import android.app.Activity;
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.GridView;
@@ -52,7 +48,7 @@ public class AlbumActivity extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.plugin_camera_album);
+        setContentView(R.layout.album_activity);
         ButterKnife.bind(this);
         EventBus.getDefault().register(this);
         PublicWay.activityList.add(this);
@@ -64,7 +60,7 @@ public class AlbumActivity extends Activity {
 
 
     private void init() {
-        bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.plugin_camera_no_pictures);
+        bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.no_pictures);
         helper = AlbumHelper.getHelper();
         helper.init(getApplicationContext());
 
@@ -87,7 +83,7 @@ public class AlbumActivity extends Activity {
     void onButtonClick(View v){
         switch (v.getId()){
             case R.id.btn_album:
-                startActivity(new Intent(AlbumActivity.this, ImageFile.class));
+                startActivity(new Intent(AlbumActivity.this, ImageFileActivity.class));
                 break;
             case R.id.btn_cancle:
                 Bimp.tempSelectBitmap.clear();
@@ -101,14 +97,14 @@ public class AlbumActivity extends Activity {
                 overridePendingTransition(R.anim.activity_translate_in, R.anim.activity_translate_out);
                 finish();
                 break;
-
         }
     }
 
 
     @Subscribe
     public void isRefreshAlbum(PhotoEvent event){
-        if (event.isRefresh()) gridImageAdapter.notifyDataSetChanged();
+        if (event.isRefresh())
+            gridImageAdapter.notifyDataSetChanged();
     }
 
     private void initListener() {

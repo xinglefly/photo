@@ -45,8 +45,8 @@
         <activity
             android:name="com.king.photo.activity.AlbumActivity"
             android:screenOrientation="portrait" />
-        <activity android:name="com.king.photo.activity.ImageFile" />
-        <activity android:name="com.king.photo.activity.ShowAllPhoto" />
+        <activity android:name="com.king.photo.activity.ImageFileActivity" />
+        <activity android:name="com.king.photo.activity.ShowAllPhotoActivity" />
         <activity android:name="com.king.photo.activity.GalleryActivity" />
     </application>
 

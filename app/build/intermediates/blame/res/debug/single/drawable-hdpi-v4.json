@@ -1,122 +1,70 @@
 [
     {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon_queding_focused.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/icon_queding_focused.png"
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/btn_album.png",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/btn_album.png"
     },
     {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon_quxiao_unfocused.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/icon_quxiao_unfocused.png"
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/btn_del.png",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/btn_del.png"
     },
     {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plugin_camera_send_focused.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plugin_camera_send_focused.png"
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/folder_filenum.png",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/folder_filenum.png"
     },
     {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plubin_camera_del_focused.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plubin_camera_del_focused.png"
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/btn_album_pressed.png",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/btn_album_pressed.png"
     },
     {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plugin_camera_send_pressed.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plugin_camera_send_pressed.png"
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/folder_choose.png",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/folder_choose.png"
     },
     {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon_shanchu_focused.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/icon_shanchu_focused.png"
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/btn_fnish_pressed.png",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/btn_fnish_pressed.png"
     },
     {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plugin_camera_back_btn.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plugin_camera_back_btn.png"
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/btn_del_pressed.png",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/btn_del_pressed.png"
     },
     {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plugin_camera_preview_pressed.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plugin_camera_preview_pressed.png"
-    },
-    {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon_data_select.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/icon_data_select.png"
-    },
-    {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plugin_camera_preview_unselected.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plugin_camera_preview_unselected.png"
-    },
-    {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plugin_camera_del_unfocused.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plugin_camera_del_unfocused.png"
-    },
-    {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plugin_camera_send_unselected.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plugin_camera_send_unselected.png"
-    },
-    {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon_queding_unfocused.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/icon_queding_unfocused.png"
-    },
-    {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon_addpic_focused.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/icon_addpic_focused.png"
-    },
-    {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon_addpic_unfocused.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/icon_addpic_unfocused.png"
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/folder_bg.png",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/folder_bg.png"
     },
     {
         "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/bg_transparent.png",
         "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/bg_transparent.png"
     },
     {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plugin_camera_album_back.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plugin_camera_album_back.png"
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/album_bottom_bar.png",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/album_bottom_bar.png"
     },
     {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon_quxiao_focused.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/icon_quxiao_focused.png"
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/btn_cancel_pressed.png",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/btn_cancel_pressed.png"
     },
     {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plugin_camera_cancel.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plugin_camera_cancel.png"
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/btn_choosed.png",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/btn_choosed.png"
     },
     {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plugin_camera_no_pictures.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plugin_camera_no_pictures.png"
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/btn_finish.png",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/btn_finish.png"
     },
     {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plugin_camera_title_bar.9.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plugin_camera_title_bar.9.png"
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/no_pictures.png",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/no_pictures.png"
     },
     {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plugin_camera_bottom_bar.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plugin_camera_bottom_bar.png"
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/addpic.png",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/addpic.png"
     },
     {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plugin_camera_cancel_pressed.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plugin_camera_cancel_pressed.png"
-    },
-    {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plugin_camera_preview_focused.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plugin_camera_preview_focused.png"
-    },
-    {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon_shanchu_unfocused.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/icon_shanchu_unfocused.png"
-    },
-    {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plugin_camera_back_btn_pressed.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plugin_camera_back_btn_pressed.png"
-    },
-    {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plugin_camera_choose_back.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plugin_camera_choose_back.png"
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/btn_cancle.png",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/btn_cancle.png"
     },
     {
         "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
         "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plugin_camera_choosed.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plugin_camera_choosed.png"
-    },
-    {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/plugin_camera_filenum.png",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable-hdpi/plugin_camera_filenum.png"
     }
 ]

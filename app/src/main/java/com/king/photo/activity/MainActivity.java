@@ -1,6 +1,7 @@
 package com.king.photo.activity;
 
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -8,8 +9,6 @@ import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.provider.MediaStore;
 import android.view.Gravity;
 import android.view.KeyEvent;
@@ -23,7 +22,7 @@ import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
+import android.widget.Toast;
 
 import com.king.photo.R;
 import com.king.photo.adapter.PhotoGridAdapter;
@@ -34,12 +33,12 @@ import com.king.photo.util.PublicWay;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import butterknife.OnItemClick;
 
 
 public class MainActivity extends Activity {
 
-    @BindView(R.id.activity_selectimg_send) TextView activitySelectimgSend;
     @BindView(R.id.noScrollgridview) GridView noScrollgridview;
 
     private PhotoGridAdapter adapter;
@@ -50,7 +49,7 @@ public class MainActivity extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        parentView = getLayoutInflater().inflate(R.layout.activity_selectimg, null);
+        parentView = getLayoutInflater().inflate(R.layout.main_activity, null);
         setContentView(parentView);
         ButterKnife.bind(this);
         initView();
@@ -58,12 +57,21 @@ public class MainActivity extends Activity {
     }
 
     private void initView() {
-        bimap = BitmapFactory.decodeResource(getResources(), R.drawable.icon_addpic_unfocused);
+        bimap = BitmapFactory.decodeResource(getResources(), R.drawable.addpic);
         PublicWay.activityList.add(this);
         noScrollgridview.setSelector(new ColorDrawable(Color.TRANSPARENT));
         adapter = new PhotoGridAdapter(this);
         adapter.isRefresh();
         noScrollgridview.setAdapter(adapter);
+    }
+
+    @OnClick(R.id.tv_upload)
+    void onUploadClick(){
+        Intent intent = new Intent();
+        ComponentName name = new ComponentName("com.zcsy.yidian","com.zcsy.yidian.activity.WelcomeActivity");
+        intent.setComponent(name);
+        intent.setAction(Intent.ACTION_VIEW);
+        startActivity(intent);
     }
 
     @OnItemClick(R.id.noScrollgridview)
@@ -81,7 +89,7 @@ public class MainActivity extends Activity {
 
     public void initPup() {
         pop = new PopupWindow(MainActivity.this);
-        View view = getLayoutInflater().inflate(R.layout.item_popupwindows, null);
+        View view = getLayoutInflater().inflate(R.layout.popupwindows, null);
         ll_popup = ButterKnife.findById(view, R.id.ll_popup);
 
         pop.setWidth(LayoutParams.MATCH_PARENT);
@@ -125,62 +133,21 @@ public class MainActivity extends Activity {
                 ll_popup.clearAnimation();
             }
         });
-
-
-
     }
 
-
-
-    Handler handler = new Handler() {
-        public void handleMessage(Message msg) {
-            switch (msg.what) {
-                case 1:
-                    adapter.isRefresh();
-                    break;
-            }
-            super.handleMessage(msg);
-        }
-    };
-
-    public void loading() {
-        new Thread(new Runnable() {
-            public void run() {
-                while (true) {
-                    if (Bimp.max == Bimp.tempSelectBitmap.size()) {
-                        Message message = new Message();
-                        message.what = 1;
-                        handler.sendMessage(message);
-                        break;
-                    } else {
-                        Bimp.max += 1;
-                        Message message = new Message();
-                        message.what = 1;
-                        handler.sendMessage(message);
-                    }
-                }
-            }
-        }).start();
-    }
-
-    public String getString(String s) {
-        String path = null;
-        if (s == null)
-            return "";
-        for (int i = s.length() - 1; i > 0; i++) {
-            s.charAt(i);
-        }
-        return path;
-    }
 
     protected void onRestart() {
-        loading();
+        adapter.isRefresh();
         super.onRestart();
     }
 
     private static final int TAKE_PICTURE = 0x000001;
 
     public void photo() {
+        if (!FileUtils.hasSdcard()) {
+            Toast.makeText(this,"SD卡不存在，不能拍照",Toast.LENGTH_SHORT).show();
+            return;
+        }
         Intent openCameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(openCameraIntent, TAKE_PICTURE);
     }
@@ -188,12 +155,10 @@ public class MainActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
             case TAKE_PICTURE:
-                if (Bimp.tempSelectBitmap.size() < 6 && resultCode == RESULT_OK) {
-
+                if (Bimp.tempSelectBitmap.size() < 6 && resultCode == RESULT_OK){
                     String fileName = String.valueOf(System.currentTimeMillis());
                     Bitmap bm = (Bitmap) data.getExtras().get("data");
                     FileUtils.saveBitmap(bm, fileName);
-
                     ImageItem takePhoto = new ImageItem();
                     takePhoto.setBitmap(bm);
                     Bimp.tempSelectBitmap.add(takePhoto);

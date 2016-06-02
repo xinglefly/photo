@@ -102,14 +102,14 @@ ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:4
 		ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:46:13-49
 	android:name
 		ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:45:13-51
-activity#com.king.photo.activity.ImageFile
-ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:47:9-65
+activity#com.king.photo.activity.ImageFileActivity
+ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:47:9-73
 	android:name
-		ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:47:19-53
-activity#com.king.photo.activity.ShowAllPhoto
-ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:48:9-68
+		ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:47:19-61
+activity#com.king.photo.activity.ShowAllPhotoActivity
+ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:48:9-76
 	android:name
-		ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:48:19-56
+		ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:48:19-64
 activity#com.king.photo.activity.GalleryActivity
 ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:49:9-71
 	android:name

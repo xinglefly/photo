@@ -51,13 +51,13 @@ public class AlbumGridViewAdapter extends BaseAdapter{
 	}
 
 	public long getItemId(int position) {
-		return 0;
+		return position;
 	}
 
 
 	public View getView(int position, View convertView, ViewGroup parent) {
 		if (convertView == null)
-			convertView =LayoutInflater.from(mContext) .inflate(R.layout.plugin_camera_select_imageview,parent, false);
+			convertView =LayoutInflater.from(mContext) .inflate(R.layout.album_item,parent, false);
 
 		ImageView imgView = ViewHolder.get(convertView, R.id.img_view);
 		ToggleButton btnToggle = ViewHolder.get(convertView, R.id.btn_toggle);
@@ -71,7 +71,7 @@ public class AlbumGridViewAdapter extends BaseAdapter{
 		else path = "camera_default";
 
 		if (path.contains("camera_default")) {
-			imgView.setImageResource(R.drawable.plugin_camera_no_pictures);
+			imgView.setImageResource(R.drawable.no_pictures);
 		} else {
 			final ImageItem item = dataList.get(position);
 			imgView.setTag(item.imagePath);

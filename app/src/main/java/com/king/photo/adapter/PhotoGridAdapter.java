@@ -2,8 +2,6 @@ package com.king.photo.adapter;
 
 import android.content.Context;
 import android.graphics.BitmapFactory;
-import android.os.Handler;
-import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +16,7 @@ import com.king.photo.util.ViewHolder;
 
 
 public class PhotoGridAdapter extends BaseAdapter {
+
     private LayoutInflater inflater;
     private int selectedPosition = -1;
     private boolean shape;
@@ -41,9 +40,8 @@ public class PhotoGridAdapter extends BaseAdapter {
     }
 
     public int getCount() {
-        if (Bimp.tempSelectBitmap.size() == 6) {
+        if (Bimp.tempSelectBitmap.size() == 6)
             return 6;
-        }
         return (Bimp.tempSelectBitmap.size() + 1);
     }
 
@@ -65,15 +63,14 @@ public class PhotoGridAdapter extends BaseAdapter {
 
     public View getView(final int position, View convertView, ViewGroup parent) {
         if (convertView == null)
-            convertView = inflater.inflate(R.layout.item_published_grida, parent, false);
+            convertView = inflater.inflate(R.layout.photo_item, parent, false);
 
         ImageView image = ViewHolder.get(convertView, R.id.item_grida_image);
-        FrameLayout frame = ViewHolder.get(convertView, R.id.frame);
         Button btnChoose = ViewHolder.get(convertView, R.id.btn_choose);
 
         if (position == Bimp.tempSelectBitmap.size()) {
             btnChoose.setVisibility(View.GONE);
-            image.setImageBitmap(BitmapFactory.decodeResource(mContext.getResources(), R.drawable.icon_addpic_unfocused));
+            image.setImageBitmap(BitmapFactory.decodeResource(mContext.getResources(), R.drawable.addpic));
             if (position == 6) image.setVisibility(View.GONE);
         } else {
             image.setImageBitmap(Bimp.tempSelectBitmap.get(position).getBitmap());

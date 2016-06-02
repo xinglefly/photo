@@ -10,7 +10,7 @@ import java.lang.IllegalStateException;
 import java.lang.Object;
 import java.lang.Override;
 
-public class ImageFile$$ViewBinder<T extends ImageFile> implements ViewBinder<T> {
+public class ImageFile$$ViewBinder<T extends ImageFileActivity> implements ViewBinder<T> {
   @Override
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
@@ -34,7 +34,7 @@ public class ImageFile$$ViewBinder<T extends ImageFile> implements ViewBinder<T>
     return new InnerUnbinder(target);
   }
 
-  protected static class InnerUnbinder<T extends ImageFile> implements Unbinder {
+  protected static class InnerUnbinder<T extends ImageFileActivity> implements Unbinder {
     private T target;
 
     View view2131296268;
