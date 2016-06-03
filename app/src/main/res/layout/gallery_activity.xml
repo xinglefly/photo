@@ -52,7 +52,7 @@
 
     </RelativeLayout>
 
-    <com.king.photo.zoom.ViewPagerFixed
+    <com.xinglefly.photo.zoom.ViewPagerFixed
         android:id="@+id/page_gallery"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
