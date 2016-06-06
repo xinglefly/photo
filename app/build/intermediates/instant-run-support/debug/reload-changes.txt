@@ -1,4 +1,0 @@
-CHANGED,/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/king/photo/util/BitmapCache$1$1$override.class
-CHANGED,/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/king/photo/util/BitmapCache$override.class
-CHANGED,/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
-CHANGED,/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/king/photo/util/BitmapCache$1$override.class
