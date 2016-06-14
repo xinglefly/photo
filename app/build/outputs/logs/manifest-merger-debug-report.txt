@@ -86,6 +86,7 @@ ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:3
 uses-sdk
 INJECTED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.jakewharton:butterknife:8.0.1] /Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.0.1/AndroidManifest.xml:5:5-43
+MERGED from [com.makeramen:roundedimageview:2.2.1] /Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/exploded-aar/com.makeramen/roundedimageview/2.2.1/AndroidManifest.xml:7:5-43
 	android:targetSdkVersion
 		INJECTED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml

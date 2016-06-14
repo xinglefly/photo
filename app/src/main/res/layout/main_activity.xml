@@ -40,7 +40,7 @@
 
     <GridView
         android:id="@+id/noScrollgridview"
-        android:layout_width="290dp"
+        android:layout_width="fill_parent"
         android:layout_height="350dp"
         android:layout_marginLeft="5dp"
         android:horizontalSpacing="3dp"
