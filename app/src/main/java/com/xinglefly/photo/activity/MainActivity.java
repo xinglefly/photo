@@ -10,6 +10,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
@@ -18,7 +19,6 @@ import android.view.ViewGroup.LayoutParams;
 import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
@@ -26,20 +26,27 @@ import android.widget.Toast;
 
 import com.xinglefly.photo.R;
 import com.xinglefly.photo.adapter.PhotoGridAdapter;
+import com.xinglefly.photo.event.PhotoEvent;
 import com.xinglefly.photo.util.Bimp;
 import com.xinglefly.photo.util.FileUtils;
 import com.xinglefly.photo.bean.ImageItem;
+import com.xinglefly.photo.util.NoScrollGridView;
 import com.xinglefly.photo.util.PublicWay;
+
+import org.greenrobot.eventbus.Subscribe;
+
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.OnItemClick;
+import rx.Observable;
+import rx.Subscriber;
 
 
 public class MainActivity extends Activity {
 
-    @BindView(R.id.noScrollgridview) GridView noScrollgridview;
+    @BindView(R.id.noScrollgridview) NoScrollGridView noScrollgridview;
 
     private PhotoGridAdapter adapter;
     private View parentView;
@@ -54,7 +61,9 @@ public class MainActivity extends Activity {
         ButterKnife.bind(this);
         initView();
         initPup();
+
     }
+
 
     private void initView() {
         bimap = BitmapFactory.decodeResource(getResources(), R.drawable.addpic);
@@ -66,16 +75,16 @@ public class MainActivity extends Activity {
     }
 
     @OnClick(R.id.tv_upload)
-    void onUploadClick(){
-        Intent intent = new Intent();
-        ComponentName name = new ComponentName("com.zcsy.yidian","com.zcsy.yidian.activity.WelcomeActivity");
-        intent.setComponent(name);
-        intent.setAction(Intent.ACTION_VIEW);
-        startActivity(intent);
+    void onUploadClick() {
+//        Intent intent = new Intent();
+//        ComponentName name = new ComponentName("com.zcsy.yidian", "com.zcsy.yidian.activity.WelcomeActivity");
+//        intent.setComponent(name);
+//        intent.setAction(Intent.ACTION_VIEW);
+        startActivity(new Intent(this,UsingRxJava.class));
     }
 
     @OnItemClick(R.id.noScrollgridview)
-    void onGridviewItemClick(AdapterView<?> parent,int position){
+    void onGridviewItemClick(AdapterView<?> parent, int position) {
         if (position == Bimp.tempSelectBitmap.size()) {
             ll_popup.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.activity_translate_in));
             pop.showAtLocation(parentView, Gravity.BOTTOM, 0, 0);
@@ -136,6 +145,8 @@ public class MainActivity extends Activity {
     }
 
 
+
+
     protected void onRestart() {
         adapter.isRefresh();
         super.onRestart();
@@ -145,7 +156,7 @@ public class MainActivity extends Activity {
 
     public void photo() {
         if (!FileUtils.hasSdcard()) {
-            Toast.makeText(this,"SD卡不存在，不能拍照",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "SD卡不存在，不能拍照", Toast.LENGTH_SHORT).show();
             return;
         }
         Intent openCameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -155,7 +166,7 @@ public class MainActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
             case TAKE_PICTURE:
-                if (Bimp.tempSelectBitmap.size() < 6 && resultCode == RESULT_OK){
+                if (Bimp.tempSelectBitmap.size() < 6 && resultCode == RESULT_OK) {
                     String fileName = String.valueOf(System.currentTimeMillis());
                     Bitmap bm = (Bitmap) data.getExtras().get("data");
                     FileUtils.saveBitmap(bm, fileName);
@@ -176,6 +187,12 @@ public class MainActivity extends Activity {
             System.exit(0);
         }
         return true;
+    }
+
+    @Subscribe
+    public void isRefreshAlbum(PhotoEvent event) {
+        if (event.isRefresh())
+            adapter.isRefresh();
     }
 
 }

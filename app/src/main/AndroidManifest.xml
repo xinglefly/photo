@@ -33,6 +33,7 @@
         <activity android:name="com.xinglefly.photo.activity.ImageFileActivity"/>
         <activity android:name="com.xinglefly.photo.activity.ShowAllPhotoActivity"/>
         <activity android:name="com.xinglefly.photo.activity.GalleryActivity"/>
+        <activity android:name="com.xinglefly.photo.activity.UsingRxJava"/>
     </application>
 
 </manifest>

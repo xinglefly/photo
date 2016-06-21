@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="9"
         android:targetSdkVersion="18" />
 
     <uses-feature android:name="android.hardware.camera" />
@@ -13,9 +13,8 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -32,21 +31,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.xinglefly.photo.activity.ImageGridActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.xinglefly.photo.activity.TestPicActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.xinglefly.photo.activity.PhotoActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.xinglefly.photo.activity.AlbumActivity"
             android:screenOrientation="portrait" />
         <activity android:name="com.xinglefly.photo.activity.ImageFileActivity" />
         <activity android:name="com.xinglefly.photo.activity.ShowAllPhotoActivity" />
         <activity android:name="com.xinglefly.photo.activity.GalleryActivity" />
+        <activity android:name="com.xinglefly.photo.activity.UsingRxJava" />
     </application>
 
 </manifest>

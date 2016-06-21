@@ -38,7 +38,7 @@
         android:gravity="left|top"
         android:hint="说点什么吧..."/>
 
-    <GridView
+    <com.xinglefly.photo.util.NoScrollGridView
         android:id="@+id/noScrollgridview"
         android:layout_width="290dp"
         android:layout_height="350dp"

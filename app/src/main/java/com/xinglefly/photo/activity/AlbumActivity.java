@@ -31,6 +31,9 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import rx.Observable;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
 
 
 public class AlbumActivity extends Activity {
@@ -74,6 +77,11 @@ public class AlbumActivity extends Activity {
         gridViewAlbum.setAdapter(gridImageAdapter);
         gridViewAlbum.setEmptyView(tvNone);
         btnFinish.setText(Bimp.tempSelectBitmap.size() + "/" + PublicWay.num);
+
+//
+//        Observable.from(contentList)
+//                .subscribeOn(Schedulers.io())
+//                .observeOn(AndroidSchedulers.mainThread())
     }
 
 
