@@ -33,6 +33,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
 
@@ -78,13 +79,20 @@ public class AlbumActivity extends Activity {
         gridViewAlbum.setEmptyView(tvNone);
         btnFinish.setText(Bimp.tempSelectBitmap.size() + "/" + PublicWay.num);
 
-//
 //        Observable.from(contentList)
 //                .subscribeOn(Schedulers.io())
 //                .observeOn(AndroidSchedulers.mainThread())
+        /*Observable.just(contentList)
+                .map(new Func1<List<ImageBucket> , List<ImageItem> >() {
+
+                    @Override
+                    public List<ImageItem> call(List<ImageBucket> imageBuckets) {
+
+                    }
+                })*/
+
+
     }
-
-
 
 
     @OnClick({R.id.btn_album,R.id.btn_cancle,R.id.btn_preview,R.id.btn_finish})

@@ -1,7 +1,6 @@
 package com.xinglefly.photo.activity;
 
 import android.app.Activity;
-import android.content.ComponentName;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -19,6 +18,7 @@ import android.view.ViewGroup.LayoutParams;
 import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
@@ -36,17 +36,18 @@ import com.xinglefly.photo.util.PublicWay;
 import org.greenrobot.eventbus.Subscribe;
 
 
+import java.io.File;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.OnItemClick;
-import rx.Observable;
-import rx.Subscriber;
 
 
 public class MainActivity extends Activity {
 
     @BindView(R.id.noScrollgridview) NoScrollGridView noScrollgridview;
+    @BindView(R.id.img_pic) ImageView imgPic;
 
     private PhotoGridAdapter adapter;
     private View parentView;
@@ -61,7 +62,6 @@ public class MainActivity extends Activity {
         ButterKnife.bind(this);
         initView();
         initPup();
-
     }
 
 
@@ -81,6 +81,17 @@ public class MainActivity extends Activity {
 //        intent.setComponent(name);
 //        intent.setAction(Intent.ACTION_VIEW);
         startActivity(new Intent(this,UsingRxJava.class));
+    }
+
+    public void UploadImageLoader(File file) {
+        for (int i = 0; i < Bimp.tempSelectBitmap.size(); i++) {
+            String fileName = String.valueOf(System.currentTimeMillis());
+            Bitmap bm = Bimp.tempSelectBitmap.get(i).getBitmap();
+            if(bm == null) continue;
+//                    Bitmap bitmap = ImageUtils.compressImage(bm);   //图片压缩
+            String filePath = FileUtils.saveBitmap(bm, fileName);
+//            addRequestParams("image",new File(filePath));
+        }
     }
 
     @OnItemClick(R.id.noScrollgridview)
@@ -167,9 +178,7 @@ public class MainActivity extends Activity {
         switch (requestCode) {
             case TAKE_PICTURE:
                 if (Bimp.tempSelectBitmap.size() < 6 && resultCode == RESULT_OK) {
-                    String fileName = String.valueOf(System.currentTimeMillis());
                     Bitmap bm = (Bitmap) data.getExtras().get("data");
-                    FileUtils.saveBitmap(bm, fileName);
                     ImageItem takePhoto = new ImageItem();
                     takePhoto.setBitmap(bm);
                     Bimp.tempSelectBitmap.add(takePhoto);
@@ -177,6 +186,7 @@ public class MainActivity extends Activity {
                 break;
         }
     }
+
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {

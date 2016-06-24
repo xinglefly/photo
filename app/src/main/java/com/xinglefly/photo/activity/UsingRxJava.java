@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import com.xinglefly.photo.R;
 import com.xinglefly.photo.activity.actions.SuccessAction;
+import com.xinglefly.photo.bean.Course;
+import com.xinglefly.photo.bean.Student;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -43,6 +45,25 @@ public class UsingRxJava extends Activity {
 //        useObservableCreate();
         useObservableJust();
         useObserverBitMap();
+        useObserverFlatMap();
+    }
+
+    Student[] students;
+    private void useObserverFlatMap() {
+        Observable.from(students)
+                .flatMap(new Func1<Student, Observable<Course>>() {
+                    @Override
+                    public Observable<Course> call(Student student) {
+                        return Observable.from(student.getCourseList());
+                    }
+                })
+                .subscribe(new Action1<Course>() {
+                    @Override
+                    public void call(Course course) {
+                        Log.d(TAG,course.getName());
+                    }
+                });
+
     }
 
     private void useObserverBitMap() {
