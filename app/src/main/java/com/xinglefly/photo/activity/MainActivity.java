@@ -5,9 +5,12 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.Matrix;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.Gravity;
@@ -30,11 +33,11 @@ import com.xinglefly.photo.event.PhotoEvent;
 import com.xinglefly.photo.util.Bimp;
 import com.xinglefly.photo.util.FileUtils;
 import com.xinglefly.photo.bean.ImageItem;
+import com.xinglefly.photo.util.ImageUtil;
 import com.xinglefly.photo.util.NoScrollGridView;
 import com.xinglefly.photo.util.PublicWay;
 
 import org.greenrobot.eventbus.Subscribe;
-
 
 import java.io.File;
 
@@ -76,21 +79,21 @@ public class MainActivity extends Activity {
 
     @OnClick(R.id.tv_upload)
     void onUploadClick() {
-//        Intent intent = new Intent();
-//        ComponentName name = new ComponentName("com.zcsy.yidian", "com.zcsy.yidian.activity.WelcomeActivity");
-//        intent.setComponent(name);
-//        intent.setAction(Intent.ACTION_VIEW);
-        startActivity(new Intent(this,UsingRxJava.class));
+//        startActivity(new Intent(this,UsingRxJava.class));
+        UploadImageLoader();
     }
 
-    public void UploadImageLoader(File file) {
-        for (int i = 0; i < Bimp.tempSelectBitmap.size(); i++) {
-            String fileName = String.valueOf(System.currentTimeMillis());
-            Bitmap bm = Bimp.tempSelectBitmap.get(i).getBitmap();
-            if(bm == null) continue;
-//                    Bitmap bitmap = ImageUtils.compressImage(bm);   //图片压缩
-            String filePath = FileUtils.saveBitmap(bm, fileName);
-//            addRequestParams("image",new File(filePath));
+    public void UploadImageLoader() {
+        if (Bimp.tempSelectBitmap.size() > 0) {
+            for (int i = 0; i < Bimp.tempSelectBitmap.size(); i++) {
+                String fileName = String.valueOf(System.currentTimeMillis());
+                Bitmap bm = Bimp.tempSelectBitmap.get(i).getBitmap();
+                if(bm == null)
+                    continue;
+                Bitmap bitmap = ImageUtil.compressImage(bm);   //图片压缩
+                String filePath = FileUtils.saveBitmap(bitmap, fileName);
+//                params.addBodyParameter(fileName, new File(filePath));
+            }
         }
     }
 
@@ -156,8 +159,6 @@ public class MainActivity extends Activity {
     }
 
 
-
-
     protected void onRestart() {
         adapter.isRefresh();
         super.onRestart();
@@ -170,22 +171,33 @@ public class MainActivity extends Activity {
             Toast.makeText(this, "SD卡不存在，不能拍照", Toast.LENGTH_SHORT).show();
             return;
         }
-        Intent openCameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        startActivityForResult(openCameraIntent, TAKE_PICTURE);
+        /*Intent openCameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(openCameraIntent, TAKE_PICTURE);*/
+
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        Uri imageUri = Uri.fromFile(new File(Environment.getExternalStorageDirectory(),"image.jpg"));
+        intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
+        startActivityForResult(intent, TAKE_PICTURE);
+
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
             case TAKE_PICTURE:
                 if (Bimp.tempSelectBitmap.size() < 6 && resultCode == RESULT_OK) {
-                    Bitmap bm = (Bitmap) data.getExtras().get("data");
+//                    Bitmap bm = (Bitmap) data.getExtras().get("data");由于系统的原因对其拍照后的照片会自动压缩，导致失真
+                    Bitmap bitmap = BitmapFactory.decodeFile(Environment.getExternalStorageDirectory()+"/image.jpg");
+                    Bitmap newBitmap = ImageUtil.zoomBitmap(bitmap, bitmap.getWidth() / 2, bitmap.getHeight() / 2);
+                    bitmap.recycle();
                     ImageItem takePhoto = new ImageItem();
-                    takePhoto.setBitmap(bm);
+                    takePhoto.setBitmap(newBitmap);
                     Bimp.tempSelectBitmap.add(takePhoto);
                 }
                 break;
         }
     }
+
+
 
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {

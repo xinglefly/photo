@@ -25,7 +25,7 @@ public class Bimp {
 		int i = 0;
 		Bitmap bitmap = null;
 		while (true) {
-			if ((options.outWidth >> i <= 100) && (options.outHeight >> i <= 100)) {
+			if ((options.outWidth >> i <= 1000) && (options.outHeight >> i <= 1000)) {
 				in = new BufferedInputStream(new FileInputStream(new File(path)));
 				options.inSampleSize = 1;
 				options.inJustDecodeBounds = false;

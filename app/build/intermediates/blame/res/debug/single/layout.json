@@ -16,12 +16,12 @@
         "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/layout/allphoto_activity.xml"
     },
     {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/layout/popupwindows.xml",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/layout/popupwindows.xml"
-    },
-    {
         "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/layout/gridview.xml",
         "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/layout/gridview.xml"
+    },
+    {
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/layout/popupwindows.xml",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/layout/popupwindows.xml"
     },
     {
         "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/layout/imagefile_activity.xml",
