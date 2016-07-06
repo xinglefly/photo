@@ -20,7 +20,7 @@ public class FileUtils {
 		try {
 			File dirFile = new File(SDPATH);
 			if (!dirFile.exists()) {
-				dirFile.mkdir();
+				dirFile.mkdirs();
 			}
 			File f = new File(SDPATH, picName + ".jpg");
 			BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(f));

@@ -3,6 +3,8 @@ package com.xinglefly.photo.util;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
+import android.util.Log;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 
@@ -26,6 +28,7 @@ public class ImageUtil {
         image.compress(Bitmap.CompressFormat.JPEG, 100, baos);
         int options = 100;
         while ( baos.toByteArray().length / 1024>100) {
+            Log.d("ImageUtil","baos-->"+baos.toByteArray().length);
             baos.reset();
             if(options>10)
                 options -= 10;

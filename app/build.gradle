@@ -11,6 +11,7 @@ android {
         targetSdkVersion 18
     }
 
+
     buildTypes {
         release {
             minifyEnabled false

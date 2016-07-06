@@ -5,14 +5,12 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.graphics.Matrix;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
@@ -37,6 +35,7 @@ import com.xinglefly.photo.util.ImageUtil;
 import com.xinglefly.photo.util.NoScrollGridView;
 import com.xinglefly.photo.util.PublicWay;
 
+import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 
 import java.io.File;
@@ -63,6 +62,7 @@ public class MainActivity extends Activity {
         parentView = getLayoutInflater().inflate(R.layout.main_activity, null);
         setContentView(parentView);
         ButterKnife.bind(this);
+        EventBus.getDefault().register(this);
         initView();
         initPup();
     }
@@ -196,8 +196,6 @@ public class MainActivity extends Activity {
                 break;
         }
     }
-
-
 
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
