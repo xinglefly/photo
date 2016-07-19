@@ -78,20 +78,6 @@ public class AlbumActivity extends Activity {
         gridViewAlbum.setAdapter(gridImageAdapter);
         gridViewAlbum.setEmptyView(tvNone);
         btnFinish.setText(Bimp.tempSelectBitmap.size() + "/" + PublicWay.num);
-
-//        Observable.from(contentList)
-//                .subscribeOn(Schedulers.io())
-//                .observeOn(AndroidSchedulers.mainThread())
-        /*Observable.just(contentList)
-                .map(new Func1<List<ImageBucket> , List<ImageItem> >() {
-
-                    @Override
-                    public List<ImageItem> call(List<ImageBucket> imageBuckets) {
-
-                    }
-                })*/
-
-
     }
 
 
