@@ -7,9 +7,10 @@ android {
 
     defaultConfig {
         applicationId "com.king.photo"
-        minSdkVersion 8
+        minSdkVersion 9
         targetSdkVersion 18
     }
+
 
     buildTypes {
         release {
@@ -20,9 +21,13 @@ android {
 }
 
 dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:support-v4:19.1.0'
     compile 'com.jakewharton:butterknife:8.0.1'
     apt 'com.jakewharton:butterknife-compiler:8.0.1'
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'com.makeramen:roundedimageview:2.2.1'
+    compile 'com.makeramen:roundedimageview:2.2.1'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.0'
 }

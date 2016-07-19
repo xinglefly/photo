@@ -2,9 +2,9 @@
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="18"
-    density="xhdpi"
+    density="hdpi"
     format="7"
-    timestamp="1465894644222442000" >
+    timestamp="1467789694002386000" >
 
     <task
         name="javac"
@@ -19,14 +19,6 @@
         name="verifier"
         duration="0" />
 
-    <artifact
-        location="/Users/chenzhenxing/Desktop/Photo1/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
-
-    <build timestamp="1465894644222442000" >
-        <artifact
-            location="/Users/chenzhenxing/Desktop/Photo1/app/build/outputs/apk/app-debug.apk"
-            type="MAIN" />
-    </build>
+    <build timestamp="1467789694002386000" />
 
 </instant-run>

@@ -1,11 +1,14 @@
 package com.xinglefly.photo.util;
 
 import java.io.BufferedOutputStream;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Environment;
 
@@ -13,21 +16,21 @@ public class FileUtils {
 
 	public static String SDPATH = Environment.getExternalStorageDirectory() + "/Photo_sd/";
 
-	public static void saveBitmap(Bitmap bm, String picName) {
+	public static String saveBitmap(Bitmap bm, String picName) {
 		try {
 			File dirFile = new File(SDPATH);
-			if (!dirFile.exists())
-				dirFile.mkdir();
-			File f = new File(SDPATH, picName + ".JPEG");
-			BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream(f));
-			bm.compress(Bitmap.CompressFormat.JPEG, 100, out);
-			out.flush();
-			out.close();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			if (!dirFile.exists()) {
+				dirFile.mkdirs();
+			}
+			File f = new File(SDPATH, picName + ".jpg");
+			BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(f));
+			bm.compress(Bitmap.CompressFormat.JPEG, 100, bos);
+			bos.flush();
+			bos.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		return SDPATH + picName + ".jpg";
 	}
 
 
@@ -67,6 +70,7 @@ public class FileUtils {
 			savedir.mkdirs();
 		}
 	}
+
 
 
 }

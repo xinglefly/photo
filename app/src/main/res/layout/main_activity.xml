@@ -36,9 +36,9 @@
         android:layout_margin="8dp"
         android:background="@null"
         android:gravity="left|top"
-        android:hint="说点什么吧..."/>
+        android:hint="说点什么吧..." />
 
-    <GridView
+    <com.xinglefly.photo.util.NoScrollGridView
         android:id="@+id/noScrollgridview"
         android:layout_width="fill_parent"
         android:layout_height="350dp"
@@ -46,6 +46,12 @@
         android:horizontalSpacing="3dp"
         android:numColumns="4"
         android:scrollbars="none"
-        android:verticalSpacing="5dp"/>
+        android:verticalSpacing="5dp" />
+
+    <ImageView
+        android:id="@+id/img_pic"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:scaleType="fitXY"/>
 
 </LinearLayout>

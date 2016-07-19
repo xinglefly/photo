@@ -1,6 +1,0 @@
-CHANGED,/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/xinglefly/photo/activity/MainActivity$1$override.class
-CHANGED,/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
-CHANGED,/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/xinglefly/photo/activity/MainActivity$override.class
-CHANGED,/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/xinglefly/photo/activity/MainActivity$2$override.class
-CHANGED,/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/xinglefly/photo/activity/MainActivity$4$override.class
-CHANGED,/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/xinglefly/photo/activity/MainActivity$3$override.class

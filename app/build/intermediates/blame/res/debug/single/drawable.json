@@ -20,11 +20,11 @@
         "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable/btn_del_selector.xml"
     },
     {
-        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable/btn_album_select.xml",
-        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable/btn_album_select.xml"
-    },
-    {
         "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable/pic_choose_selector.xml",
         "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable/pic_choose_selector.xml"
+    },
+    {
+        "merged": "/Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/res/merged/debug/drawable/btn_album_select.xml",
+        "source": "/Users/chenzhenxing/Desktop/Photo1/app/src/main/res/drawable/btn_album_select.xml"
     }
 ]

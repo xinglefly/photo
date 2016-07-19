@@ -27,13 +27,14 @@ public class Bimp {
 		while (true) {
 			if ((options.outWidth >> i <= 1000) && (options.outHeight >> i <= 1000)) {
 				in = new BufferedInputStream(new FileInputStream(new File(path)));
-				options.inSampleSize = (int) Math.pow(2.0D, i);
+				options.inSampleSize = 1;
 				options.inJustDecodeBounds = false;
 				bitmap = BitmapFactory.decodeStream(in, null, options);
 				break;
 			}
 			i += 1;
 		}
+
 		return bitmap;
 	}
 }

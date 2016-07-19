@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:2:1-38:12
+ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:2:1-39:12
 	xmlns:android
 		ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:2:11-69
 	package
@@ -40,7 +40,7 @@ ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:1
 	android:name
 		ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:13:22-77
 application
-ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:16:5-36:19
+ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:16:5-37:19
 	android:label
 		ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:19:9-41
 	android:allowBackup
@@ -83,10 +83,15 @@ activity#com.xinglefly.photo.activity.GalleryActivity
 ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:35:9-80
 	android:name
 		ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:35:19-78
+activity#com.xinglefly.photo.activity.UsingRxJava
+ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:36:9-76
+	android:name
+		ADDED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml:36:19-74
 uses-sdk
 INJECTED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.jakewharton:butterknife:8.0.1] /Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.0.1/AndroidManifest.xml:5:5-43
 MERGED from [com.makeramen:roundedimageview:2.2.1] /Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/exploded-aar/com.makeramen/roundedimageview/2.2.1/AndroidManifest.xml:7:5-43
+MERGED from [io.reactivex:rxandroid:1.1.0] /Users/chenzhenxing/Desktop/Photo1/app/build/intermediates/exploded-aar/io.reactivex/rxandroid/1.1.0/AndroidManifest.xml:19:5-43
 	android:targetSdkVersion
 		INJECTED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/chenzhenxing/Desktop/Photo1/app/src/main/AndroidManifest.xml
