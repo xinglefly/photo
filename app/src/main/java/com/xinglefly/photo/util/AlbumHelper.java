@@ -14,7 +14,6 @@ import android.provider.MediaStore.Audio.Albums;
 import android.provider.MediaStore.Images.Media;
 import android.provider.MediaStore.Images.Thumbnails;
 import android.util.Log;
-
 import com.xinglefly.photo.bean.ImageBucket;
 import com.xinglefly.photo.bean.ImageItem;
 
@@ -154,6 +153,7 @@ public class AlbumHelper {
 						+ picasaId + " name:" + name + " path:" + path
 						+ " title: " + title + " size: " + size + " bucket: "
 						+ bucketName + "---");
+
 
 				ImageBucket bucket = bucketList.get(bucketId);
 				if (bucket == null) {

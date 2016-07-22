@@ -26,6 +26,7 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.orhanobut.logger.Logger;
 import com.xinglefly.photo.R;
 import com.xinglefly.photo.adapter.PhotoGridAdapter;
 import com.xinglefly.photo.event.PhotoEvent;
@@ -64,6 +65,7 @@ public class MainActivity extends Activity {
         parentView = getLayoutInflater().inflate(R.layout.main_activity, null);
         setContentView(parentView);
         ButterKnife.bind(this);
+        Logger.init();
         EventBus.getDefault().register(this);
         initView();
         initPup();
@@ -94,6 +96,7 @@ public class MainActivity extends Activity {
                     continue;
                 Bitmap bitmap = ImageUtil.compressImage(bm);   //图片压缩
                 String filePath = FileUtils.saveBitmap(bitmap, fileName);
+                Logger.d("%s",filePath);
 //                params.addBodyParameter(fileName, new File(filePath));
             }
         }
